@@ -15,7 +15,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @var array
      */
-    protected $pages;
+    public $pages;
 
     /**
      * @var string
@@ -27,7 +27,6 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
-        $this->loadDirectoryPages();
         $this->currentUrl = $UrlDescriptor->url_rebuild;
 
         if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
@@ -43,7 +42,6 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        $this->loadDirectoryPages();
         $linksFound = 0;
         $pageUrls   = array();
 
@@ -101,8 +99,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @param array $directory
      */
-    public function setDirectory($directory)
+    public function initDirectory($directory)
     {
         $this->directory = $directory;
+        $this->loadDirectoryPages();
     }
 }
