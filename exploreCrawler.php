@@ -12,6 +12,9 @@ foreach($db->query($sSql) as $directory) {
     $crawler = new ExploreCrawler(array(
         'multiprocessing'           => false,
         'FollowMode'                => 1,
+        'showPageRequested'         => true,
+        'showReferer'               => false,
+        'showContentReceived'       => false,
     ));
     $crawler->initDirectory($directory);
     $crawler->setURL($directory['url']);

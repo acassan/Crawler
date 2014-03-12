@@ -26,7 +26,7 @@ class BaseCrawler extends PHPCrawler
      */
     public function __construct($options = array())
     {
-        $this->lb       = PHP_SAPI == "cli" ? "\n" : "<br />";
+        $this->lb       = PHP_SAPI == "cli" ? "\n" : "\n";
         $this->db       = Database::getInstance();
         $this->options = array(
             'showPageRequested'     => true,
