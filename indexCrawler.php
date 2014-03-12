@@ -9,7 +9,7 @@ $sSql = "SELECT * FROM website_to_verify WHERE verified = 0";
 foreach($db->query($sSql) as $website) {
 
     $crawler = new IndexCrawler(array(
-        'multiprocessing'           => true,
+        'multiprocessing'           => false,
         'FollowMode'                => 3,
         'showReferer'               => false,
         'showContentReceived'       => false,
