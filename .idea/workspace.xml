@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IndexCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.45555556" vertical-offset="1579" max-vertical-offset="4658">
+            <state line="117" column="26" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-15.769231" vertical-offset="1579" max-vertical-offset="4658">
               <folding>
                 <marker date="1394644469703" expanded="true" signature="3090:3128" placeholder="SELECT * FRO..website..." />
                 <marker date="1394644469703" expanded="true" signature="5455:5499" placeholder="SELECT * FRO..dictionary..." />
@@ -50,12 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="17" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-20.538462" vertical-offset="894" max-vertical-offset="2278">
+            <state line="53" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.2774123" vertical-offset="648" max-vertical-offset="2278">
               <folding>
-                <marker date="1394644464291" expanded="true" signature="1706:1732" placeholder="INSERT INTO ..." />
+                <marker date="1394644950103" expanded="true" signature="1698:1724" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -100,8 +99,8 @@
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
-        <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
+        <option value="$PROJECT_DIR$/Lib/Database.php" />
       </list>
     </option>
   </component>
@@ -289,10 +288,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26385927" sideWeight="0.4979296" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26385927" sideWeight="0.4984456" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26385927" sideWeight="0.50207037" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26385927" sideWeight="0.5015544" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -522,22 +521,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="17" selection-start="1972" selection-end="1972" vertical-scroll-proportion="-20.538462" vertical-offset="894" max-vertical-offset="2278">
-          <folding>
-            <marker date="1394644464291" expanded="true" signature="1706:1732" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3476" selection-end="3476" vertical-scroll-proportion="0.45555556" vertical-offset="1579" max-vertical-offset="4658">
+        <state line="117" column="26" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-15.769231" vertical-offset="1579" max-vertical-offset="4658">
           <folding>
             <marker date="1394644469703" expanded="true" signature="3090:3128" placeholder="SELECT * FRO..website..." />
             <marker date="1394644469703" expanded="true" signature="5455:5499" placeholder="SELECT * FRO..dictionary..." />
             <marker date="1394644469703" expanded="true" signature="7027:7099" placeholder="SELECT * FRO..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.2774123" vertical-offset="648" max-vertical-offset="2278">
+          <folding>
+            <marker date="1394644950103" expanded="true" signature="1698:1724" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

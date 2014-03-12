@@ -51,11 +51,11 @@ Class Database extends mysqli
 		if(is_array($data)){
 			foreach($data as $key=>$val){
 				if(!is_array($data[$key])){
-					$data[$key] = mysql_real_escape_string($data[$key]);
+					$data[$key] = $this->escape_string($data[$key]);
 				}
 			}
 		}else{
-			$data = mysql_real_escape_string($data);
+			$data = $this->escape_string($data);
 		}
 		return $data;
 	}
