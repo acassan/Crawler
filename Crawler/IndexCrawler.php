@@ -115,7 +115,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
                 'updatedAt' => date('Y-m-d H:i:s'),
             );
 
-            var_dump($this->website);
             $this->db->Insert($this->website, 'website');
             $this->website['id'] = $this->db->insert_id;
         }
