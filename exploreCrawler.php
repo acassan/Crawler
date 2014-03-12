@@ -7,7 +7,6 @@ require_once 'Lib/Database.php';
 
 $db     = Database::getInstance();
 $sSql   = "SELECT * FROM directory";
-die("ok");
 
 foreach($db->query($sSql) as $directory) {
     $crawler = new ExploreCrawler(array(
