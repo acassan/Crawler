@@ -16,7 +16,7 @@ foreach($db->query($sSql) as $website) {
     ));
     $crawler->setPageLimit(5);
     $crawler->resetWebsite();
-    $crawler->initWebsite($website['url']);die();
+    $crawler->initWebsite($website['url']);
     $crawler->setURL($website['url']);
     $crawler->go();
     $crawler->saveWebsite();

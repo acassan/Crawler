@@ -6,7 +6,7 @@ Class Database extends mysqli
     private static $_instance;
 
     protected $db;
-    
+
 //    protected $dbHost       = "localhost";
 //    protected $dbUsername   = "root";
 //    protected $dbPassword   = "";
