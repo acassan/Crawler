@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Crawler" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a735822a-35ac-432c-a66c-924419f8c00f">
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost/crawler</jdbc-url>
+    <user-name>root</user-name>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/../../Drivers/mysql-connector-java-5.1.26-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://$PROJECT_DIR$/../../Drivers/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
