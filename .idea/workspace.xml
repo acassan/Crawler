@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="14" selection-start="454" selection-end="454" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="850">
+            <state line="11" column="14" selection-start="216" selection-end="216" vertical-scroll-proportion="0.22" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -347,7 +347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="454" selection-end="454" vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="850">
+        <state line="11" column="14" selection-start="216" selection-end="216" vertical-scroll-proportion="0.22" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>

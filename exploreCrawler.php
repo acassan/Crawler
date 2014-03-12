@@ -9,6 +9,7 @@ $db     = Database::getInstance();
 $sSql   = "SELECT * FROM directory";
 
 foreach($db->query($sSql) as $directory) {
+    die("ok");
     $crawler = new ExploreCrawler(array(
         'multiprocessing'           => false,
         'FollowMode'                => 1,
