@@ -31,6 +31,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $this->currentUrl = $UrlDescriptor->url_rebuild;
 
         if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
+            die("ok");
             return parent::processUrl($UrlDescriptor);
         }
     }
