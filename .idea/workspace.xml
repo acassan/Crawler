@@ -52,9 +52,9 @@
       <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.2774123" vertical-offset="648" max-vertical-offset="2278">
+            <state line="8" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1491228" vertical-offset="0" max-vertical-offset="2380">
               <folding>
-                <marker date="1394644950103" expanded="true" signature="1698:1724" placeholder="INSERT INTO ..." />
+                <marker date="1394645114323" expanded="true" signature="1907:1933" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -534,9 +534,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="38" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.2774123" vertical-offset="648" max-vertical-offset="2278">
+        <state line="8" column="4" selection-start="95" selection-end="95" vertical-scroll-proportion="0.1491228" vertical-offset="0" max-vertical-offset="2380">
           <folding>
-            <marker date="1394644950103" expanded="true" signature="1698:1724" placeholder="INSERT INTO ..." />
+            <marker date="1394645114323" expanded="true" signature="1907:1933" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

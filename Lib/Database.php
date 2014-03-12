@@ -6,10 +6,16 @@ Class Database extends mysqli
     private static $_instance;
 
     protected $db;
-    protected $dbHost       = "localhost";
-    protected $dbUsername   = "root";
-    protected $dbPassword   = "";
-    protected $dbDatabase   = "crawler";
+    
+//    protected $dbHost       = "localhost";
+//    protected $dbUsername   = "root";
+//    protected $dbPassword   = "";
+//    protected $dbDatabase   = "crawler";
+
+    protected $dbHost       ="db518842993.db.1and1.com";
+    protected $dbUsername   = "dbo518842993";
+    protected $dbPassword   = "riverline2013";
+    protected $dbDatabase   = "db518842993";
 
     /**
      * Empêche la création externe d'instances.
@@ -82,7 +88,7 @@ Class Database extends mysqli
 		}
 
 		$query = substr($query, 0, -2);
-var_dump($query);
+
 		return $this->query($query);
 	}
 
