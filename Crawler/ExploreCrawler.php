@@ -18,30 +18,16 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     protected  $pages;
 
     /**
-     * @var string
-     */
-    protected $currentUrl;
-
-    /**
-     * @inheritdoc
-     */
-    protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
-    {
-        $this->currentUrl = $UrlDescriptor->url_rebuild;
-var_dump($UrlDescriptor->link_raw);
-        if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
-            die("ok");
-            return parent::processUrl($UrlDescriptor);
-        }
-    }
-
-    /**
      * Handle the page crawled
      * @param PHPCrawlerDocumentInfo $DocInfo
      * @return bool
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
+        if(array_key_exists(md5($DocInfo->url), $this->pages)) {
+            return true;
+        }
+
         $linksFound = 0;
         $pageUrls   = array();
 
@@ -65,7 +51,7 @@ var_dump($UrlDescriptor->link_raw);
         }
 
         // Add page to directory
-        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($this->currentUrl), $this->currentUrl, $linksFound);
+        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
         $this->db->query($sSql);
 
         return true;

@@ -46,7 +46,25 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="656" selection-end="656" vertical-scroll-proportion="0.32" vertical-offset="238" max-vertical-offset="1904">
+            <state line="39" column="39" selection-start="1070" selection-end="1071" vertical-scroll-proportion="0.42" vertical-offset="306" max-vertical-offset="1666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="31" selection-start="214" selection-end="214" vertical-scroll-proportion="11.769231" vertical-offset="408" max-vertical-offset="1870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PHPCrawler.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="516" column="50" selection-start="17857" selection-end="17857" vertical-scroll-proportion="-5.72549" vertical-offset="8480" max-vertical-offset="34799">
               <folding />
             </state>
           </provider>
@@ -272,18 +290,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1073" column="38" selection-start="34385" selection-end="34385" vertical-scroll-proportion="0.48849946" vertical-offset="17795" max-vertical-offset="18734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="471" selection-end="471" vertical-scroll-proportion="0.27767694" vertical-offset="0" max-vertical-offset="551" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="274" column="23" selection-start="7215" selection-end="7215" vertical-scroll-proportion="0.3233533" vertical-offset="4388" max-vertical-offset="22695">
@@ -308,7 +314,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawlerURLFilter.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="18" selection-start="1951" selection-end="1951" vertical-scroll-proportion="-11.692307" vertical-offset="1073" max-vertical-offset="4199" />
+        <state line="81" column="18" selection-start="1951" selection-end="1951" vertical-scroll-proportion="-11.692307" vertical-offset="1073" max-vertical-offset="4199">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
@@ -321,13 +329,6 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="482" column="48" selection-start="13511" selection-end="13511" vertical-scroll-proportion="0.51222223" vertical-offset="7682" max-vertical-offset="54893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="628" column="21" selection-start="21362" selection-end="21362" vertical-scroll-proportion="-13.5" vertical-offset="10325" max-vertical-offset="34799">
           <folding />
         </state>
       </provider>
@@ -346,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="23" selection-start="1803" selection-end="1803" vertical-scroll-proportion="1.38" vertical-offset="0" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="50" selection-start="604" selection-end="604" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="2380">
@@ -367,9 +361,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawlerHTTPRequest.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="18" selection-start="4923" selection-end="4923" vertical-scroll-proportion="0.3435294" vertical-offset="3159" max-vertical-offset="20910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpCrawler/ProcessCommunication/PHPCrawlerDocumentInfoQueue.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="4" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.4035294" vertical-offset="1153" max-vertical-offset="2567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="516" column="50" selection-start="17857" selection-end="17857" vertical-scroll-proportion="-5.72549" vertical-offset="8480" max-vertical-offset="34799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="214" selection-end="214" vertical-scroll-proportion="11.769231" vertical-offset="408" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="656" selection-end="656" vertical-scroll-proportion="0.32" vertical-offset="238" max-vertical-offset="1904">
+        <state line="39" column="39" selection-start="1070" selection-end="1071" vertical-scroll-proportion="0.42" vertical-offset="306" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
