@@ -14,11 +14,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @var array
      */
-    protected $websiteToVerify;
-
-    /**
-     * @var array
-     */
     protected $dictionary = array();
 
     /**
@@ -31,7 +26,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
-        if (preg_match('#\.(jpg|gif|png|pdf|jpeg|css|js|ico|google|youtube|api|facebook|twitter|forum)$# i', $UrlDescriptor->url_rebuild) == 0) {
+        if (preg_match('#\.(jpg|gif|png|pdf|jpeg|css|js|ico|google|youtube|api|facebook|twitter|forum)# i', $UrlDescriptor->url_rebuild) == 0) {
             parent::processUrl($UrlDescriptor);
         }
     }
@@ -43,8 +38,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        $this->initWebsite();
-
         // Check game website
         if (!stripos($DocInfo->content, 'jeu')) {
             return true;
@@ -55,7 +48,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         if(empty($this->website['title'])) {
             $titleNode = $dom->getElementsByTagName('title');
-            $title = $titleNode->length > 0 ? utf8_encode($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->websiteToVerify['url'];
+            $title = $titleNode->length > 0 ? utf8_encode($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
             $title = ltrim($title);
             $title = rtrim($title);
             $this->website['title'] = $title;
@@ -104,28 +97,26 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      * @return array|bool
      * @throws Exception
      */
-    protected function initWebsite()
+    public function initWebsite($url)
     {
         if(is_array($this->website)) {
             return $this->website;
         }
 
-        if(!is_array($this->websiteToVerify)) {
-            throw new \Exception('Website to verify empty');
-        }
-
-        $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $this->websiteToVerify['url']);
+        $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
         foreach($this->db->query($sSql) as $website) {
             $this->website = $website;
         }
 
         if(!is_array($this->website)) {
             $this->website = array(
-                'url'       => $this->websiteToVerify['url'],
+                'url'       => $url,
+                'createdAt' => date('Y-m-d H:i:s'),
+                'updatedAt' => date('Y-m-d H:i:s'),
             );
 
-            $websiteId = $this->createWebsite($this->websiteToVerify['url']);
-            $this->website['id'] = $websiteId;
+            $this->db->Insert($this->website, 'website');
+            $this->website['id'] = $this->db->insert_id;
         }
 
         return true;
@@ -137,14 +128,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     public function setWebsite($website)
     {
         $this->website = $website;
-    }
-
-    /**
-     * @param array $websiteToVerify
-     */
-    public function setWebsiteToVerify($websiteToVerify)
-    {
-        $this->websiteToVerify = $websiteToVerify;
     }
 
     /**
@@ -210,20 +193,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         return true;
     }
 
-    protected function createWebsite($url)
-    {
-        $now                = new \DateTime();
-        $fields = array(
-            'url'           => $url,
-            'createdAt'     => $now->format('Y-m-d H:i:s'),
-            'updatedAt'     => $now->format('Y-m-d H:i:s'),
-        );
-
-        $this->db->Insert($fields, 'website');
-
-        return $this->db->insert_id;
-    }
-
     public function updateDictionaries()
     {
         // Dictionary
@@ -279,7 +248,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
                     'weight'        => $weight,
                 );
 
-                $this->db->Update('website_dictionary', $fieldsUpdated, array('id' => $currentWord['id']));
+                $this->db->Update('website_dictionary', $fieldsUpdated, array('website_id' => $currentWord['website_id']));
             } else {
                 // New word
                 $now                = new \DateTime();

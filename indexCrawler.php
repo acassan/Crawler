@@ -4,17 +4,19 @@ require_once 'Lib/Database.php';
 $db = Database::getInstance();
 
 // Init Crawler
-$crawler = new IndexCrawler(array(
-    'multiprocessing'           => false,
-    'FollowMode'                => 3,
-    'showReferer'               => false,
-    'showContentReceived'       => false,
-));
 
-$sSql = "SELECT * FROM website_to_verify WHERE verified = 0 LIMIT 0,3";
+$sSql = "SELECT * FROM website_to_verify WHERE verified = 0";
 foreach($db->query($sSql) as $website) {
+
+    $crawler = new IndexCrawler(array(
+        'multiprocessing'           => false,
+        'FollowMode'                => 3,
+        'showReferer'               => false,
+        'showContentReceived'       => false,
+    ));
+    $crawler->setPageLimit(5);
     $crawler->resetWebsite();
-    $crawler->setWebsiteToVerify($website);
+    $crawler->initWebsite($website['url']);
     $crawler->setURL($website['url']);
     $crawler->go();
     $crawler->saveWebsite();
