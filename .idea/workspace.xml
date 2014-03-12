@@ -38,7 +38,7 @@
       <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="37" selection-start="458" selection-end="458" vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="850">
+            <state line="16" column="40" selection-start="420" selection-end="420" vertical-scroll-proportion="0.32" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="374" selection-end="374" vertical-scroll-proportion="-9.153846" vertical-offset="51" max-vertical-offset="1904">
+            <state line="17" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-1.9615384" vertical-offset="238" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -363,14 +363,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="374" selection-end="374" vertical-scroll-proportion="-9.153846" vertical-offset="51" max-vertical-offset="1904">
+        <state line="17" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-1.9615384" vertical-offset="238" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="37" selection-start="458" selection-end="458" vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="850">
+        <state line="16" column="40" selection-start="420" selection-end="420" vertical-scroll-proportion="0.32" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>

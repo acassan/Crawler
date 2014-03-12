@@ -15,7 +15,6 @@ foreach($db->query($sSql) as $directory) {
     ));
     $crawler->initDirectory($directory);
     $crawler->setURL($directory['url']);
-    var_dump(count($crawler->pages));
     $crawler->go();
 
     unset($crawler);

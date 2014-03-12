@@ -15,7 +15,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @var array
      */
-    public $pages;
+    protected  $pages;
 
     /**
      * @var string
@@ -28,7 +28,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
         $this->currentUrl = $UrlDescriptor->url_rebuild;
-
+var_dump($this->currentUrl);
         if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
             die("ok");
             return parent::processUrl($UrlDescriptor);
