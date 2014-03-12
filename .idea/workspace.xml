@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,19 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exploreCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="40" selection-start="420" selection-end="420" vertical-scroll-proportion="0.32" vertical-offset="0" max-vertical-offset="850">
+            <state line="20" column="1" selection-start="464" selection-end="464" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExploreCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-1.9615384" vertical-offset="238" max-vertical-offset="1904">
+            <state line="30" column="33" selection-start="656" selection-end="656" vertical-scroll-proportion="0.32" vertical-offset="238" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -81,8 +80,8 @@
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
-        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
+        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
       </list>
     </option>
   </component>
@@ -361,16 +360,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
+    <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-1.9615384" vertical-offset="238" max-vertical-offset="1904">
+        <state line="20" column="1" selection-start="464" selection-end="464" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
+    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="40" selection-start="420" selection-end="420" vertical-scroll-proportion="0.32" vertical-offset="0" max-vertical-offset="850">
+        <state line="30" column="33" selection-start="656" selection-end="656" vertical-scroll-proportion="0.32" vertical-offset="238" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
