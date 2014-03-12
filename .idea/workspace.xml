@@ -4,7 +4,6 @@
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exploreCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="850">
+            <state line="11" column="22" selection-start="224" selection-end="224" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExploreCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="18" selection-start="557" selection-end="557" vertical-scroll-proportion="-12.423077" vertical-offset="102" max-vertical-offset="1751">
+            <state line="31" column="8" selection-start="667" selection-end="667" vertical-scroll-proportion="0.14" vertical-offset="408" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -81,9 +80,9 @@
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
+        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
       </list>
     </option>
   </component>
@@ -355,13 +354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="557" selection-end="557" vertical-scroll-proportion="-12.423077" vertical-offset="102" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="17" selection-start="109" selection-end="109" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2380">
@@ -371,7 +363,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="850">
+        <state line="11" column="22" selection-start="224" selection-end="224" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="8" selection-start="667" selection-end="667" vertical-scroll-proportion="0.14" vertical-offset="408" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>

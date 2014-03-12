@@ -18,12 +18,21 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     protected $pages;
 
     /**
+     * @var string
+     */
+    protected $currentUrl;
+
+    /**
      * @inheritdoc
      */
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
         $this->loadDirectoryPages();
-        return parent::processUrl($UrlDescriptor);
+        $this->currentUrl = $UrlDescriptor->url_rebuild;
+        
+        if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
+            return parent::processUrl($UrlDescriptor);
+        }
     }
 
     /**
@@ -57,7 +66,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         // Add page to directory
-        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
+        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($this->currentUrl), $this->currentUrl, $linksFound);
         $this->db->query($sSql);
 
         return true;
