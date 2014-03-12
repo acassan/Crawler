@@ -16,4 +16,5 @@ foreach($db->query($sSql) as $directory) {
     $crawler->setDirectory($directory);
     $crawler->setURL($directory['url']);
     $crawler->go();
+    die("ok");
 }
