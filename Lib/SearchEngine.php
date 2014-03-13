@@ -45,18 +45,14 @@ Class SearchEngine
             $word = strtolower($word);
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 
-            $websites           = $this->getWebsitesWord($word);
-            $wordWebsitesWeight = $this->wordWebsitesWeight($word, $websites);
+            $sSql = sprintf("SELECT website_id, weight FROM website_dictionary WHERE word = '%s'");
 
-            $this->debug['wordWebsites'][$word] = $websites;
-            $this->debug['wordWebsitesWeight'] = $wordWebsitesWeight;
-
-            foreach($wordWebsitesWeight as $websiteId => $weight) {
-                if(!array_key_exists($websiteId, $this->websitesWeight)) {
-                    $this->websitesWeight[$websiteId] = 0;
+            foreach($this->db->query($sSql) as $websiteWord) {
+                if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
+                    $this->websitesWeight[$websiteWord['website_id']] = 0;
                 }
 
-                $this->websitesWeight[$websiteId] += $weight;
+                $this->websitesWeight[$websiteWord['website_id']] += $websiteWord['weight'];
             }
         }
 

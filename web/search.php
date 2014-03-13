@@ -3,7 +3,7 @@ require_once '../Lib/Database.php';
 require_once '../Lib/SearchEngine.php';
 
 $searchEngine = new SearchEngine(array(
-    'resultsPerPage'    => 20,
+    'resultsPerPage'    => 5,
 ));
 
 $searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
