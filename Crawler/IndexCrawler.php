@@ -171,8 +171,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             'updatedAt'     => $now->format('Y-m-d H:i:s'),
         );
 
-        var_dump($fieldsUpdated);
-
         $this->db->Update('website', $fieldsUpdated, array('id' => $this->website['id']));
 
         return true;

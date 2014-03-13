@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexCrawler.php" afterPath="$PROJECT_DIR$/indexCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,14 +37,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="25" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.86403507" vertical-offset="1456" max-vertical-offset="2414">
+              <folding>
+                <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-1.6151279" vertical-offset="2370" max-vertical-offset="4709">
+            <state line="173" column="22" selection-start="4777" selection-end="4777" vertical-scroll-proportion="-22.615385" vertical-offset="2353" max-vertical-offset="4675">
               <folding>
-                <marker date="1394703496305" expanded="true" signature="3079:3117" placeholder="SELECT * FRO..website..." />
-                <marker date="1394703496305" expanded="true" signature="5517:5561" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1394703496305" expanded="true" signature="7089:7161" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1394703520084" expanded="true" signature="3079:3117" placeholder="SELECT * FRO..website..." />
+                <marker date="1394703520084" expanded="true" signature="5482:5526" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1394703520084" expanded="true" signature="7054:7126" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -73,7 +84,6 @@
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
-        <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
         <option value="$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php" />
@@ -81,6 +91,7 @@
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
+        <option value="$PROJECT_DIR$/Lib/Database.php" />
       </list>
     </option>
   </component>
@@ -281,7 +292,9 @@
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="50" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2380">
-          <folding />
+          <folding>
+            <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -356,13 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/ProcessCommunication/PHPCrawlerDocumentInfoQueue.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="4" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.4035294" vertical-offset="1153" max-vertical-offset="2567" />
@@ -426,11 +432,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1463" selection-end="1463" vertical-scroll-proportion="-1.6151279" vertical-offset="2370" max-vertical-offset="4709">
+        <state line="173" column="22" selection-start="4777" selection-end="4777" vertical-scroll-proportion="-22.615385" vertical-offset="2353" max-vertical-offset="4675">
           <folding>
-            <marker date="1394703496305" expanded="true" signature="3079:3117" placeholder="SELECT * FRO..website..." />
-            <marker date="1394703496305" expanded="true" signature="5517:5561" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1394703496305" expanded="true" signature="7089:7161" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1394703520084" expanded="true" signature="3079:3117" placeholder="SELECT * FRO..website..." />
+            <marker date="1394703520084" expanded="true" signature="5482:5526" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1394703520084" expanded="true" signature="7054:7126" placeholder="SELECT * FRO..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="25" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.86403507" vertical-offset="1456" max-vertical-offset="2414">
+          <folding>
+            <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
