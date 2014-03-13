@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="138988898">
     <data-source source="LOCAL" name="Crawler" uuid="a735822a-35ac-432c-a66c-924419f8c00f">
+      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost/crawler</jdbc-url>

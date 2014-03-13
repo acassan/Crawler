@@ -3,7 +3,7 @@
 require_once 'Crawler/ExploreCrawler.php';
 require_once 'Lib/Database.php';
 
-
+echo "Garbage Colletor enabled : " . (gc_enabled() ? 'OUI' : 'NON') . "\n";
 
 $db     = Database::getInstance();
 $sSql   = "SELECT * FROM directory";
