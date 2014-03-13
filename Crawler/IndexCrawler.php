@@ -52,6 +52,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $title = ltrim($title);
             $title = rtrim($title);
             $this->website['title'] = $title;
+            echo $title;
         }
 
         $bodyContentNode = $dom->getElementsByTagName('body');
@@ -105,6 +106,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
         foreach($this->db->query($sSql) as $website) {
+            unset($website['title']);
             $this->website = $website;
         }
 
