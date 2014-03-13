@@ -17,6 +17,8 @@ Class SearchEngine
      */
     protected $websitesWeight = array();
 
+    public $debug = array();
+
 
     /**
      * @param $options
@@ -46,6 +48,9 @@ Class SearchEngine
             $websites           = $this->getWebsitesWord($word);
             $wordWebsitesWeight = $this->wordWebsitesWeight($word, $websites);
 
+            $this->debug['wordWebsites'][$word] = $websites;
+            $this->debug['wordWebsitesWeight'] = $wordWebsitesWeight;
+
             foreach($wordWebsitesWeight as $websiteId => $weight) {
                 if(!array_key_exists($websiteId, $this->websitesWeight)) {
                     $this->websitesWeight[$websiteId] = 0;
@@ -54,6 +59,8 @@ Class SearchEngine
                 $this->websitesWeight[$websiteId] += $weight;
             }
         }
+
+        $this->debug['websitesWeight'] = $this->websitesWeight;
 
         if(count($this->websitesWeight) < 1) {
             return array();

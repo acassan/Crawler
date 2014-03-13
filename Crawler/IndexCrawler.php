@@ -159,12 +159,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         $now                = new \DateTime();
-        $fieldsUpdated      = array(
-                'title'         => !empty($this->website['title']) ? $this->website['title'] : "",
-                'updatedAt'     => $now->format('Y-m-d H:i:s'),
-        );
+        $website            = $this->website;
+        unset($website['id']);
+        $website['updatedAt'] = $now->format('Y-m-d H:i:s');
 
-        $this->db->Update('website', $fieldsUpdated, array('id' => $this->website['id']));
+        $this->db->Update('website', $website, array('id' => $this->website['id']));
 
         return true;
     }
