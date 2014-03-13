@@ -35,7 +35,7 @@ $searchResults  = $searchEngine->search($searchValue);
                             <img src="http://www.apercite.fr/api/apercite/120x90/yes/http://<?php echo $website['url']; ?>">
                         </div>
                         <div style="float: left;">
-                            <h5><a href='http://<?php echo $website['url']; ?>'><?php echo utf8_decode($website['title']); ?></a></h5>
+                            <h5><a href='http://<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
                             <p><i><?php echo $website['url']; ?></i></p>
                         </div>
                     </div>
