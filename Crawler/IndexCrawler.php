@@ -26,11 +26,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
-        // Check forum website
-        if (stripos($this->starting_url, 'forum')) {
-            $this->website['forum'] = 1;
-        }
-
         if (preg_match('#\.(jpg|gif|png|pdf|jpeg|css|js|ico|google|youtube|api|facebook|twitter)# i', $UrlDescriptor->url_rebuild) == 0) {
             return parent::processUrl($UrlDescriptor);
         }
@@ -114,6 +109,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         foreach($this->db->query($sSql) as $website) {
             unset($website['title']);
             $this->website = $website;
+        }
+
+        // Check forum website
+        if (stripos($this->website['url'], 'forum')) {
+            $this->website['forum'] = 1;
         }
 
         if(!is_array($this->website)) {
