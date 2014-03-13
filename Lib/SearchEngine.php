@@ -46,7 +46,7 @@ Class SearchEngine
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 
             $sSql = sprintf("SELECT website_id, weight FROM website_dictionary WHERE word = '%s'");
-
+var_dump($sSql);
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
