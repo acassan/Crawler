@@ -45,10 +45,5 @@ $searchResults  = $searchEngine->search($searchValue);
             }
             ?>
         </div>
-
-        <div>
-            <h3>Debug</h3>
-            <pre><?php var_dump($searchEngine->debug); ?></pre>
-        </div>
     </body>
 </html>
