@@ -56,7 +56,6 @@ Class SearchEngine
             }
         }
 
-        $this->debug['websitesWeight'] = $this->websitesWeight;
 
         if(count($this->websitesWeight) < 1) {
             return array();
@@ -69,6 +68,9 @@ Class SearchEngine
         $websitesChoosen    = array_slice($this->websitesWeight, 0, $this->resultsPerPage, true);
         $websitesResult     = array();
         $websitesDatabase   = array();
+
+        $this->debug['websitesWeight'] = $this->websitesWeight;
+        $this->debug['websitesChoosen'] = $websitesChoosen;
 
         $sSql = sprintf("SELECT * FROM website WHERE id IN(%s)", implode(',', array_keys($websitesChoosen)));
         foreach($this->db->query($sSql) as $website) {
