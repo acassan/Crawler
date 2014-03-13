@@ -29,9 +29,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     {
         $this->iterations++;
 
-        if($this->$iterations > 200) {
+        if($this->iterations > 200) {
             gc_collect_cycles();
-            echo ">> Iterations ". $this->$iterations .": ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
+            echo ">> Iterations ". $this->iterations .": ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
             $this->iterations = 1;
         }
 
