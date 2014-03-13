@@ -46,7 +46,7 @@ Class SearchEngine
             $word = strtolower($word);
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 
-            $sSql = sprintf("SELECT WD.website_id, WD.weight
+            $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s'", $word);
@@ -58,6 +58,10 @@ Class SearchEngine
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
+                }
+
+                if(strpos($websiteWord['url'], $word)) {
+                    $websiteWord['weight'] *= 2;
                 }
 
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWord['weight'];

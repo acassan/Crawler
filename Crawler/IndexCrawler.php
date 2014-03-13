@@ -123,7 +123,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         // Check forum website
-        if (stripos($this->website['url'], 'forum')) {
+        if (stripos($url, 'forum')) {
             $this->website['forum'] = 1;
         }
 
