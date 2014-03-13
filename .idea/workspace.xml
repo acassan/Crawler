@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,9 +39,9 @@
       <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="25" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.86403507" vertical-offset="1456" max-vertical-offset="2414">
+            <state line="109" column="14" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.4725877" vertical-offset="1422" max-vertical-offset="2380">
               <folding>
-                <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+                <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -293,7 +292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="50" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2380">
           <folding>
-            <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+            <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -443,9 +442,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="25" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.86403507" vertical-offset="1456" max-vertical-offset="2414">
+        <state line="109" column="14" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.4725877" vertical-offset="1422" max-vertical-offset="2380">
           <folding>
-            <marker date="1394703539595" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+            <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
