@@ -12,13 +12,15 @@ foreach($db->query($sSql) as $directory) {
     $crawler = new ExploreCrawler(array(
         'multiprocessing'           => false,
         'FollowMode'                => 1,
-        'showPageRequested'         => true,
+        'showPageRequested'         => false,
         'showReferer'               => false,
         'showContentReceived'       => false,
     ));
     $crawler->initDirectory($directory);
     $crawler->setURL($directory['url']);
     $crawler->go();
+
+    echo number_format(memory_get_usage(), 0, '.', ','). " octets\n";
 
     unset($crawler);
 }
