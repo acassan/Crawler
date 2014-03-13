@@ -51,7 +51,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $title = $titleNode->length > 0 ? ($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
             $title = ltrim($title);
             $title = rtrim($title);
-            $this->website['title'] = $title;
+            $this->website['title'] = utf8_decode($title);
         }
 
         $bodyContentNode = $dom->getElementsByTagName('body');
