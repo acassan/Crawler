@@ -54,6 +54,8 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
         $this->db->query($sSql);
 
+        echo number_format(memory_get_usage(), 0, '.', ','). " octets\n";   
+
         return true;
     }
 
