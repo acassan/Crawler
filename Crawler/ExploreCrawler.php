@@ -50,7 +50,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
                 $linkUrl = $linkUrl['host'];
 
                 if(!array_key_exists($linkUrl, $pageUrls)) {
-                     // Add website to verify
+                    // Add website to verify
                     $sql = sprintf("INSERT IGNORE INTO website_to_verify VALUES('%s','%s',0,NOW())", md5($linkUrl), $linkUrl);
                     $this->db->query($sql);
 

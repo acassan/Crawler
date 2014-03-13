@@ -158,45 +158,13 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             throw new \Exception('Website empty when saved');
         }
 
-        if(array_key_exists('id', $this->website)) {
-            $this->saveUpdateWebsite();
-        } else {
-            $this->saveCreateWebsite();
-        }
-
-        return true;
-    }
-
-    /**
-     * @return bool
-     */
-    protected function saveUpdateWebsite()
-    {
         $now                = new \DateTime();
-        $fieldsUpdated = array(
-            'title'         => !empty($this->website['title']) ? $this->website['title'] : "",
-            'updatedAt'     => $now->format('Y-m-d H:i:s'),
+        $fieldsUpdated      = array(
+                'title'         => !empty($this->website['title']) ? $this->website['title'] : "",
+                'updatedAt'     => $now->format('Y-m-d H:i:s'),
         );
 
         $this->db->Update('website', $fieldsUpdated, array('id' => $this->website['id']));
-
-        return true;
-    }
-
-    /**
-     * @return bool
-     */
-    protected function saveCreateWebsite()
-    {
-        $now                = new \DateTime();
-        $fields = array(
-            'url'           => $this->website['url'],
-            'title'         => $this->website['title'],
-            'createdAt'     => $now->format('Y-m-d H:i:s'),
-            'updatedAt'     => $now->format('Y-m-d H:i:s'),
-        );
-
-        $this->db->Insert($fields, 'website');
 
         return true;
     }

@@ -17,18 +17,30 @@ $searchResults  = $searchEngine->search($searchValue);
         <title>Moteur de recherche</title>
     </head>
     <body>
-        <div style="position: relative; width: 500px; height: 300px; border: 1px black dotted; margin: auto auto;">
+        <div id="content" style="position: relative;">
             <div>
                 <form action="search.php" method="GET">
                     <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" />
                 </form>
             </div>
+            <h3>Liste des résultats</h3>
             <?php
             if(count($searchResults) < 1) {
                 echo "<div>Aucun résultat</div>";
             } else {
                 foreach($searchResults as $website) {
-                    echo "<div><a href='".$website['url']."'>".$website['title']."</a></div>";
+                    ?>
+                    <div style="height: 80px;">
+                        <div style="float: left; width: 155px;">
+                            <img src="http://www.apercite.fr/api/apercite/150x80/yes/http://<?php echo $website['url']; ?>">
+                        </div>
+                        <div style="float: left;">
+                            <h5><a href='http://<?php echo $website['url']; ?>'><?php echo $website['title']; ?></a></h5>
+                            <p><i><?php echo $website['url']; ?></i></p>
+                        </div>
+                    </div>
+                    <hr />
+                    <?php
                 }
             }
             ?>
