@@ -23,8 +23,11 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
     protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
     {
-        echo $UrlDescriptor->url_rebuild;
-        return parent::processUrl($UrlDescriptor);
+        if(!array_key_exists($UrlDescriptor->url_rebuild, $this->pages)) {
+            return parent::processUrl($UrlDescriptor);
+        }
+
+        return false;
     }
 
     /**
