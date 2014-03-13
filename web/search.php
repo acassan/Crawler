@@ -24,7 +24,7 @@ $searchResults  = $searchEngine->search($searchValue, $searchOptions);
             <div>
                 <form action="search.php" method="GET">
                     <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" /> <br />
-                    <input type="checkbox" name="forum" /> <i>Inclure les forums</i>
+                    <input type="checkbox" name="forum" value="<?php echo $_GET['search']; ?>" /> <i>Exclure les forums</i>
                 </form>
             </div>
             <h3>Liste des résultats</h3>

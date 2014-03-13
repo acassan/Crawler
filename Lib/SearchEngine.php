@@ -52,7 +52,7 @@ Class SearchEngine
                                 WHERE WD.word = '%s'", $word);
 
             if(!empty($options['forum'])) {
-                $sSql .= " AND W.forum = 1";
+                $sSql .= " AND W.forum = 0";
             }
 
             foreach($this->db->query($sSql) as $websiteWord) {
