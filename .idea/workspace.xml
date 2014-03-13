@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -58,24 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchEngine.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="44" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-14.384615" vertical-offset="748" max-vertical-offset="2176">
+            <state line="54" column="44" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.6495071" vertical-offset="325" max-vertical-offset="2312">
               <folding>
-                <marker date="1394719497984" expanded="true" signature="1110:1177" placeholder="SELECT websi..website_dictionary..." />
-                <marker date="1394719497984" expanded="true" signature="2104:2141" placeholder="SELECT * FRO..website..." />
-                <marker date="1394719497984" expanded="true" signature="2651:2700" placeholder="SELECT websi..dictionary..." />
-                <marker date="1394719497984" expanded="true" signature="3231:3321" placeholder="SELECT websi..website_dictionary..." />
+                <marker date="1394720496630" expanded="true" signature="1159:1385" placeholder="SELECT WD.we..website_dictionary..." />
+                <marker date="1394720496630" expanded="true" signature="2416:2453" placeholder="SELECT * FRO..website..." />
+                <marker date="1394720496630" expanded="true" signature="2963:3012" placeholder="SELECT websi..dictionary..." />
+                <marker date="1394720496630" expanded="true" signature="3543:3633" placeholder="SELECT websi..website_dictionary..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="14" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.86333334" vertical-offset="5" max-vertical-offset="918">
+            <state line="12" column="35" selection-start="353" selection-end="353" vertical-scroll-proportion="-7.6538463" vertical-offset="5" max-vertical-offset="986">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -128,8 +129,8 @@
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
       </list>
     </option>
   </component>
@@ -380,10 +381,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2142">
           <folding>
-            <marker date="1394719497984" expanded="true" signature="1110:1177" placeholder="SELECT websi..website_dictionary..." />
-            <marker date="1394719497984" expanded="true" signature="2104:2141" placeholder="SELECT * FRO..website..." />
-            <marker date="1394719497984" expanded="true" signature="2651:2700" placeholder="SELECT websi..dictionary..." />
-            <marker date="1394719497984" expanded="true" signature="3231:3321" placeholder="SELECT websi..website_dictionary..." />
+            <marker date="1394720496630" expanded="true" signature="1159:1385" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1394720496630" expanded="true" signature="2416:2453" placeholder="SELECT * FRO..website..." />
+            <marker date="1394720496630" expanded="true" signature="2963:3012" placeholder="SELECT websi..dictionary..." />
+            <marker date="1394720496630" expanded="true" signature="3543:3633" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -660,27 +661,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="44" selection-start="1769" selection-end="1769" vertical-scroll-proportion="-14.384615" vertical-offset="748" max-vertical-offset="2176">
-          <folding>
-            <marker date="1394719497984" expanded="true" signature="1110:1177" placeholder="SELECT websi..website_dictionary..." />
-            <marker date="1394719497984" expanded="true" signature="2104:2141" placeholder="SELECT * FRO..website..." />
-            <marker date="1394719497984" expanded="true" signature="2651:2700" placeholder="SELECT websi..dictionary..." />
-            <marker date="1394719497984" expanded="true" signature="3231:3321" placeholder="SELECT websi..website_dictionary..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="14" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.86333334" vertical-offset="5" max-vertical-offset="918">
+        <state line="12" column="35" selection-start="353" selection-end="353" vertical-scroll-proportion="-7.6538463" vertical-offset="5" max-vertical-offset="986">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="44" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.6495071" vertical-offset="325" max-vertical-offset="2312">
+          <folding>
+            <marker date="1394720496630" expanded="true" signature="1159:1385" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1394720496630" expanded="true" signature="2416:2453" placeholder="SELECT * FRO..website..." />
+            <marker date="1394720496630" expanded="true" signature="2963:3012" placeholder="SELECT websi..dictionary..." />
+            <marker date="1394720496630" expanded="true" signature="3543:3633" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>

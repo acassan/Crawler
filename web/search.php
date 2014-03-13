@@ -7,7 +7,10 @@ $searchEngine = new SearchEngine(array(
 ));
 
 $searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
-$searchResults  = $searchEngine->search($searchValue);
+$searchOptions  = array(
+    'forum' => empty($_GET['forum']) ? 0 : 1,
+);
+$searchResults  = $searchEngine->search($searchValue, $searchOptions);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -20,7 +23,8 @@ $searchResults  = $searchEngine->search($searchValue);
         <div id="content" style="position: relative;">
             <div>
                 <form action="search.php" method="GET">
-                    <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" />
+                    <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" /> <br />
+                    <input type="checkbox" name="forum" /> <i>Inclure les forums</i>
                 </form>
             </div>
             <h3>Liste des résultats</h3>

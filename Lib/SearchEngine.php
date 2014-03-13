@@ -34,9 +34,10 @@ Class SearchEngine
 
     /**
      * @param $searchString
+     * @param array $options
      * @return array
      */
-    public function search($searchString)
+    public function search($searchString, $options = array())
     {
         $explodedSearch = explode(' ', $searchString);
 
@@ -45,7 +46,14 @@ Class SearchEngine
             $word = strtolower($word);
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 
-            $sSql = sprintf("SELECT website_id, weight FROM website_dictionary WHERE word = '%s'", $word);
+            $sSql = sprintf("SELECT WD.website_id, WD.weight
+                                FROM website_dictionary AS WD
+                                INNER JOIN website AS W ON WD.website_id = W.id
+                                WHERE WD.word = '%s'", $word);
+
+            if(!empty($options['forum'])) {
+                $sSql .= " AND W.forum = 1";
+            }
 
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
