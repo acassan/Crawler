@@ -30,9 +30,9 @@ $searchResults  = $searchEngine->search($searchValue);
             } else {
                 foreach($searchResults as $website) {
                     ?>
-                    <div style="height: 80px;">
+                    <div style="height: 90px;">
                         <div style="float: left; width: 155px;">
-                            <img src="http://www.apercite.fr/api/apercite/150x80/yes/http://<?php echo $website['url']; ?>">
+                            <img src="http://www.apercite.fr/api/apercite/120x90/yes/http://<?php echo $website['url']; ?>">
                         </div>
                         <div style="float: left;">
                             <h5><a href='http://<?php echo $website['url']; ?>'><?php echo $website['title']; ?></a></h5>
