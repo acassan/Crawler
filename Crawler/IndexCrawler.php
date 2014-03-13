@@ -111,11 +111,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $this->website = $website;
         }
 
-        // Check forum website
-        if (stripos($this->website['url'], 'forum')) {
-            $this->website['forum'] = 1;
-        }
-
         if(!is_array($this->website)) {
             $this->website = array(
                 'url'       => $url,
@@ -125,6 +120,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
             $this->db->Insert($this->website, 'website');
             $this->website['id'] = $this->db->insert_id;
+        }
+
+        // Check forum website
+        if (stripos($this->website['url'], 'forum')) {
+            $this->website['forum'] = 1;
         }
 
         return true;
