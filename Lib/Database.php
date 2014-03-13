@@ -57,11 +57,11 @@ Class Database extends mysqli
 		if(is_array($data)){
 			foreach($data as $key=>$val){
 				if(!is_array($data[$key])){
-					$data[$key] = $this->escape_string(utf8_encode($data[$key]));
+					$data[$key] = $this->escape_string(utf8_decode($data[$key]));
 				}
 			}
 		}else{
-			$data = $this->escape_string(utf8_encode($data));
+			$data = $this->escape_string(utf8_decode($data));
 		}
 		return $data;
 	}
