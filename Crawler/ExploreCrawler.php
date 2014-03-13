@@ -20,6 +20,12 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     protected $pagesHandle  = 0;
     protected $iterations   = 0;
 
+
+    protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
+    {
+        echo $UrlDescriptor->url_rebuild;
+    }
+
     /**
      * Handle the page crawled
      * @param PHPCrawlerDocumentInfo $DocInfo
