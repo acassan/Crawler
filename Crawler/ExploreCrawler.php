@@ -27,6 +27,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
             return parent::processUrl($UrlDescriptor);
         }
 
+        echo ".";
         return false;
     }
 
