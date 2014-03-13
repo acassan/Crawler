@@ -24,8 +24,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
+        gc_collect_cycles();
         echo number_format(memory_get_usage(), 0, '.', ','). " octets\n";
-        
+
         if(array_key_exists(md5($DocInfo->url), $this->pages)) {
             return true;
         }

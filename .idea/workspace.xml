@@ -57,10 +57,10 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="649" selection-end="649" vertical-scroll-proportion="0.22666667" vertical-offset="255" max-vertical-offset="1700">
+            <state line="26" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.20777778" vertical-offset="255" max-vertical-offset="1717">
               <folding>
-                <marker date="1394698629667" expanded="true" signature="1624:1689" placeholder="INSERT INTO ..." />
-                <marker date="1394698629667" expanded="true" signature="2181:2236" placeholder="SELECT page ..directory_page..." />
+                <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
+                <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
               </folding>
             </state>
           </provider>
@@ -293,8 +293,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1785">
           <folding>
-            <marker date="1394698629667" expanded="true" signature="1624:1689" placeholder="INSERT INTO ..." />
-            <marker date="1394698629667" expanded="true" signature="2181:2236" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
+            <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
@@ -404,10 +404,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="649" selection-end="649" vertical-scroll-proportion="0.22666667" vertical-offset="255" max-vertical-offset="1700">
+        <state line="26" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.20777778" vertical-offset="255" max-vertical-offset="1717">
           <folding>
-            <marker date="1394698629667" expanded="true" signature="1624:1689" placeholder="INSERT INTO ..." />
-            <marker date="1394698629667" expanded="true" signature="2181:2236" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
+            <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
