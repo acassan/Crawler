@@ -5,7 +5,7 @@ $db = Database::getInstance();
 
 // Init Crawler
 
-$sSql = "SELECT * FROM website_to_verify";
+$sSql = "SELECT * FROM website_to_verify WHERE verified = 0 OR url LIKE '%blobby-dungeon%'";
 foreach($db->query($sSql) as $website) {
 
     $crawler = new IndexCrawler(array(

@@ -52,7 +52,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $title = ltrim($title);
             $title = rtrim($title);
             $this->website['title'] = $title;
-            echo $title;
         }
 
         $bodyContentNode = $dom->getElementsByTagName('body');
@@ -171,6 +170,8 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             'title'         => !empty($this->website['title']) ? $this->website['title'] : "",
             'updatedAt'     => $now->format('Y-m-d H:i:s'),
         );
+
+        var_dump($fieldsUpdated);
 
         $this->db->Update('website', $fieldsUpdated, array('id' => $this->website['id']));
 
