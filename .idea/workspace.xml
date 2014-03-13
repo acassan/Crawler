@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL/crawler.sql" afterPath="$PROJECT_DIR$/SQL/crawler.sql" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +41,10 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="59" selection-start="135" selection-end="135" vertical-scroll-proportion="-0.6640712" vertical-offset="665" max-vertical-offset="1972">
+            <state line="83" column="46" selection-start="2417" selection-end="2417" vertical-scroll-proportion="1.2080089" vertical-offset="325" max-vertical-offset="2006">
               <folding>
-                <marker date="1394701358144" expanded="true" signature="1870:1935" placeholder="INSERT INTO ..." />
-                <marker date="1394701358144" expanded="true" signature="2548:2603" placeholder="SELECT page ..directory_page..." />
+                <marker date="1394701624722" expanded="true" signature="1795:1860" placeholder="INSERT INTO ..." />
+                <marker date="1394701624722" expanded="true" signature="2489:2544" placeholder="SELECT page ..directory_page..." />
               </folding>
             </state>
           </provider>
@@ -97,7 +98,6 @@
         <option value="$PROJECT_DIR$/wip/indexing.php" />
         <option value="$PROJECT_DIR$/Crawler/CrawlerInterface.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
-        <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
@@ -107,6 +107,7 @@
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
         <option value="$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php" />
         <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
+        <option value="$PROJECT_DIR$/SQL/crawler.sql" />
       </list>
     </option>
   </component>
@@ -150,6 +151,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="crawler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SQL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -286,8 +311,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1785">
           <folding>
-            <marker date="1394701358144" expanded="true" signature="1870:1935" placeholder="INSERT INTO ..." />
-            <marker date="1394701358144" expanded="true" signature="2548:2603" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394701624722" expanded="true" signature="1795:1860" placeholder="INSERT INTO ..." />
+            <marker date="1394701624722" expanded="true" signature="2489:2544" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
@@ -314,11 +339,6 @@
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQL/crawler.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="658" selection-end="658" vertical-scroll-proportion="0.16319825" vertical-offset="293" max-vertical-offset="1972" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
@@ -401,12 +421,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQL/crawler.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="23" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.4307036" vertical-offset="344" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="135" selection-end="135" vertical-scroll-proportion="-0.6640712" vertical-offset="665" max-vertical-offset="1972">
+        <state line="83" column="46" selection-start="2417" selection-end="2417" vertical-scroll-proportion="1.2080089" vertical-offset="325" max-vertical-offset="2006">
           <folding>
-            <marker date="1394701358144" expanded="true" signature="1870:1935" placeholder="INSERT INTO ..." />
-            <marker date="1394701358144" expanded="true" signature="2548:2603" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394701624722" expanded="true" signature="1795:1860" placeholder="INSERT INTO ..." />
+            <marker date="1394701624722" expanded="true" signature="2489:2544" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>

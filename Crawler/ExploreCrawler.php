@@ -26,12 +26,11 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        echo $this->getCrawlerId(). $this->lb;
         $this->iterations++;
 
         if($this->iterations > 200) {
             gc_collect_cycles();
-            echo ">> Iterations ". $this->iterations .": ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
+            echo ">> Memory: ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
             $this->iterations = 1;
         }
 
@@ -65,8 +64,8 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
         $this->db->query($sSql);
 
-        echo "Page handle: ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
         $this->pagesHandle++;
+        echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
 
         return true;
     }
@@ -106,6 +105,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
         if(!empty($directory['crawler_id'])) {
             $this->resume($directory['crawler_id']);
+        } else {
+            $this->directory['crawler_id'] = $this->getCrawlerId();
+            $this->db->Update('directory',array('crawler_id' => $this->getCrawlerId()), array('id' => $directory['id']));
         }
     }
 }
