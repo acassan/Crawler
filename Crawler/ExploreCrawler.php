@@ -3,7 +3,6 @@
 require_once "BaseCrawler.php";
 require_once "CrawlerInterface.php";
 require_once "phpCrawler/PHPCrawlerDocumentInfo.class.php";
-require_once "phpCrawler/PHPCrawlerURLDescriptor.class.php";
 
 class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 {
@@ -20,17 +19,6 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     protected $pagesHandle  = 0;
     protected $iterations   = 0;
 
-
-    protected function processUrl(PHPCrawlerURLDescriptor $UrlDescriptor)
-    {
-        if(!array_key_exists(md5($UrlDescriptor->url_rebuild), $this->pages)) {
-            return parent::processUrl($UrlDescriptor);
-        }
-
-        echo ".";
-        return false;
-    }
-
     /**
      * Handle the page crawled
      * @param PHPCrawlerDocumentInfo $DocInfo
@@ -38,9 +26,10 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
+        echo $this->getCrawlerId(). $this->lb;
         $this->iterations++;
 
-        if($this->iterations > 2) {
+        if($this->iterations > 200) {
             gc_collect_cycles();
             echo ">> Iterations ". $this->iterations .": ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
             $this->iterations = 1;
@@ -114,5 +103,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     {
         $this->directory = $directory;
         $this->loadDirectoryPages();
+
+        if(!empty($directory['crawler_id'])) {
+            $this->resume($directory['crawler_id']);
+        }
     }
 }
