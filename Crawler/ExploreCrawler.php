@@ -15,7 +15,10 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @var array
      */
-    protected  $pages;
+    protected $pages;
+
+    protected $pagesHandle  = 0;
+    protected $iterations   = 0;
 
     /**
      * Handle the page crawled
@@ -24,8 +27,13 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        gc_collect_cycles();
-        echo number_format(memory_get_usage(), 0, '.', ','). " octets\n";
+        $this->iterations++;
+
+        if($this->$iterations > 200) {
+            gc_collect_cycles();
+            echo ">> Iterations ". $this->$iterations .": ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
+            $this->iterations = 1;
+        }
 
         if(array_key_exists(md5($DocInfo->url), $this->pages)) {
             return true;
@@ -56,6 +64,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         // Add page to directory
         $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
         $this->db->query($sSql);
+
+        echo "Page handle: ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
+        $this->pagesHandle++;
 
         return true;
     }

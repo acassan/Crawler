@@ -57,10 +57,10 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.20777778" vertical-offset="255" max-vertical-offset="1717">
+            <state line="47" column="74" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.4911111" vertical-offset="357" max-vertical-offset="1904">
               <folding>
-                <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
-                <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
+                <marker date="1394699642759" expanded="true" signature="1886:1951" placeholder="INSERT INTO ..." />
+                <marker date="1394699642759" expanded="true" signature="2564:2619" placeholder="SELECT page ..directory_page..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="BaseCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1870">
+            <state line="43" column="5" selection-start="973" selection-end="973" vertical-scroll-proportion="-19.615385" vertical-offset="221" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
@@ -293,8 +293,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1785">
           <folding>
-            <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
-            <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394699642759" expanded="true" signature="1886:1951" placeholder="INSERT INTO ..." />
+            <marker date="1394699642759" expanded="true" signature="2564:2619" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
@@ -386,13 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="32" selection-start="82" selection-end="82" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="459">
@@ -402,12 +395,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="5" selection-start="973" selection-end="973" vertical-scroll-proportion="-19.615385" vertical-offset="221" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="595" selection-end="595" vertical-scroll-proportion="0.20777778" vertical-offset="255" max-vertical-offset="1717">
+        <state line="47" column="74" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.4911111" vertical-offset="357" max-vertical-offset="1904">
           <folding>
-            <marker date="1394698684597" expanded="true" signature="1645:1710" placeholder="INSERT INTO ..." />
-            <marker date="1394698684597" expanded="true" signature="2202:2257" placeholder="SELECT page ..directory_page..." />
+            <marker date="1394699642759" expanded="true" signature="1886:1951" placeholder="INSERT INTO ..." />
+            <marker date="1394699642759" expanded="true" signature="2564:2619" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
