@@ -96,8 +96,8 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     }
 
     /**
+     * @param $url
      * @return array|bool
-     * @throws Exception
      */
     public function initWebsite($url)
     {
