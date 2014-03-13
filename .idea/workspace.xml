@@ -39,9 +39,9 @@
       <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="14" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.4725877" vertical-offset="1422" max-vertical-offset="2380">
+            <state line="63" column="60" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.45942983" vertical-offset="652" max-vertical-offset="2380">
               <folding>
-                <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+                <marker date="1394703741640" expanded="true" signature="1929:1955" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -292,7 +292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="50" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2380">
           <folding>
-            <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+            <marker date="1394703741640" expanded="true" signature="1929:1955" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -442,9 +442,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="14" selection-start="2624" selection-end="2624" vertical-scroll-proportion="0.4725877" vertical-offset="1422" max-vertical-offset="2380">
+        <state line="63" column="60" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.45942983" vertical-offset="652" max-vertical-offset="2380">
           <folding>
-            <marker date="1394703636115" expanded="true" signature="1903:1929" placeholder="INSERT INTO ..." />
+            <marker date="1394703741640" expanded="true" signature="1929:1955" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

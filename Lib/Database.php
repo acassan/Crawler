@@ -57,11 +57,11 @@ Class Database extends mysqli
 		if(is_array($data)){
 			foreach($data as $key=>$val){
 				if(!is_array($data[$key])){
-					$data[$key] = $this->escape_string($data[$key]);
+					$data[$key] = $this->escape_string(utf8_encode($data[$key]));
 				}
 			}
 		}else{
-			$data = $this->escape_string($data);
+			$data = $this->escape_string(utf8_encode($data));
 		}
 		return $data;
 	}
@@ -105,7 +105,7 @@ Class Database extends mysqli
 		array_push($exclude, 'MAX_FILE_SIZE'); // Automatically exclude this one
 
 		$set 		= $this->SecureData($set);
-		$where 	= $this->SecureData($where);
+		$where 	    = $this->SecureData($where);
 
 		// SET
 
