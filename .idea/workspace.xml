@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="133" selection-start="2565" selection-end="2565" vertical-scroll-proportion="0.7010309" vertical-offset="357" max-vertical-offset="1462">
+            <state line="37" column="35" selection-start="1365" selection-end="1365" vertical-scroll-proportion="-5.1320753" vertical-offset="357" max-vertical-offset="1462">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,15 +56,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchEngine.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="51" selection-start="1877" selection-end="1877" vertical-scroll-proportion="-7.769231" vertical-offset="1090" max-vertical-offset="3655">
+            <state line="107" column="82" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.7426068" vertical-offset="1141" max-vertical-offset="3672">
               <folding>
-                <marker date="1396023559389" expanded="true" signature="1477:1710" placeholder="SELECT WD.we..website_dictionary..." />
-                <marker date="1396023559389" expanded="true" signature="3138:3175" placeholder="SELECT * FRO..website..." />
-                <marker date="1396023559389" expanded="true" signature="3685:3734" placeholder="SELECT websi..dictionary..." />
-                <marker date="1396023559389" expanded="true" signature="4265:4355" placeholder="SELECT websi..website_dictionary..." />
+                <marker date="1396024085890" expanded="true" signature="1477:1710" placeholder="SELECT WD.we..website_dictionary..." />
+                <marker date="1396024085890" expanded="true" signature="3237:3274" placeholder="SELECT * FRO..website..." />
+                <marker date="1396024085890" expanded="true" signature="3784:3833" placeholder="SELECT websi..dictionary..." />
+                <marker date="1396024085890" expanded="true" signature="4364:4454" placeholder="SELECT websi..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -115,8 +114,8 @@
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
-        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
       </list>
     </option>
   </component>
@@ -500,13 +499,6 @@
         <state line="351" column="33" selection-start="8721" selection-end="8729" vertical-scroll-proportion="0.5" vertical-offset="5676" max-vertical-offset="20910" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="455" column="42" selection-start="14590" selection-end="14590" vertical-scroll-proportion="0.3242059" vertical-offset="7439" max-vertical-offset="18734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/animation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="4" selection-start="6602" selection-end="6602" vertical-scroll-proportion="2.191111" vertical-offset="0" max-vertical-offset="2550" />
@@ -621,21 +613,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="51" selection-start="1877" selection-end="1877" vertical-scroll-proportion="-7.769231" vertical-offset="1090" max-vertical-offset="3655">
-          <folding>
-            <marker date="1396023559389" expanded="true" signature="1477:1710" placeholder="SELECT WD.we..website_dictionary..." />
-            <marker date="1396023559389" expanded="true" signature="3138:3175" placeholder="SELECT * FRO..website..." />
-            <marker date="1396023559389" expanded="true" signature="3685:3734" placeholder="SELECT websi..dictionary..." />
-            <marker date="1396023559389" expanded="true" signature="4265:4355" placeholder="SELECT websi..website_dictionary..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="133" selection-start="2565" selection-end="2565" vertical-scroll-proportion="0.7010309" vertical-offset="357" max-vertical-offset="1462">
+        <state line="37" column="35" selection-start="1365" selection-end="1365" vertical-scroll-proportion="-5.1320753" vertical-offset="357" max-vertical-offset="1462">
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -645,6 +625,25 @@
             <marker date="1396023988994" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
             <marker date="1396023988994" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
             <marker date="1396023988994" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1066" column="29" selection-start="34092" selection-end="34092" vertical-scroll-proportion="0.3581599" vertical-offset="17795" max-vertical-offset="18734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="82" selection-start="2976" selection-end="2976" vertical-scroll-proportion="0.7426068" vertical-offset="1141" max-vertical-offset="3672">
+          <folding>
+            <marker date="1396024085890" expanded="true" signature="1477:1710" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1396024085890" expanded="true" signature="3237:3274" placeholder="SELECT * FRO..website..." />
+            <marker date="1396024085890" expanded="true" signature="3784:3833" placeholder="SELECT websi..dictionary..." />
+            <marker date="1396024085890" expanded="true" signature="4364:4454" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>

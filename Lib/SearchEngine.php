@@ -104,7 +104,8 @@ Class SearchEngine
         arsort($this->websitesWeight);
 
         // Return X first results of websitesWeight
-        $websitesChoosen    = array_slice($this->websitesWeight, 0, $this->resultsPerPage, true);
+        $offsetArrayslice   = ($this->getCurrentPage()-1) * $this->resultsPerPage;
+        $websitesChoosen    = array_slice($this->websitesWeight, $offsetArrayslice, $this->resultsPerPage, true);
         $websitesResult     = array();
         $websitesDatabase   = array();
 
