@@ -8,6 +8,7 @@ $searchEngine = new SearchEngine(array(
 
 $searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
 $searchValue    = mysql_real_escape_string($searchValue);
+var_dump($_GET['search'], $searchValue);
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,
 );
@@ -25,7 +26,7 @@ $searchResults  = $searchEngine->search($searchValue, $searchOptions);
             <div>
                 <form action="search.php" method="GET">
                     <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" /> <br />
-                    <input type="checkbox" name="forum" value="<?php echo $_GET['search']; ?>" /> <i>Exclure les forums</i>
+                    <input type="checkbox" name="forum" value="<?php echo $_GET['forum']; ?>" /> <i>Exclure les forums</i>
                 </form>
             </div>
             <h3>Liste des résultats</h3>
