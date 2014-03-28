@@ -105,6 +105,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
+        var_dump($sSql);
         foreach($this->db->query($sSql) as $website) {
             unset($website['title']);
             $this->website = $website;
@@ -208,10 +209,12 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         // Website Dictionary
-        $sSql = sprintf("SELECT * FROM website_dictionary WHERE website_id = %s AND word IN('%s')", $this->website['id'], implode("','", array_keys($this->websiteDictionary)));
         $currentDictionary = array();
-        foreach($this->db->query($sSql) as $word) {
-            $currentDictionary[$word['word']] = $word;
+        if(count($this->websiteDictionary) > 0) {
+            $sSql = sprintf("SELECT * FROM website_dictionary WHERE website_id = %s AND word IN('%s')", $this->website['id'], implode("','", array_keys($this->websiteDictionary)));
+            foreach($this->db->query($sSql) as $word) {
+                $currentDictionary[$word['word']] = $word;
+            }
         }
 
         foreach($this->websiteDictionary as $word => $weight) {

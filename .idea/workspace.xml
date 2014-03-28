@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/indexCrawler.php" afterPath="$PROJECT_DIR$/indexCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
       <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="52" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.5277778" vertical-offset="2602" max-vertical-offset="4964">
+            <state line="107" column="24" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.26333332" vertical-offset="1582" max-vertical-offset="5015">
               <folding>
-                <marker date="1396014191627" expanded="true" signature="3107:3145" placeholder="SELECT * FRO..website..." />
-                <marker date="1396014191627" expanded="true" signature="4869:4913" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396014191627" expanded="true" signature="6463:6535" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396014308791" expanded="true" signature="3107:3145" placeholder="SELECT * FRO..website..." />
+                <marker date="1396014308791" expanded="true" signature="4894:4938" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396014308791" expanded="true" signature="6580:6652" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -446,11 +445,6 @@
         <state line="85" column="9" selection-start="2452" selection-end="2452" vertical-scroll-proportion="-8.5" vertical-offset="1224" max-vertical-offset="8636" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="482" column="48" selection-start="13511" selection-end="13511" vertical-scroll-proportion="0.51222223" vertical-offset="7682" max-vertical-offset="54893" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/ProcessCommunication/PHPCrawlerDocumentInfoQueue.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="4" selection-start="2420" selection-end="2420" vertical-scroll-proportion="0.4035294" vertical-offset="1153" max-vertical-offset="2567" />
@@ -566,13 +560,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="491" column="20" selection-start="13870" selection-end="13870" vertical-scroll-proportion="4.74" vertical-offset="4030" max-vertical-offset="54893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="52" selection-start="5215" selection-end="5215" vertical-scroll-proportion="0.5277778" vertical-offset="2602" max-vertical-offset="4964">
+        <state line="107" column="24" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.26333332" vertical-offset="1582" max-vertical-offset="5015">
           <folding>
-            <marker date="1396014191627" expanded="true" signature="3107:3145" placeholder="SELECT * FRO..website..." />
-            <marker date="1396014191627" expanded="true" signature="4869:4913" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396014191627" expanded="true" signature="6463:6535" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396014308791" expanded="true" signature="3107:3145" placeholder="SELECT * FRO..website..." />
+            <marker date="1396014308791" expanded="true" signature="4894:4938" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396014308791" expanded="true" signature="6580:6652" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
