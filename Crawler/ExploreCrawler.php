@@ -48,6 +48,10 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
                 $linkUrl = $this->parseUrl($linkInfo['url_rebuild']);
 
+                if(!strstr($linkUrl, '.')) {
+                    continue;
+                }
+
                 if(!array_key_exists($linkUrl, $pageUrls)) {
                     // Add website to verify
                     $sql = sprintf("INSERT IGNORE INTO website_to_verify VALUES('%s','%s',0,NOW())", md5($linkUrl), $linkUrl);
