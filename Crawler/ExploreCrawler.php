@@ -64,8 +64,8 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $this->db->query($sSql);
 
         $this->pagesHandle++;
-//        echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
-        echo ".";
+        echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
+//        echo ".";
 
         return true;
     }
