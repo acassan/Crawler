@@ -32,13 +32,20 @@ $sSql               = "SELECT COUNT(*) AS number FROM website WHERE forum = 1";
 $statTmp            = $db->query($sSql)->fetch_assoc();
 $stats['forums']    = $statTmp['number']
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <link rel="shortcut icon" href="favicon.ico">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" type="text/css" media="screen" href="search.css" />
-        <title>Moteur de recherche</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SnapGameSearch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="search.css">
     </head>
     <body>
         <div id="stats">
