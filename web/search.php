@@ -17,8 +17,16 @@ $searchOptions  = array(
 $searchResults  = $searchEngine->search($searchValueEngine, $searchOptions);
 
 // STATS
-$sSql = "SELECT COUNT(*) FROM website";
-var_dump($db->query($sSql)->fetch_assoc());
+$stats              = array();
+$sSql               = "SELECT COUNT(*) AS number FROM website";
+$statTmp            = $db->query($sSql)->fetch_assoc();
+$stats['websites']  = $statTmp['number'];
+$sSql               = "SELECT COUNT(*) AS number FROM website WHERE game = 1";
+$statTmp            = $db->query($sSql)->fetch_assoc();
+$stats['webgames']  = $statTmp['number'];
+$sSql               = "SELECT COUNT(*) AS number FROM website WHERE forum = 1";
+$statTmp            = $db->query($sSql)->fetch_assoc();
+$stats['forums']    = $statTmp['number']
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -30,9 +38,9 @@ var_dump($db->query($sSql)->fetch_assoc());
     </head>
     <body>
         <div id="stats">
-            Sites: <span class="stats-websites"></span><br />
-            Jeux: <span class="stats-webgames"></span><br />
-            Forum: <span class="stats-forums"></span>
+            Sites: <span class="stats-websites"><?php echo $stats['websites']; ?></span><br />
+            Jeux: <span class="stats-webgames"><?php echo $stats['webgames']; ?></span><br />
+            Forum: <span class="stats-forums"><?php echo $stats['forums']; ?></span>
         </div>
         <div id="content" style="position: relative;">
             <div>
