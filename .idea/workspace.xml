@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Tools.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +41,7 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="1054">
+            <state line="10" column="106" selection-start="387" selection-end="387" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -595,7 +592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="423" selection-end="423" vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="1054">
+        <state line="10" column="106" selection-start="387" selection-end="387" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
