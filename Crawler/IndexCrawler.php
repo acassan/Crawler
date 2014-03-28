@@ -105,7 +105,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
-        var_dump($sSql);
         foreach($this->db->query($sSql) as $website) {
             unset($website['title']);
             $this->website = $website;
