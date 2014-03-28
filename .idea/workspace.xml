@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,10 +34,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExploreCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="58" selection-start="1280" selection-end="1280" vertical-scroll-proportion="-15.0" vertical-offset="426" max-vertical-offset="2346">
+              <folding>
+                <marker date="1395999441947" expanded="true" signature="1755:1820" placeholder="INSERT INTO ..." />
+                <marker date="1395999441947" expanded="true" signature="2469:2524" placeholder="SELECT page ..directory_page..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="43" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.28333333" vertical-offset="561" max-vertical-offset="4233">
+              <folding>
+                <marker date="1394722997957" expanded="true" signature="3124:3162" placeholder="SELECT * FRO..website..." />
+                <marker date="1394722997957" expanded="true" signature="4833:4877" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1394722997957" expanded="true" signature="6405:6477" placeholder="SELECT * FRO..website_dictionary..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="url.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/www/test/url.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="44" selection-start="355" selection-end="651" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="449" selection-end="449" vertical-scroll-proportion="0.26333332" vertical-offset="1" max-vertical-offset="1003">
+            <state line="16" column="6" selection-start="547" selection-end="547" vertical-scroll-proportion="-10.423077" vertical-offset="1" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -70,12 +103,12 @@
         <option value="$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php" />
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
-        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$USER_HOME$/Téléchargements/tmp/animation.html" />
         <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
       </list>
     </option>
   </component>
@@ -259,7 +292,7 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28144988" sideWeight="0.49689442" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28464818" sideWeight="0.49689442" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -297,6 +330,20 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/indexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="646" />
@@ -496,11 +543,6 @@
         <state line="351" column="33" selection-start="8721" selection-end="8729" vertical-scroll-proportion="0.5" vertical-offset="5676" max-vertical-offset="20910" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2006" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="455" column="42" selection-start="14590" selection-end="14590" vertical-scroll-proportion="0.3242059" vertical-offset="7439" max-vertical-offset="18734">
@@ -513,11 +555,6 @@
         <state line="23" column="0" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1145" selection-end="1145" vertical-scroll-proportion="3.9230769" vertical-offset="918" max-vertical-offset="4233" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="48" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-40.53846" vertical-offset="0" max-vertical-offset="2380" />
@@ -528,6 +565,13 @@
         <state line="116" column="4" selection-start="6602" selection-end="6602" vertical-scroll-proportion="2.191111" vertical-offset="0" max-vertical-offset="2550" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="547" selection-end="547" vertical-scroll-proportion="-10.423077" vertical-offset="1" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
@@ -535,10 +579,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.php">
+    <entry file="file://$USER_HOME$/www/test/url.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="449" selection-end="449" vertical-scroll-proportion="0.26333332" vertical-offset="1" max-vertical-offset="1003">
+        <state line="27" column="44" selection-start="355" selection-end="651" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="935">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="58" selection-start="1280" selection-end="1280" vertical-scroll-proportion="-15.0" vertical-offset="426" max-vertical-offset="2346">
+          <folding>
+            <marker date="1395999441947" expanded="true" signature="1755:1820" placeholder="INSERT INTO ..." />
+            <marker date="1395999441947" expanded="true" signature="2469:2524" placeholder="SELECT page ..directory_page..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.28333333" vertical-offset="561" max-vertical-offset="4233">
+          <folding>
+            <marker date="1394722997957" expanded="true" signature="3124:3162" placeholder="SELECT * FRO..website..." />
+            <marker date="1394722997957" expanded="true" signature="4833:4877" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1394722997957" expanded="true" signature="6405:6477" placeholder="SELECT * FRO..website_dictionary..." />
+          </folding>
         </state>
       </provider>
     </entry>

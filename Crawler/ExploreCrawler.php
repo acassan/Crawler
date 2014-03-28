@@ -46,8 +46,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
             // Limit research on website link
             if (preg_match('#\.(jpg|gif|png|pdf|jpeg|css|js|ico|google|youtube|api|facebook|twitter)$# i', $linkInfo['url_rebuild']) == 0) {
 
-                $linkUrl = parse_url($linkInfo['url_rebuild']);
-                $linkUrl = $linkUrl['host'];
+                $linkUrl = $this->parseUrl($linkInfo['url_rebuild']);
 
                 if(!array_key_exists($linkUrl, $pageUrls)) {
                     // Add website to verify
@@ -65,7 +64,8 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $this->db->query($sSql);
 
         $this->pagesHandle++;
-        echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
+//        echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
+        echo ".";
 
         return true;
     }
@@ -109,5 +109,25 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
             $this->directory['crawler_id'] = $this->getCrawlerId();
             $this->db->Update('directory',array('crawler_id' => $this->getCrawlerId()), array('id' => $directory['id']));
         }
+    }
+
+    /**
+     * @param $url
+     * @return mixed|string
+     */
+    public function parseUrl($url)
+    {
+        $search = array('https://','www.');
+        $replace = array('','');
+
+        $url = str_replace($search, $replace, $url);
+
+        if(substr( $url, 0, 7 ) !== 'http://') {
+            $url = 'http://'.$url;
+        }
+
+        $url = 'http://'.parse_url($url, PHP_URL_HOST);
+
+        return $url; // return the formatted url
     }
 }
