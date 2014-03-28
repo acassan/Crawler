@@ -1,18 +1,20 @@
 <?php
 require_once '../Lib/Database.php';
 require_once '../Lib/SearchEngine.php';
+require_once '../Lib/Tools.php';
 
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 5,
 ));
 
-$searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
-$searchValue    = Database::getInstance()->escape_string(utf8_decode($searchValue));
-var_dump($_GET['search'], $searchValue);
+$searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
+$searchValueEngine  = Database::getInstance()->escape_string(Tools::formatWord($searchValue));
+var_dump($_GET['search'], $searchValueEngine);
+
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,
 );
-$searchResults  = $searchEngine->search($searchValue, $searchOptions);
+$searchResults  = $searchEngine->search($searchValueEngine, $searchOptions);
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>

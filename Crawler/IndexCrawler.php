@@ -3,6 +3,7 @@
 require_once "BaseCrawler.php";
 require_once "CrawlerInterface.php";
 require_once "phpCrawler/PHPCrawlerDocumentInfo.class.php";
+require_once "Lib/Tools.php";
 
 class IndexCrawler extends BaseCrawler implements CrawlerInterface
 {
@@ -65,10 +66,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         foreach($words as $word) {
             if(strlen($word) > 3) {
 
-                // Format word
-                $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
-                $word = strtolower($word);
-                $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+                Tools::formatWord($word);
 
                 if(preg_match('/[^a-zA-Z0-9]/', $word)) {
                   continue;
