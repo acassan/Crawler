@@ -41,7 +41,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
         // Check game website
-        if (stripos($DocInfo->content, 'jeu')) {
+        if($this->isGame($DocInfo->content)) {
             $this->website['game'] = 1;
         }
 
@@ -51,8 +51,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         if(empty($this->website['title'])) {
             $titleNode = $dom->getElementsByTagName('title');
             $title = $titleNode->length > 0 ? ($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
-            $title = ltrim($title);
-            $title = rtrim($title);
+            $title = $this->formatTitle($title);
             $this->website['title'] = utf8_decode($title);
         }
 
@@ -80,7 +79,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
                     $this->dictionary[$word] = array();
                 }
 
-                $this->dictionary[$word][] = $this->website['id'];
+                $this->dictionary[$word][] = intval($this->website['id']);
 
                 // Website dictionary
                 if(!array_key_exists($word, $this->websiteDictionary)) {
@@ -119,11 +118,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             );
 
             $this->db->Insert($this->website, 'website');
-            $this->website['id'] = $this->db->insert_id;
+            $this->website['id'] = intval($this->db->insert_id);
         }
 
         // Check forum website
-        if (stripos($url, 'forum')) {
+        if ($this->isForum($url)) {
             $this->website['forum'] = 1;
         }
 
@@ -240,5 +239,47 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         return true;
+    }
+
+    /**
+     * @param $content
+     * @return bool
+     */
+    protected function isGame($content)
+    {
+        if (stripos($content, 'jeu')) {
+            return true;
+        }
+
+        if (stripos($content, 'game')) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $url
+     * @return bool
+     */
+    protected function isForum($url)
+    {
+        if(stripos($url, 'forum')) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $title
+     * @return string
+     */
+    protected function formatTitle($title)
+    {
+        $title = ltrim($title);
+        $title = rtrim($title);
+
+        return $title;
     }
 }
