@@ -4,8 +4,12 @@ require_once '../Lib/SearchEngine.php';
 require_once '../Lib/Tools.php';
 
 $db = Database::getInstance();
+
+$currentPage = isset($_GET['page']) ? intval($_GET['page']) : 1;
+
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 10,
+    'currentPage'       => $currentPage,
 ));
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
@@ -50,6 +54,8 @@ $stats['forums']    = $statTmp['number']
                 </form>
             </div>
             <h3>Liste des résultats</h3>
+
+            <h6><?php for($i=1; $i <= $searchEngine->getTotalPage(); $i++) { echo "[<a href='?search=".$searchValue."&page=$i'>$i</a>]"; } ?></h6>
             <?php
             if(count($searchResults) < 1) {
                 echo "<div>Aucun résultat</div>";

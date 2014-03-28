@@ -19,6 +19,21 @@ Class SearchEngine
 
     public $debug = array();
 
+    /**
+     * @var integer
+     */
+    protected $currentPage;
+
+    /**
+     * @var integer
+     */
+    protected $totalResult;
+
+    /**
+     * @var integer
+     */
+    protected $totalPage;
+
 
     /**
      * @param $options
@@ -29,6 +44,10 @@ Class SearchEngine
 
         if(array_key_exists('resultsPerPage', $options)) {
             $this->resultsPerPage = $options['resultsPerPage'];
+        }
+
+        if(array_key_exists('currentPage', $options)) {
+            $this->currentPage = $options['currentPage'];
         }
     }
 
@@ -71,6 +90,14 @@ Class SearchEngine
 
         if(count($this->websitesWeight) < 1) {
             return array();
+        }
+
+        // Stats
+        $this->setTotalResult(count($this->websitesWeight));
+        $this->setTotalPage(ceil($this->getTotalResult()/$this->resultsPerPage));
+
+        if($this->getCurrentPage() > $this->getTotalPage()) {
+            $this->setCurrentPage(1);
         }
 
         // Order websitesWeight per weight
@@ -131,5 +158,53 @@ Class SearchEngine
         }
 
         return $websitesWordWeight;
+    }
+
+    /**
+     * @param int $totalPage
+     */
+    public function setTotalPage($totalPage)
+    {
+        $this->totalPage = $totalPage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalPage()
+    {
+        return $this->totalPage;
+    }
+
+    /**
+     * @param int $totalResult
+     */
+    public function setTotalResult($totalResult)
+    {
+        $this->totalResult = $totalResult;
+    }
+
+    /**
+     * @return int
+     */
+    public function getTotalResult()
+    {
+        return $this->totalResult;
+    }
+
+    /**
+     * @param int $currentPage
+     */
+    public function setCurrentPage($currentPage)
+    {
+        $this->currentPage = $currentPage;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCurrentPage()
+    {
+        return $this->currentPage;
     }
 }
