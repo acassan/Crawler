@@ -7,7 +7,7 @@ $searchEngine = new SearchEngine(array(
 ));
 
 $searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
-$searchValue    = mysql_real_escape_string($searchValue);
+$searchValue    = $db->escape_string($searchValue);
 var_dump($_GET['search'], $searchValue);
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,
