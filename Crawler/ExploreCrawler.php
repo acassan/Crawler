@@ -104,6 +104,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         $this->loadDirectoryPages();
 
         if(!empty($directory['crawler_id'])) {
+            $this->enableResumption();
             $this->resume($directory['crawler_id']);
         } else {
             $this->directory['crawler_id'] = $this->getCrawlerId();
