@@ -4,12 +4,11 @@ require_once '../Lib/SearchEngine.php';
 require_once '../Lib/Tools.php';
 
 $searchEngine = new SearchEngine(array(
-    'resultsPerPage'    => 5,
+    'resultsPerPage'    => 10,
 ));
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
 $searchValueEngine  = Database::getInstance()->escape_string(Tools::formatWord(utf8_decode($searchValue)));
-var_dump($_GET['search'], $searchValueEngine);
 
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,
@@ -40,10 +39,10 @@ $searchResults  = $searchEngine->search($searchValueEngine, $searchOptions);
                     ?>
                     <div style="height: 90px;">
                         <div style="float: left; width: 155px;">
-                            <img src="http://www.apercite.fr/api/apercite/120x90/yes/http://<?php echo $website['url']; ?>">
+                            <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
                         </div>
                         <div style="float: left;">
-                            <h5><a href='http://<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
+                            <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
                             <p><i><?php echo $website['url']; ?></i></p>
                         </div>
                     </div>
