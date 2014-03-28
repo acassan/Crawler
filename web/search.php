@@ -3,26 +3,37 @@ require_once '../Lib/Database.php';
 require_once '../Lib/SearchEngine.php';
 require_once '../Lib/Tools.php';
 
+$db = Database::getInstance();
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 10,
 ));
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
-$searchValueEngine  = Database::getInstance()->escape_string(Tools::formatWord(utf8_decode($searchValue)));
+$searchValueEngine  = $db->escape_string(Tools::formatWord(utf8_decode($searchValue)));
 
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,
 );
 $searchResults  = $searchEngine->search($searchValueEngine, $searchOptions);
+
+// STATS
+$sSql = "SELECT COUNT(*) FROM website";
+var_dump($db->query($sSql));
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
         <link rel="shortcut icon" href="favicon.ico">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="search.css" />
         <title>Moteur de recherche</title>
     </head>
     <body>
+        <div id="stats">
+            Sites: <span class="stats-websites"></span><br />
+            Jeux: <span class="stats-webgames"></span><br />
+            Forum: <span class="stats-forums"></span>
+        </div>
         <div id="content" style="position: relative;">
             <div>
                 <form action="search.php" method="GET">
