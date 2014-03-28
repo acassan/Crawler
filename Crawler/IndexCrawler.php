@@ -171,9 +171,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     {
         // Dictionary
         $currentDictionary = array();
-        $sSql = sprintf("SELECT * FROM dictionary WHERE word IN('%s')", implode("','", array_keys($this->dictionary)));
-        foreach($this->db->query($sSql) as $word) {
-            $currentDictionary[$word['word']] = $word;
+        if(count($this->dictionary) > 0) {
+            $sSql = sprintf("SELECT * FROM dictionary WHERE word IN('%s')", implode("','", array_keys($this->dictionary)));
+            foreach($this->db->query($sSql) as $word) {
+                $currentDictionary[$word['word']] = $word;
+            }
         }
 
         foreach($this->dictionary as $word => $websites) {
