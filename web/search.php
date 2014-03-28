@@ -7,7 +7,7 @@ $searchEngine = new SearchEngine(array(
 ));
 
 $searchValue    = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
-$searchValue    = Database::getInstance()->escape_string(utf8_encode($searchValue));
+$searchValue    = Database::getInstance()->escape_string(utf8_decode($searchValue));
 var_dump($_GET['search'], $searchValue);
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,

@@ -41,7 +41,7 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="83" selection-start="327" selection-end="327" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
+            <state line="9" column="64" selection-start="308" selection-end="308" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -588,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="83" selection-start="327" selection-end="327" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
+        <state line="9" column="64" selection-start="308" selection-end="308" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
