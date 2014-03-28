@@ -41,7 +41,7 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="59" selection-start="217" selection-end="217" vertical-scroll-proportion="0.15111111" vertical-offset="0" max-vertical-offset="1020">
+            <state line="9" column="83" selection-start="327" selection-end="327" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -552,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="491" column="20" selection-start="13870" selection-end="13870" vertical-scroll-proportion="4.74" vertical-offset="4030" max-vertical-offset="54893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="64" selection-start="3653" selection-end="3653" vertical-scroll-proportion="-17.615385" vertical-offset="1582" max-vertical-offset="4998">
@@ -586,9 +579,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="623" column="0" selection-start="18444" selection-end="18444" vertical-scroll-proportion="0.3611111" vertical-offset="10215" max-vertical-offset="54893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="59" selection-start="217" selection-end="217" vertical-scroll-proportion="0.15111111" vertical-offset="0" max-vertical-offset="1020">
+        <state line="9" column="83" selection-start="327" selection-end="327" vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
