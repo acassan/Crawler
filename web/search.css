@@ -12,8 +12,12 @@ header {
     padding: 5px;
 }
 
-header .header-slot {
+.floatLeft {
     float: left;
+}
+
+.floatRight {
+    float: right;
 }
 
 header .header-slot:first-child {
@@ -26,4 +30,13 @@ header .header-slot:nth-child(2) {
 
 header .header-slot:nth-child(3) {
     margin: 2px 0 0 10px;
+}
+
+header .statistics {
+    font-size: 10px;
+}
+
+#content {
+    position: relative;
+    margin: 10px 0 0 15px;
 }

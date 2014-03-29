@@ -50,22 +50,21 @@ $stats['forums']    = $statTmp['number']
     <body>
         <header>
             <form action="search.php" method="GET">
-            <div class="header-slot"><img src="img/ico-pad.png" /></div>
-            <div class="header-slot">
+            <div class="floatLeft"><img src="img/ico-pad.png" /></div>
+            <div class="floatLeft">
                 <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" />
             </div>
-            <div class="header-slot">
+            <div class="floatLeft">
                 <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
             </div>
             </form>
+            <div class="floatRight statistics">
+                Total sites: <?php echo $stats['websites']; ?> <br />
+                Sites jeux: <?php echo $stats['webgames']; ?> <br />
+                Forums: <?php echo $stats['forums']; ?>
+            </div>
         </header>
-        <div id="stats">
-            Sites: <span class="stats-websites"><?php echo $stats['websites']; ?></span><br />
-            Jeux: <span class="stats-webgames"><?php echo $stats['webgames']; ?></span><br />
-            Forum: <span class="stats-forums"><?php echo $stats['forums']; ?></span>
-        </div>
-        <div id="content" style="position: relative;">
-            <h3>Liste des résultats</h3>
+        <div id="content">
 
             <h6><?php for($i=1; $i <= $searchEngine->getTotalPage(); $i++) { echo "[<a href='?search=".$searchValue."&page=$i'>$i</a>]"; } ?></h6>
             <?php
