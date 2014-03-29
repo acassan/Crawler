@@ -10,6 +10,7 @@ header {
     height: 50px;
     background-color: lightgray;
     padding: 5px;
+    margin: 0 0;
 }
 
 .floatLeft {
@@ -20,15 +21,15 @@ header {
     float: right;
 }
 
-header .header-slot:first-child {
+header .floatLeft:first-child {
     min-width: 150px;
     text-align: center;
 }
-header .header-slot:nth-child(2) {
+header .floatLeft:nth-child(2) {
     margin: 10px 0 0 0;
 }
 
-header .header-slot:nth-child(3) {
+header .floatLeft:nth-child(3) {
     margin: 2px 0 0 10px;
 }
 
