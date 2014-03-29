@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/ico-search.png" afterPath="$PROJECT_DIR$/web/img/ico-search.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="33" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-26.73077" vertical-offset="376" max-vertical-offset="1615">
+            <state line="56" column="12" selection-start="2347" selection-end="2347" vertical-scroll-proportion="-22.153847" vertical-offset="376" max-vertical-offset="1615">
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -43,7 +42,7 @@
       <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="0.5057208" vertical-offset="0" max-vertical-offset="874">
+            <state line="16" column="16" selection-start="237" selection-end="237" vertical-scroll-proportion="0.3112128" vertical-offset="0" max-vertical-offset="874">
               <folding />
             </state>
           </provider>
@@ -371,7 +370,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="33" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-26.73077" vertical-offset="376" max-vertical-offset="1615">
+        <state line="56" column="12" selection-start="2347" selection-end="2347" vertical-scroll-proportion="-22.153847" vertical-offset="376" max-vertical-offset="1615">
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -382,7 +381,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="0.5057208" vertical-offset="0" max-vertical-offset="874">
+        <state line="16" column="16" selection-start="237" selection-end="237" vertical-scroll-proportion="0.3112128" vertical-offset="0" max-vertical-offset="874">
           <folding />
         </state>
       </provider>

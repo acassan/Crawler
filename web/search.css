@@ -15,7 +15,6 @@ header {
 
 header .header-slot {
     float: left;
-    margin: 5px;
 }
 
 header . header-slot:first-child {
@@ -23,6 +22,7 @@ header . header-slot:first-child {
     text-align: center;
     vertical-align: middle;
 }
-header . header-slot:nth-child(2) {
+header . header-slot:nth-child(1) {
     margin-left: 25px;
+    vertical-align: middle;
 }

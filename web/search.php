@@ -54,7 +54,7 @@ $stats['forums']    = $statTmp['number']
             <div class="header-slot">
                 <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
             </div>
-             </form>
+            </form>
         </header>
         <div id="stats">
             Sites: <span class="stats-websites"><?php echo $stats['websites']; ?></span><br />
