@@ -16,12 +16,12 @@ header .header-slot {
     float: left;
 }
 
-header . header-slot:first-child {
+header .header-slot:first-child {
     min-width: 150px;
     text-align: center;
     vertical-align: middle;
 }
-header . header-slot:nth-child(1) {
+header .header-slot:nth-child(2) {
     margin-left: 25px;
     vertical-align: middle;
 }
