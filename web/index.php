@@ -17,7 +17,7 @@
 <img class="logo" src="img/pad.png" border="0" alt="" />
         <div style="position: relative; width: 550px; margin: 300px auto 0 auto;">
             <form action="search.php" method="GET">
-                <input type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
+                <input class="searchValue" type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
             </form>
         </div>
     </body>

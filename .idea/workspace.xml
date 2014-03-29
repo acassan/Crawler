@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.css" />
-      <change type="DELETED" beforePath="C:\Users\Alexis\Documents\GitHub\Crawler\.htaccess" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
@@ -32,28 +31,19 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="31" selection-start="974" selection-end="974" vertical-scroll-proportion="-7.769231" vertical-offset="274" max-vertical-offset="1581">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="107" selection-start="907" selection-end="907" vertical-scroll-proportion="0.38089624" vertical-offset="0" max-vertical-offset="848">
+            <state line="53" column="37" selection-start="2051" selection-end="2051" vertical-scroll-proportion="-20.192308" vertical-offset="376" max-vertical-offset="1717">
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.css">
+      <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+            <state line="24" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.46681923" vertical-offset="0" max-vertical-offset="874">
               <folding />
             </state>
           </provider>
@@ -85,14 +75,14 @@
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Utils.php" />
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
-        <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/base.css" />
-        <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
+        <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/index.css" />
-        <option value="$PROJECT_DIR$/Lib/Database.php" />
+        <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/web/search.css" />
       </list>
     </option>
   </component>
@@ -356,20 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="78" selection-end="78" vertical-scroll-proportion="0.09725401" vertical-offset="0" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="31" selection-start="974" selection-end="974" vertical-scroll-proportion="-7.769231" vertical-offset="274" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="14" selection-start="106" selection-end="106" vertical-scroll-proportion="0.18042453" vertical-offset="0" max-vertical-offset="2380">
@@ -379,18 +355,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="4" column="1" selection-start="69" selection-end="69" vertical-scroll-proportion="0.08272506" vertical-offset="0" max-vertical-offset="822">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="107" selection-start="907" selection-end="907" vertical-scroll-proportion="0.38089624" vertical-offset="0" max-vertical-offset="848">
+        <state line="19" column="41" selection-start="841" selection-end="841" vertical-scroll-proportion="0.38089624" vertical-offset="0" max-vertical-offset="848">
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="37" selection-start="2051" selection-end="2051" vertical-scroll-proportion="-20.192308" vertical-offset="376" max-vertical-offset="1717">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="21" selection-start="374" selection-end="374" vertical-scroll-proportion="0.46681923" vertical-offset="0" max-vertical-offset="874">
+          <folding />
         </state>
       </provider>
     </entry>

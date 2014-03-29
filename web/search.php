@@ -48,6 +48,14 @@ $stats['forums']    = $statTmp['number']
         <link rel="stylesheet" href="search.css">
     </head>
     <body>
+        <header>
+            <form action="search.php" method="GET">
+            <div class="header-slot">LOGO</div>
+            <div class="header-slot">
+                <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
+            </div>
+             </form>
+        </header>
         <div id="stats">
             Sites: <span class="stats-websites"><?php echo $stats['websites']; ?></span><br />
             Jeux: <span class="stats-webgames"><?php echo $stats['webgames']; ?></span><br />
@@ -55,8 +63,8 @@ $stats['forums']    = $statTmp['number']
         </div>
         <div id="content" style="position: relative;">
             <div>
-                <form action="search.php" method="GET">
-                    <input type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input type="submit" value="Rechercher" /> <br />
+
+                     &nbsp;  <br />
                     <input type="checkbox" name="forum" value="<?php echo $_GET['forum']; ?>" /> <i>Exclure les forums</i>
                 </form>
             </div>
