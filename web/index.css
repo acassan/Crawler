@@ -1,0 +1,20 @@
+img.logo {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+}
+
+input.btn-search {
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    color: #585858;
+    font-size: 14px;
+    line-height: 34px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    font-weight: bold;
+}

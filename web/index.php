@@ -1,14 +1,23 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-    <head>
-        <link rel="shortcut icon" href="favicon.ico">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-        <title>Moteur de recherche</title>
-    </head>
-    <body>
-        <div style="position: relative; width: 500px; height: 300px; border: 1px black dotted; margin: auto auto;">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SnapGameSearch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<img class="logo" src="img/pad.png" border="0" alt="" />
+        <div style="position: relative; width: 550px; margin: 300px auto 0 auto;">
             <form action="search.php" method="GET">
-                <input type="text" name="search" style="width: 400px;" /> &nbsp; <input type="submit" value="Rechercher" />
+                <input type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
             </form>
         </div>
     </body>
