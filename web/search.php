@@ -52,7 +52,10 @@ $stats['forums']    = $statTmp['number']
             <form action="search.php" method="GET">
             <div class="header-slot"><img src="img/ico-pad.png" /></div>
             <div class="header-slot">
-                <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
+                <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" />
+            </div>
+            <div class="header-slot">
+                <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
             </div>
             </form>
         </header>

@@ -19,9 +19,12 @@ header .header-slot {
 header .header-slot:first-child {
     min-width: 150px;
     text-align: center;
-    vertical-align: middle;
 }
 header .header-slot:nth-child(2) {
     margin-left: 25px;
-    vertical-align: middle;
+    margin-top: -5px;
+}
+
+header .header-slot:nth-child(3) {
+    margin-top: 5px;
 }
