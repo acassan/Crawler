@@ -50,7 +50,7 @@ $stats['forums']    = $statTmp['number']
     <body>
         <header>
             <form action="search.php" method="GET">
-            <div class="header-slot">LOGO</div>
+            <div class="header-slot"><img src="img/ico-pad.png" /></div>
             <div class="header-slot">
                 <input class="searchValue" type="text" name="search" style="width: 400px;" value="<?php echo $searchValue; ?>" /> &nbsp; <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
             </div>
@@ -62,12 +62,6 @@ $stats['forums']    = $statTmp['number']
             Forum: <span class="stats-forums"><?php echo $stats['forums']; ?></span>
         </div>
         <div id="content" style="position: relative;">
-            <div>
-
-                     &nbsp;  <br />
-                    <input type="checkbox" name="forum" value="<?php echo $_GET['forum']; ?>" /> <i>Exclure les forums</i>
-                </form>
-            </div>
             <h3>Liste des résultats</h3>
 
             <h6><?php for($i=1; $i <= $searchEngine->getTotalPage(); $i++) { echo "[<a href='?search=".$searchValue."&page=$i'>$i</a>]"; } ?></h6>
