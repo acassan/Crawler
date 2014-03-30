@@ -1,5 +1,4 @@
 <?php
-
 require_once 'Crawler/ExploreCrawler.php';
 require_once 'Lib/Database.php';
 

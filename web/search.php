@@ -71,20 +71,24 @@ $stats['forums']    = $statTmp['number']
             if(count($searchResults) < 1) {
                 echo "<div>Aucun résultat</div>";
             } else {
+                echo "<table>";
                 foreach($searchResults as $website) {
                     ?>
-                    <div style="height: 90px;">
-                        <div style="float: left; width: 155px;">
+                    <tr>
+                        <td>
                             <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
-                        </div>
-                        <div style="float: left;">
+                        </td>
+                        <td>
                             <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
                             <p><i><?php echo $website['url']; ?></i></p>
-                        </div>
-                    </div>
-                    <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr /></td>
+                    </tr>
                     <?php
                 }
+                echo "</table>";
             }
             ?>
         </div>

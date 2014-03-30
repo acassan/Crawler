@@ -18,6 +18,7 @@ foreach($db->query($sSql) as $website) {
     $crawler->resetWebsite();
     $crawler->initWebsite($website['url']);
     $crawler->setURL($website['url']);
+    $crawler->setWebsiteDirectory($website['directory']);
     $crawler->go();
     $crawler->saveWebsite();
     $crawler->updateDictionaries();

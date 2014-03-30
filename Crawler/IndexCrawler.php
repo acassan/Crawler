@@ -105,7 +105,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
-        var_dump($sSql);
         foreach($this->db->query($sSql) as $website) {
             unset($website['title']);
             $this->website = $website;
@@ -113,9 +112,10 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         if(!is_array($this->website)) {
             $this->website = array(
-                'url'       => $url,
-                'createdAt' => date('Y-m-d H:i:s'),
-                'updatedAt' => date('Y-m-d H:i:s'),
+                'url'           => $url,
+                'directories'   => json_encode(array()),
+                'createdAt'     => date('Y-m-d H:i:s'),
+                'updatedAt'     => date('Y-m-d H:i:s'),
             );
 
             $this->db->Insert($this->website, 'website');
@@ -168,6 +168,9 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         return true;
     }
 
+    /**
+     * @return bool
+     */
     public function updateDictionaries()
     {
         // Dictionary
@@ -286,5 +289,20 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         $title = rtrim($title);
 
         return $title;
+    }
+
+    /**
+     * @param $directoryId
+     * @return bool
+     */
+    public function setWebsiteDirectory($directoryId)
+    {
+        $currentDirectories = json_decode($this->website['directories']);
+
+        if(!array_key_exists($directoryId, $currentDirectories)) {
+            $this->website['directories'][] = $directoryId;
+        }
+
+        return true;
     }
 }
