@@ -40,7 +40,7 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="57" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.21710527" vertical-offset="618" max-vertical-offset="2465">
+            <state line="49" column="30" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.29166666" vertical-offset="567" max-vertical-offset="2465">
               <folding />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="jac.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="993" column="51" selection-start="104871" selection-end="104871" vertical-scroll-proportion="-18.153847" vertical-offset="16409" max-vertical-offset="199495">
+            <state line="993" column="51" selection-start="104871" selection-end="104871" vertical-scroll-proportion="-29.923077" vertical-offset="16103" max-vertical-offset="199495">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -794,7 +794,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="993" column="51" selection-start="104871" selection-end="104871" vertical-scroll-proportion="-18.153847" vertical-offset="16409" max-vertical-offset="199495">
+        <state line="993" column="51" selection-start="104871" selection-end="104871" vertical-scroll-proportion="-29.923077" vertical-offset="16103" max-vertical-offset="199495">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1077,7 +1077,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="57" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.21710527" vertical-offset="618" max-vertical-offset="2465">
+        <state line="49" column="30" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.29166666" vertical-offset="567" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
