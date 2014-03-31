@@ -40,3 +40,8 @@ header .statistics {
     position: relative;
     margin: 10px 0 0 15px;
 }
+
+.ranking-jac {
+    width: 100px;
+    text-align: center;
+}

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/base.css" afterPath="$PROJECT_DIR$/web/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,20 +52,23 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="31" selection-start="3034" selection-end="3034" vertical-scroll-proportion="-7.716981" vertical-offset="832" max-vertical-offset="1717">
+            <state line="84" column="44" selection-start="3639" selection-end="3639" vertical-scroll-proportion="-11.245283" vertical-offset="832" max-vertical-offset="1768">
               <folding>
-                <marker date="1396252047358" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
-                <marker date="1396252047358" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
-                <marker date="1396252047358" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+                <marker date="1396274775398" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
+                <marker date="1396274775398" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
+                <marker date="1396274775398" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+                <marker date="1396274775398" expanded="true" signature="3039:3051" placeholder="..." />
+                <marker date="1396274775398" expanded="true" signature="3156:3223" placeholder="..." />
+                <marker date="1396274775398" expanded="true" signature="3185:3223" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/base.css">
+      <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1046" column="28" selection-start="21007" selection-end="21007" vertical-scroll-proportion="0.565032" vertical-offset="17252" max-vertical-offset="18258">
+            <state line="46" column="1" selection-start="614" selection-end="614" vertical-scroll-proportion="0.8336887" vertical-offset="0" max-vertical-offset="938">
               <folding />
             </state>
           </provider>
@@ -96,9 +100,7 @@
         <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/index.css" />
-        <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
-        <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/Crawler/WebsiteParser/JacParser.php" />
         <option value="$PROJECT_DIR$/Crawler/WebsiteParser/WebsiteParserInterface.php" />
         <option value="$USER_HOME$/Téléchargements/tmp/tutu.php" />
@@ -113,6 +115,8 @@
         <option value="$USER_HOME$/Téléchargements/tmp/jac.html" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/web/base.css" />
+        <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/web/search.css" />
       </list>
     </option>
   </component>
@@ -282,11 +286,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14498934" sideWeight="0.5709845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14498934" sideWeight="0.5709845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -354,9 +358,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="17" selection-start="3718" selection-end="3718" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1581">
           <folding>
-            <marker date="1396252047358" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
-            <marker date="1396252047358" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
-            <marker date="1396252047358" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="3039:3051" placeholder="..." />
+            <marker date="1396274775398" expanded="true" signature="3156:3223" placeholder="..." />
+            <marker date="1396274775398" expanded="true" signature="3185:3223" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -408,13 +415,6 @@
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="37" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0" vertical-offset="1472" max-vertical-offset="3672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="1" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
@@ -817,20 +817,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1035" column="14" selection-start="20823" selection-end="20823" vertical-scroll-proportion="0.8006396" vertical-offset="16844" max-vertical-offset="18258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="31" selection-start="3034" selection-end="3034" vertical-scroll-proportion="-7.716981" vertical-offset="832" max-vertical-offset="1717">
+        <state line="84" column="44" selection-start="3639" selection-end="3639" vertical-scroll-proportion="-11.245283" vertical-offset="832" max-vertical-offset="1768">
           <folding>
-            <marker date="1396252047358" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
-            <marker date="1396252047358" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
-            <marker date="1396252047358" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+            <marker date="1396274775398" expanded="true" signature="3039:3051" placeholder="..." />
+            <marker date="1396274775398" expanded="true" signature="3156:3223" placeholder="..." />
+            <marker date="1396274775398" expanded="true" signature="3185:3223" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/base.css">
+    <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1046" column="28" selection-start="21007" selection-end="21007" vertical-scroll-proportion="0.565032" vertical-offset="17252" max-vertical-offset="18258">
+        <state line="46" column="1" selection-start="614" selection-end="614" vertical-scroll-proportion="0.8336887" vertical-offset="0" max-vertical-offset="938">
           <folding />
         </state>
       </provider>
