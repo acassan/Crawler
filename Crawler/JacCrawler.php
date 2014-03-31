@@ -56,7 +56,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
                 continue;
             }
 
-            var_dump($rankingLineColumns->item(0)->nodeValue);die();
+            var_dump(intval($rankingLineColumns->item(0)->nodeValue));die();
 
             preg_match("#<span id='chifClass(.+)'>([0-9]+)</span>#Uis", $rankingLineColumns->item(0)->nodeValue, $rankingTmp);
 
