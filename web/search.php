@@ -76,7 +76,7 @@ $stats['forums']    = $statTmp['number']
                     <tr>
                         <th></th>
                         <th></th>
-                        <th>Classement JAC</th>
+                        <th class="ranking-jac">Classement JAC</th>
                     </tr>
                 <?php foreach($searchResults as $website) {
                     ?>
