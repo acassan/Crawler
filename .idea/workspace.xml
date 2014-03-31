@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JacCrawler.php" afterPath="$PROJECT_DIR$/JacCrawler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/JacCrawler.php" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -38,19 +37,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="0.2236842" vertical-offset="0" max-vertical-offset="912">
+            <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="5" selection-start="3829" selection-end="3829" vertical-scroll-proportion="-25.26923" vertical-offset="1553" max-vertical-offset="2465">
+            <state line="46" column="18" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.72039473" vertical-offset="125" max-vertical-offset="2482">
               <folding />
             </state>
           </provider>
@@ -96,8 +95,8 @@
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php" />
-        <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/JacCrawler.php" />
+        <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
       </list>
     </option>
   </component>
@@ -520,16 +519,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
+    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="5" selection-start="3829" selection-end="3829" vertical-scroll-proportion="-25.26923" vertical-offset="1553" max-vertical-offset="2465">
+        <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="0.2236842" vertical-offset="0" max-vertical-offset="912">
+        <state line="46" column="18" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.72039473" vertical-offset="125" max-vertical-offset="2482">
           <folding />
         </state>
       </provider>
