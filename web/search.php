@@ -72,7 +72,7 @@ $stats['forums']    = $statTmp['number']
                 echo "<div>Aucun résultat</div>";
             } else {
                 ?>
-                <table class="table-bordered" style='width: 100%;'>
+                <table class="table" style='width: 100%;'>
                     <tr>
                         <th></th>
                         <th></th>
