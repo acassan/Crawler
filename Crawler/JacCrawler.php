@@ -57,8 +57,8 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             }
 
             foreach($rankingLineColumns as $column) {
-                die("ok");
                 $spanTag = $column->getElementsByTagName('span');
+                var_dump($spanTag->length);
                 if($spanTag->length == 1) {
                     // Handling first column
                     $ranking = intval($spanTag->nodeValue);
