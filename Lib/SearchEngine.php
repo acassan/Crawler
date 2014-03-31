@@ -84,7 +84,7 @@ Class SearchEngine
             $sSql = sprintf("SELECT * FROM dictionary WHERE word = '%s'", $word);
             $wordWeight = 1;
             foreach($this->db->query($sSql) as $wordWeightDB) {
-                $wordWeight = 1 / $wordWeightDB['weight'];
+                $wordWeight = ceil(1 / $wordWeightDB['weight'] * 100);
             }
 
             foreach($this->db->query($sSql) as $websiteWord) {
