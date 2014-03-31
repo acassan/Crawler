@@ -44,11 +44,6 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $dom = new DOMDocument();
         @$dom->loadHTML($DocInfo->content);
 
-        $xpath = new \DOMXPath($dom);
-
-        $divRanking = $xpath->query("div[@id='bcTable']");
-        var_dump($divRanking);
-
         $divRanking = $dom->getElementById('bcTable');
         foreach($divRanking->getElementsByTagName('tr') as $rankingLine) {
             // Init
@@ -68,7 +63,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             }
 
             // Handling JacId
-            var_dump($rankingLine->getElementById('bcImAccJeu')->getElementsByTagName('img')->getAttribute('src'));
+            var_dump($rankingLineColumns->item(1)->getElementsByTagName('img')->getAttribute('src'));
             preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $rankingLineColumns->getElementById('bcImAccJeu')->getElementsByTagName('img')->getAttribute('src'), $websiteJacId);
             $jacId                  = $websiteJacId[1];
             $gameUrl                = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
