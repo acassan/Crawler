@@ -276,6 +276,10 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
     public function setWebsiteDirectory($directoryId)
     {
         $currentDirectories = json_decode($this->website['directories']);
+        if(!is_array($currentDirectories)) {
+            $currentDirectories = array();
+            $this->website['directories'] = array();
+        }
 
         if(!array_key_exists($directoryId, $currentDirectories)) {
             $this->website['directories'][] = $directoryId;
