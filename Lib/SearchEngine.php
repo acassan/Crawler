@@ -78,6 +78,8 @@ Class SearchEngine
             foreach($this->db->query($sSql) as $wordWeightDB) {
                 $wordWeight = ceil(1 / $wordWeightDB['weight'] * 100);
             }
+            if(!isset($this->debug['wordWeight'])) { $this->debug['wordWeight'] = array(); }
+            $this->debug['wordWeight'][$word] = $wordWeight;
 
             $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
