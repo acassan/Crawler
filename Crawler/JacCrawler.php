@@ -44,8 +44,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $dom = new DOMDocument();
         @$dom->loadHTML($DocInfo->content);
 
-        $divRanking = $dom->getElementById('blocTableLegende');
-        var_dump($divRanking->getElementsByTagName('table'));
+        $divRanking = $dom->getElementById('bcTable');
         foreach($divRanking->getElementsByTagName('tr') as $rankingLine) {
 
             // Init
