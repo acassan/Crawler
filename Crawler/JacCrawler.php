@@ -76,7 +76,8 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $website['ranking_jac'] = $ranking;
             $website['jac_id']      = $ranking;
 
-            echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
+
+//            echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
 
 //            $this->saveWebsite($website);
         }
