@@ -52,12 +52,12 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $gameUrl    = null;
 
             $rankingLineColumns = $rankingLine->getElementsByTagName('td');
+            var_dump($rankingLineColumns);
             if($rankingLineColumns->length > 6) {
                 continue;
             }
 
             preg_match("#<span id='chifClass(.+)'>([0-9]+)</span>#Uis", $rankingLineColumns->item(0)->nodeValue, $rankingTmp);
-            var_dump($rankingTmp);
 
             if(is_null($ranking) || $ranking < 1) {
                 continue;
