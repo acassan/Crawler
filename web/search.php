@@ -98,6 +98,5 @@ $stats['forums']    = $statTmp['number']
             }
             ?>
         </div>
-        <pre><?Php var_dump($searchEngine->debug); ?></pre>
     </body>
 </html>
