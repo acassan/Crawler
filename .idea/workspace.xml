@@ -40,7 +40,7 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="23" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.42214912" vertical-offset="1417" max-vertical-offset="2465">
+            <state line="55" column="25" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.19846492" vertical-offset="754" max-vertical-offset="2465">
               <folding />
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="jac.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1470" column="63" selection-start="129292" selection-end="129330" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
+            <state line="1463" column="14" selection-start="128946" selection-end="128946" vertical-scroll-proportion="-10.924528" vertical-offset="24292" max-vertical-offset="199495">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -801,9 +801,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="20" selection-start="3574" selection-end="3574" vertical-scroll-proportion="-21.346153" vertical-offset="1553" max-vertical-offset="2465">
+          <folding>
+            <marker date="1396261274391" expanded="true" signature="3299:3337" placeholder="SELECT * FRO..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1470" column="63" selection-start="129292" selection-end="129330" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
+        <state line="1463" column="14" selection-start="128946" selection-end="128946" vertical-scroll-proportion="-10.924528" vertical-offset="24292" max-vertical-offset="199495">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1084,18 +1093,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="20" selection-start="3574" selection-end="3574" vertical-scroll-proportion="-21.346153" vertical-offset="1553" max-vertical-offset="2465">
-          <folding>
-            <marker date="1396261274391" expanded="true" signature="3299:3337" placeholder="SELECT * FRO..website..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="23" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.42214912" vertical-offset="1417" max-vertical-offset="2465">
+        <state line="55" column="25" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.19846492" vertical-offset="754" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
