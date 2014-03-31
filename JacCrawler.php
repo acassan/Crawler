@@ -1,5 +1,5 @@
 <?php
-require_once 'Crawler/IndexCrawler.php';
+require_once 'Crawler/JacCrawler.php';
 require_once 'Lib/Database.php';
 
 $crawler = new JacCrawler(array(

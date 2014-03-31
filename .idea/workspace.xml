@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JacCrawler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/BaseCrawler.php" afterPath="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Tools.php" afterPath="$PROJECT_DIR$/Lib/Tools.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JacCrawler.php" afterPath="$PROJECT_DIR$/JacCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,19 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+      <file leaf-file-name="IndexCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
-              <folding />
+            <state line="8" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="5100">
+              <folding>
+                <marker date="1396261373261" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396261373261" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="25" selection-start="31" selection-end="31" vertical-scroll-proportion="0.01864035" vertical-offset="0" max-vertical-offset="912">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="70" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.5964912" vertical-offset="816" max-vertical-offset="2329">
+            <state line="53" column="0" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-3.2692308" vertical-offset="816" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
@@ -90,8 +95,8 @@
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php" />
-        <option value="$PROJECT_DIR$/JacCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
+        <option value="$PROJECT_DIR$/JacCrawler.php" />
       </list>
     </option>
   </component>
@@ -250,7 +255,7 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14498934" sideWeight="0.5709845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14498934" sideWeight="0.5709845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -292,8 +297,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5015">
           <folding>
-            <marker date="1396261373261" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396261373261" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396261373261" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396261373261" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -472,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="12" selection-start="8243" selection-end="8243" vertical-scroll-proportion="-33.115383" vertical-offset="4018" max-vertical-offset="5100">
-          <folding>
-            <marker date="1396261373261" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396261373261" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..website_dictionary..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="22" selection-start="2392" selection-end="2392" vertical-scroll-proportion="-18.076923" vertical-offset="941" max-vertical-offset="2465">
@@ -514,16 +509,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="340">
+        <state line="53" column="0" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-3.2692308" vertical-offset="816" max-vertical-offset="2329">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
+    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="70" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.5964912" vertical-offset="816" max-vertical-offset="2329">
+        <state line="8" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="5100">
+          <folding>
+            <marker date="1396261373261" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396261373261" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="31" selection-end="31" vertical-scroll-proportion="0.01864035" vertical-offset="0" max-vertical-offset="912">
           <folding />
         </state>
       </provider>
