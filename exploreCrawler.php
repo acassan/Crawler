@@ -18,7 +18,7 @@ foreach($db->query($sSql) as $directory) {
     $crawler->setURL($directory['url']);
     $crawler->go();
 
-    $sSql = sprintf("UPDATE directory SET updatedAt = '%s' WHERE id = %d", $now->format('Y-m-d H:i:s'), $directory['id']);
+    $sSql = sprintf("UPDATE directory SET updatedAt = '%s', crawler_id = ''  WHERE id = %d", $now->format('Y-m-d H:i:s'), $directory['id']);
     $db->query($sSql);
 
     unset($crawler);

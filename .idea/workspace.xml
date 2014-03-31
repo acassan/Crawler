@@ -28,10 +28,11 @@
       <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="574" selection-end="574" vertical-scroll-proportion="0.27960527" vertical-offset="0" max-vertical-offset="912">
+            <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2609649" vertical-offset="0" max-vertical-offset="912">
               <folding>
-                <marker date="1396279081584" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
-                <marker date="1396279081584" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+                <marker date="1396279182128" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
+                <marker date="1396279182128" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+                <marker date="1396279182128" expanded="true" signature="699:768" placeholder="UPDATE direc..." />
               </folding>
             </state>
           </provider>
@@ -361,8 +362,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding>
-            <marker date="1396279081584" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
-            <marker date="1396279081584" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+            <marker date="1396279182128" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
+            <marker date="1396279182128" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+            <marker date="1396279182128" expanded="true" signature="699:768" placeholder="UPDATE direc..." />
           </folding>
         </state>
       </provider>
@@ -860,10 +862,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="574" selection-end="574" vertical-scroll-proportion="0.27960527" vertical-offset="0" max-vertical-offset="912">
+        <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2609649" vertical-offset="0" max-vertical-offset="912">
           <folding>
-            <marker date="1396279081584" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
-            <marker date="1396279081584" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+            <marker date="1396279182128" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
+            <marker date="1396279182128" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
+            <marker date="1396279182128" expanded="true" signature="699:768" placeholder="UPDATE direc..." />
           </folding>
         </state>
       </provider>
