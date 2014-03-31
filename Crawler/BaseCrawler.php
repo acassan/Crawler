@@ -102,4 +102,39 @@ class BaseCrawler extends PHPCrawler
             $this->options['showContentReceived'] = $options['showContentReceived'];
         }
     }
+
+    /**
+     * @param $url
+     * @return array|null
+     */
+    protected function findWebsite($url)
+    {
+        $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
+        foreach($this->db->query($sSql) as $website) {
+            return $website;
+        }
+
+        return null;
+    }
+
+    /**
+     * @param $website
+     * @return bool
+     * @throws Exception
+     */
+    public function saveWebsite($website)
+    {
+        if(is_null($website)) {
+            throw new \Exception('Website empty when saved');
+        }
+
+        $now                = new \DateTime();
+        $websiteId          = $website['id'];
+        unset($website['id']);
+        $website['updatedAt'] = $now->format('Y-m-d H:i:s');
+
+        $this->db->Update('website', $website, array('id' => $websiteId));
+
+        return true;
+    }
 }

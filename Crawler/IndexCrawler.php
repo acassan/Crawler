@@ -104,13 +104,9 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             return $this->website;
         }
 
-        $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
-        foreach($this->db->query($sSql) as $website) {
-            unset($website['title']);
-            $this->website = $website;
-        }
+        $this->website = $this->findWebsite($url);
 
-        if(!is_array($this->website)) {
+        if(is_null($this->website)) {
             $this->website = array(
                 'url'           => $url,
                 'directories'   => json_encode(array()),
@@ -120,6 +116,8 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
             $this->db->Insert($this->website, 'website');
             $this->website['id'] = intval($this->db->insert_id);
+        } else {
+            unset($this->website['title']);
         }
 
         // Check forum website
@@ -146,26 +144,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         $this->dictionary           = array();
         $this->websiteDictionary    = array();
         $this->website              = null;
-    }
-
-    /**
-     * @return bool
-     * @throws Exception
-     */
-    public function saveWebsite()
-    {
-        if(is_null($this->website)) {
-            throw new \Exception('Website empty when saved');
-        }
-
-        $now                = new \DateTime();
-        $website            = $this->website;
-        unset($website['id']);
-        $website['updatedAt'] = $now->format('Y-m-d H:i:s');
-
-        $this->db->Update('website', $website, array('id' => $this->website['id']));
-
-        return true;
     }
 
     /**
@@ -304,5 +282,14 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         return true;
+    }
+
+    /**
+     * Alias
+     * @return bool
+     */
+    public function saveWebsite()
+    {
+        return parent::saveWebsite($this->website);
     }
 }
