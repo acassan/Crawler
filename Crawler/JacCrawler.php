@@ -64,12 +64,10 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             // Handling JacId
             $jacIdHTml = $dom->saveXML($rankingLineColumns->item(1));
-            if(preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $jacIdHTml, $websiteJacId) > 0) {
+            if      (preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $jacIdHTml, $websiteJacId) > 0) {}
+            elseif  (preg_match('#-jeu([0-9]+)_generale_1_1.html#Uis', $jacIdHTml, $websiteJacId) > 0) {}
+            else { continue; }
 
-            }
-            elseif(preg_match('#-jeu([0-9]+)_generale_1_1.html#Uis', $jacIdHTml, $websiteJacId) > 0) {
-                var_dump($websiteJacId);
-            }
             $jacId                  = $websiteJacId[1];
             $gameUrl                = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
             $website                = $this->findOrCreateWebsite($gameUrl);
@@ -77,7 +75,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $website['jac_id']      = $ranking;
 
 
-//            echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
+            echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
 
 //            $this->saveWebsite($website);
         }
