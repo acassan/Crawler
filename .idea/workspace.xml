@@ -49,7 +49,16 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="46" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.5339912" vertical-offset="329" max-vertical-offset="2465">
+            <state line="54" column="46" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.5339912" vertical-offset="431" max-vertical-offset="2448">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutu.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="6" selection-start="871" selection-end="871" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="12087">
               <folding />
             </state>
           </provider>
@@ -425,34 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="103" selection-start="374" selection-end="432" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="12087">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#10;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#12;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#14;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#16;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#18;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#20;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#22;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#24;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#26;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#28;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#30;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#32;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#34;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#36;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#38;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="115" selection-start="7" selection-end="122" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153">
@@ -526,9 +507,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="6" selection-start="871" selection-end="871" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="12087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="46" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.5339912" vertical-offset="329" max-vertical-offset="2465">
+        <state line="54" column="46" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.5339912" vertical-offset="431" max-vertical-offset="2448">
           <folding />
         </state>
       </provider>
