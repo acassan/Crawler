@@ -40,8 +40,19 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="35" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.5153509" vertical-offset="652" max-vertical-offset="2431">
+            <state line="106" column="23" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.42214912" vertical-offset="1417" max-vertical-offset="2465">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="20" selection-start="3574" selection-end="3574" vertical-scroll-proportion="-21.346153" vertical-offset="1553" max-vertical-offset="2465">
+              <folding>
+                <marker date="1396261274391" expanded="true" signature="3299:3337" placeholder="SELECT * FRO..website..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -736,15 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="22" selection-start="2392" selection-end="2392" vertical-scroll-proportion="-18.076923" vertical-offset="941" max-vertical-offset="2465">
-          <folding>
-            <marker date="1396261274391" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..website..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1459" column="29" selection-start="51927" selection-end="51927" vertical-scroll-proportion="-7.769231" vertical-offset="24601" max-vertical-offset="34799">
@@ -1082,9 +1084,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="20" selection-start="3574" selection-end="3574" vertical-scroll-proportion="-21.346153" vertical-offset="1553" max-vertical-offset="2465">
+          <folding>
+            <marker date="1396261274391" expanded="true" signature="3299:3337" placeholder="SELECT * FRO..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="35" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.5153509" vertical-offset="652" max-vertical-offset="2431">
+        <state line="106" column="23" selection-start="3120" selection-end="3120" vertical-scroll-proportion="0.42214912" vertical-offset="1417" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>

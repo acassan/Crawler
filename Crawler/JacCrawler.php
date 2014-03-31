@@ -77,7 +77,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
 
-//            $this->saveWebsite($website);
+            $this->saveWebsite($website);
         }
 
     }
@@ -124,6 +124,8 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         // Add website to verify
         $sql = sprintf("INSERT IGNORE INTO website_to_verify VALUES('%s','%s',0,NOW())", md5($url), $url);
         $this->db->query($sql);
+
+        echo sprintf("Website created: '%s' %s", $url, $this->lb);
 
         return $website;
     }
