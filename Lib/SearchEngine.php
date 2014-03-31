@@ -67,9 +67,17 @@ Class SearchEngine
         }
 
         foreach($explodedSearch as $word) {
+
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
             $word = strtolower($word);
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+
+            // Word weight
+            $sSql = sprintf("SELECT * FROM dictionary WHERE word = '%s'", $word);
+            $wordWeight = 1;
+            foreach($this->db->query($sSql) as $wordWeightDB) {
+                $wordWeight = ceil(1 / $wordWeightDB['weight'] * 100);
+            }
 
             $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
@@ -78,13 +86,6 @@ Class SearchEngine
 
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
-            }
-
-            // Word weight
-            $sSql = sprintf("SELECT * FROM dictionary WHERE word = '%s'", $word);
-            $wordWeight = 1;
-            foreach($this->db->query($sSql) as $wordWeightDB) {
-                $wordWeight = ceil(1 / $wordWeightDB['weight'] * 100);
             }
 
             foreach($this->db->query($sSql) as $websiteWord) {
