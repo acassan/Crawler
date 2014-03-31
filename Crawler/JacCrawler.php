@@ -129,4 +129,12 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
         return $website;
     }
+
+    /**
+     * @param int $handlingMode
+     */
+    public function setHandlingMode($handlingMode)
+    {
+        $this->handlingMode = $handlingMode;
+    }
 }

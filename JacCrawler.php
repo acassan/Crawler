@@ -9,6 +9,8 @@ $crawler = new JacCrawler(array(
     'showContentReceived'       => false,
 ));
 $crawler->setPageLimit(1);
+
+$crawler->setHandlingMode(JacCrawler::HANDLING_RANKING);
 $crawler->setURL("http://www.jeux-alternatifs.com/index.php?p=jeuHitP");
 $crawler->go();
 
