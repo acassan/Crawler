@@ -12,7 +12,7 @@ foreach($db->query($sSql) as $website) {
 
     $crawler = new IndexCrawler(array(
         'multiprocessing'           => false,
-        'FollowMode'                => 2,
+        'FollowMode'                => 1,
         'showReferer'               => false,
         'showContentReceived'       => false,
     ));
