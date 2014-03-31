@@ -128,8 +128,9 @@ class BaseCrawler extends PHPCrawler
             throw new \Exception('Website empty when saved');
         }
 
-        $now                = new \DateTime();
-        $websiteId          = $website['id'];
+        $now                    = new \DateTime();
+        $websiteId              = $website['id'];
+        $website['directories'] = json_encode($website['directories']);
         unset($website['id']);
         $website['updatedAt'] = $now->format('Y-m-d H:i:s');
 
