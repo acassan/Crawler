@@ -71,8 +71,14 @@ $stats['forums']    = $statTmp['number']
             if(count($searchResults) < 1) {
                 echo "<div>Aucun résultat</div>";
             } else {
-                echo "<table style='width: 100%;'>";
-                foreach($searchResults as $website) {
+                ?>
+                <table class="table-bordered" style='width: 100%;'>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Classement JAC</th>
+                    </tr>
+                <?php foreach($searchResults as $website) {
                     ?>
                     <tr>
                         <td>
@@ -87,7 +93,7 @@ $stats['forums']    = $statTmp['number']
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><hr /></td>
+                        <td colspan="3"><hr /></td>
                     </tr>
                     <?php
                 }
