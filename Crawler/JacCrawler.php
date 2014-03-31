@@ -56,13 +56,11 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
                 continue;
             }
 
-            foreach($rankingLineColumns as $column) {
-                $spanTag = $column->getElementsByTagName('span');
-                var_dump($spanTag->length);
-                if($spanTag->length == 1) {
-                    // Handling first column
-                    $ranking = intval($spanTag->nodeValue);
-                }
+
+            $spanTag = $rankingLineColumns->item(0)->getElementsByTagName('span');
+            if($spanTag->length == 1) {
+                // Handling first column
+                $ranking = intval($spanTag->item(0)->nodeValue);
             }
 
             if(is_null($ranking) || $ranking < 1) {
