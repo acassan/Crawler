@@ -10,11 +10,10 @@ foreach($db->query($sSql) as $website) {
 
     $crawler = new IndexCrawler(array(
         'multiprocessing'           => false,
-        'FollowMode'                => 3,
+        'FollowMode'                => 2,
         'showReferer'               => false,
         'showContentReceived'       => false,
     ));
-    $crawler->setPageLimit(5);
     $crawler->resetWebsite();
     $crawler->initWebsite($website['url']);
     $crawler->setURL($website['url']);
