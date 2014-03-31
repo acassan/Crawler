@@ -92,9 +92,6 @@ $stats['forums']    = $statTmp['number']
                             <?php if(!is_null($website['ranking_jac'])) { echo $website['ranking_jac']; } ?>
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan="3"><hr /></td>
-                    </tr>
                     <?php
                 }
                 echo "</table>";
