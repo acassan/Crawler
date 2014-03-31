@@ -45,7 +45,6 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         @$dom->loadHTML($DocInfo->content);
 
         $divRanking = $dom->getElementById('bcTable');
-        $i= 0;
         foreach($divRanking->getElementsByTagName('tr') as $rankingLine) {
             // Init
             $ranking    = null;
@@ -57,7 +56,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
                 continue;
             }
 
-            $i++;
+            var_dump($rankingLineColumns->item(0)->nodeValue);
             $spanTag = $rankingLineColumns->item(0)->getElementsByTagName('span');
             if($spanTag->length == 1) {
                 // Handling first column
@@ -82,7 +81,6 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 //            $this->saveWebsite($website);
         }
 
-        var_dump($i);
     }
 
     protected function handlingGame(PHPCrawlerDocumentInfo $DocInfo)
