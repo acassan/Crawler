@@ -53,13 +53,13 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             $rankingLineColumns = $rankingLine->getElementsByTagName('td');
             var_dump($rankingLineColumns->length);
-            if(count($rankingLineColumns) != 8) {
+            if($rankingLineColumns->length != 8) {
                 continue;
             }
 
             foreach($rankingLineColumns as $column) {
                 $spanTag = $column->getElementsByTagName('span');
-                if(count($spanTag) == 1) {
+                if($spanTag->length == 1) {
                     // Handling first column
                     $ranking = intval($spanTag->nodeValue);
                 }
@@ -71,12 +71,11 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             // Handling JacId
             preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $rankingLine->getElementById('bcImAccJeu')->nodeValue, $websiteJacId);
-            $jacId      = $websiteJacId[1];
-            $gameUrl    = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
-
-            $website = $this->findOrCreateWebsite($gameUrl);
+            $jacId                  = $websiteJacId[1];
+            $gameUrl                = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
+            $website                = $this->findOrCreateWebsite($gameUrl);
             $website['ranking_jac'] = $ranking;
-            $website['jac_id'] = $ranking;
+            $website['jac_id']      = $ranking;
 
             echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
 
