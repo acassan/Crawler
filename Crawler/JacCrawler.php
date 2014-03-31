@@ -52,7 +52,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $gameUrl    = null;
 
             $rankingLineColumns = $rankingLine->getElementsByTagName('td');
-            var_dump($rankingLineColumns);
+            var_dump($rankingLineColumns->nodeValue);die();
             if($rankingLineColumns->length > 6) {
                 continue;
             }
