@@ -64,10 +64,10 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             // Handling JacId
             $jacIdHTml = $dom->saveXML($rankingLineColumns->item(1));
-            if(preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $jacId, $websiteJacId) > 0) {
+            if(preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $jacIdHTml, $websiteJacId) > 0) {
 
             }
-            elseif(preg_match('#-jeu([0-9]+)_generale_1_1.html#Uis', $jacId, $websiteJacId) > 0) {
+            elseif(preg_match('#-jeu([0-9]+)_generale_1_1.html#Uis', $jacIdHTml, $websiteJacId) > 0) {
                 var_dump($websiteJacId);
             }
             $jacId                  = $websiteJacId[1];
