@@ -49,7 +49,7 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="13" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.60855263" vertical-offset="516" max-vertical-offset="2414">
+            <state line="65" column="51" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.6458333" vertical-offset="516" max-vertical-offset="2414">
               <folding />
             </state>
           </provider>
@@ -500,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="24" selection-start="1118" selection-end="1118" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="12087">
@@ -514,9 +507,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="56" selection-start="364" selection-end="364" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="13" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.60855263" vertical-offset="516" max-vertical-offset="2414">
+        <state line="65" column="51" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.6458333" vertical-offset="516" max-vertical-offset="2414">
           <folding />
         </state>
       </provider>
