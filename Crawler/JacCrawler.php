@@ -52,12 +52,12 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $gameUrl    = null;
 
             $rankingLineColumns = $rankingLine->getElementsByTagName('td');
-            var_dump($rankingLineColumns->length);
             if($rankingLineColumns->length != 8) {
                 continue;
             }
 
             foreach($rankingLineColumns as $column) {
+                die("ok");
                 $spanTag = $column->getElementsByTagName('span');
                 if($spanTag->length == 1) {
                     // Handling first column
