@@ -60,6 +60,12 @@ Class SearchEngine
     {
         $explodedSearch = explode(' ', $searchString);
 
+        // Total website
+        $sSql = "SELECT COUNT(*) AS total FROM website";
+        foreach($this->db->query($sSql) as $totalDB) {
+            $totalWebsites = $totalDB['total'];
+        }
+
         foreach($explodedSearch as $word) {
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
             $word = strtolower($word);
@@ -74,6 +80,13 @@ Class SearchEngine
                 $sSql .= " AND W.forum = 0";
             }
 
+            // Word weight
+            $sSql = sprintf("SELECT * FROM dictionary WHERE word = '%s'", $word);
+            $wordWeight = 1;
+            foreach($this->db->query($sSql) as $wordWeightDB) {
+                $wordWeight = 1 / $wordWeightDB['weight'];
+            }
+
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
@@ -83,7 +96,7 @@ Class SearchEngine
                     $websiteWord['weight'] *= 2;
                 }
 
-                $this->websitesWeight[$websiteWord['website_id']] += $websiteWord['weight'];
+                $this->websitesWeight[$websiteWord['website_id']] += ($websiteWord['weight'] * $wordWeight);
             }
         }
 

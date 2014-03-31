@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exploreCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2609649" vertical-offset="0" max-vertical-offset="912">
+            <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="510">
               <folding>
                 <marker date="1396279182128" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
                 <marker date="1396279182128" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
@@ -72,7 +72,7 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="95" selection-start="2168" selection-end="2168" vertical-scroll-proportion="-1.6226416" vertical-offset="832" max-vertical-offset="1819">
+            <state line="47" column="37" selection-start="1861" selection-end="1861" vertical-scroll-proportion="-10.924528" vertical-offset="220" max-vertical-offset="1819">
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1396275263490" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
@@ -80,6 +80,22 @@
                 <marker date="1396275263490" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
                 <marker date="1396275263490" expanded="true" signature="3354:3421" placeholder="..." />
                 <marker date="1396275263490" expanded="true" signature="3383:3421" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="107" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.7719298" vertical-offset="962" max-vertical-offset="3893">
+              <folding>
+                <marker date="1396280848319" expanded="true" signature="1122:1159" placeholder="SELECT COUNT..website..." />
+                <marker date="1396280848319" expanded="true" signature="1673:1906" placeholder="SELECT WD.we..website_dictionary..." />
+                <marker date="1396280848319" expanded="true" signature="2078:2120" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396280848319" expanded="true" signature="3725:3762" placeholder="SELECT * FRO..website..." />
+                <marker date="1396280848319" expanded="true" signature="4272:4321" placeholder="SELECT websi..dictionary..." />
+                <marker date="1396280848319" expanded="true" signature="4852:4942" placeholder="SELECT websi..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -116,7 +132,6 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/php.ini" />
         <option value="$PROJECT_DIR$/Lib/Utils.php" />
-        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/index.css" />
@@ -137,6 +152,7 @@
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
+        <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
       </list>
     </option>
   </component>
@@ -432,13 +448,6 @@
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="41" selection-start="841" selection-end="841" vertical-scroll-proportion="0.38089624" vertical-offset="0" max-vertical-offset="848" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="37" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0" vertical-offset="1472" max-vertical-offset="3672">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawlerDocumentInfo.class.php">
@@ -811,20 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="95" selection-start="2168" selection-end="2168" vertical-scroll-proportion="-1.6226416" vertical-offset="832" max-vertical-offset="1819">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1396275263490" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
-            <marker date="1396275263490" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
-            <marker date="1396275263490" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
-            <marker date="1396275263490" expanded="true" signature="3354:3421" placeholder="..." />
-            <marker date="1396275263490" expanded="true" signature="3383:3421" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1215" column="53" selection-start="42548" selection-end="42548" vertical-scroll-proportion="-7.423077" vertical-offset="20462" max-vertical-offset="34799">
@@ -862,11 +857,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="0.2609649" vertical-offset="0" max-vertical-offset="912">
+        <state line="14" column="45" selection-start="566" selection-end="566" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="510">
           <folding>
             <marker date="1396279182128" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
             <marker date="1396279182128" expanded="true" signature="699:750" placeholder="UPDATE direc..." />
             <marker date="1396279182128" expanded="true" signature="699:768" placeholder="UPDATE direc..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="37" selection-start="1861" selection-end="1861" vertical-scroll-proportion="-10.924528" vertical-offset="220" max-vertical-offset="1819">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1396275263490" expanded="true" signature="725:763" placeholder="SELECT COUNT..website..." />
+            <marker date="1396275263490" expanded="true" signature="887:940" placeholder="SELECT COUNT..website..." />
+            <marker date="1396275263490" expanded="true" signature="1064:1118" placeholder="SELECT COUNT..website..." />
+            <marker date="1396275263490" expanded="true" signature="3354:3421" placeholder="..." />
+            <marker date="1396275263490" expanded="true" signature="3383:3421" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="107" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.7719298" vertical-offset="962" max-vertical-offset="3893">
+          <folding>
+            <marker date="1396280848319" expanded="true" signature="1122:1159" placeholder="SELECT COUNT..website..." />
+            <marker date="1396280848319" expanded="true" signature="1673:1906" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1396280848319" expanded="true" signature="2078:2120" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396280848319" expanded="true" signature="3725:3762" placeholder="SELECT * FRO..website..." />
+            <marker date="1396280848319" expanded="true" signature="4272:4321" placeholder="SELECT websi..dictionary..." />
+            <marker date="1396280848319" expanded="true" signature="4852:4942" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>
