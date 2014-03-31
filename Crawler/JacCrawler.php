@@ -75,7 +75,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $website['ranking_jac'] = $ranking;
             $website['jac_id']      = $ranking;
 
-            var_dump($rankingLineColumns->item(0)->nodeValue,$websiteJacId,$jacId,$gameUrl);die();
+            var_dump($rankingLineColumns->item(0)->nodeValue,$websiteJacId,$jacId,$gameUrl);
 
             echo sprintf("%s > %d %s", $gameUrl, $ranking, $this->lb);
 
