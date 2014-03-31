@@ -40,7 +40,7 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="100" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.627193" vertical-offset="550" max-vertical-offset="2380">
+            <state line="69" column="50" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.68311405" vertical-offset="550" max-vertical-offset="2465">
               <folding />
             </state>
           </provider>
@@ -58,7 +58,7 @@
       <file leaf-file-name="jac.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1470" column="71" selection-start="129332" selection-end="129338" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
+            <state line="1470" column="63" selection-start="129292" selection-end="129330" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -792,9 +792,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="23" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.30482456" vertical-offset="1133" max-vertical-offset="8636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Téléchargements/tmp/jac.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1470" column="71" selection-start="129332" selection-end="129338" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
+        <state line="1470" column="63" selection-start="129292" selection-end="129330" vertical-scroll-proportion="-10.283019" vertical-offset="24445" max-vertical-offset="199495">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1075,16 +1082,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="23" selection-start="2405" selection-end="2405" vertical-scroll-proportion="0.30482456" vertical-offset="1133" max-vertical-offset="8636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="100" selection-start="1953" selection-end="1953" vertical-scroll-proportion="0.627193" vertical-offset="550" max-vertical-offset="2380">
+        <state line="69" column="50" selection-start="2010" selection-end="2010" vertical-scroll-proportion="0.68311405" vertical-offset="550" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
