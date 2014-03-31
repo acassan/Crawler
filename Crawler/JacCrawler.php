@@ -64,7 +64,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
             // Handling JacId
             var_dump($rankingLineColumns->item(1)->getElementsByTagName('img')->getAttribute('src'));
-            preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $rankingLineColumns->getElementById('bcImAccJeu')->getElementsByTagName('img')->getAttribute('src'), $websiteJacId);
+            preg_match('#im/mep/accrJeu/([0-9]+).jpg#Uis', $rankingLineColumns->getElementById('bcImAccJeu')->getElementsByTagName('img')->item(0)->getAttribute('src'), $websiteJacId);
             $jacId                  = $websiteJacId[1];
             $gameUrl                = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
             $website                = $this->findOrCreateWebsite($gameUrl);
