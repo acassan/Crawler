@@ -48,6 +48,8 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
         $divRanking = $xpath->query("*/div[@id='bcTable']/table/tr");
 
+        var_dump($divRanking);
+
         foreach($divRanking as $rankingLine) {
             // Init
             $ranking    = null;
