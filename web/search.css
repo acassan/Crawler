@@ -44,4 +44,5 @@ header .statistics {
 .ranking-jac {
     width: 130px;
     text-align: center;
+    font-style: italic;
 }
