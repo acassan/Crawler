@@ -94,6 +94,7 @@ Class SearchEngine
                 $sSql .= " AND W.forum = 0";
             }
 
+            die($sSql);
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
@@ -105,7 +106,7 @@ Class SearchEngine
 
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
-die("ok");
+
                 $this->logDebug('websiteWordWeight', $websiteWord['name'], array($word => $websiteWordWeight));
             }
         }
