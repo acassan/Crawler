@@ -5,12 +5,13 @@ require_once '../Lib/Tools.php';
 
 $db = Database::getInstance();
 
-$currentPage = isset($_GET['page']) ? intval($_GET['page']) : 1;
+$currentPage    = isset($_GET['page']) ? intval($_GET['page']) : 1;
+$debugMode      = isset($_GET['debug']) ? true : false;
 
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 10,
     'currentPage'       => $currentPage,
-    'debug'             => isset($_GET['debug']),
+    'debug'             => $debugMode,
 ));
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
@@ -102,10 +103,10 @@ $stats['forums']    = $statTmp['number']
 
         <?php
         // DEBUG TRACE
-        if(isset($_GET['debug'])) {
+        if($debugMode) {
             echo "<style>#content { display: none; }</style>";
             echo "<pre>";
-
+            var_dump($searchEngine->debug);
             echo "</pre>";
         }
         ?>
