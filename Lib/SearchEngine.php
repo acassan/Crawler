@@ -112,6 +112,7 @@ Class SearchEngine
 
 
         if(count($this->websitesWeight) < 1) {
+            die("ok");
             return array();
         }
 
