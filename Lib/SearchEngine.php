@@ -17,7 +17,11 @@ Class SearchEngine
      */
     protected $websitesWeight = array();
 
-    public $debug = array();
+    /**
+     * DEBUG MODE
+     */
+    protected $debugMode    = false;
+    public $debug           = array();
 
     /**
      * @var integer
@@ -34,7 +38,6 @@ Class SearchEngine
      */
     protected $totalPage;
 
-
     /**
      * @param $options
      */
@@ -49,6 +52,10 @@ Class SearchEngine
         if(array_key_exists('currentPage', $options)) {
             $this->currentPage = $options['currentPage'];
         }
+
+        if(array_key_exists('debug', $options)) {
+            $this->debugMode = $options['debug'];
+        }
     }
 
     /**
@@ -60,11 +67,8 @@ Class SearchEngine
     {
         $explodedSearch = explode(' ', $searchString);
 
-        // Total website
-        $sSql = "SELECT COUNT(*) AS total FROM website";
-        foreach($this->db->query($sSql) as $totalDB) {
-            $totalWebsites = $totalDB['total'];
-        }
+        $this->logDebug('params', 'currentPage', $this->getCurrentPage());
+        $this->logDebug('params', 'resultsPerPage', $this->resultsPerPage);
 
         foreach($explodedSearch as $word) {
 
@@ -78,10 +82,10 @@ Class SearchEngine
             foreach($this->db->query($sSql) as $wordWeightDB) {
                 $wordWeight = ceil(1 / $wordWeightDB['weight'] * 100);
             }
-            if(!isset($this->debug['wordWeight'])) { $this->debug['wordWeight'] = array(); }
-            $this->debug['wordWeight'][$word] = $wordWeight;
 
-            $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
+            $this->logDebug('wordWeight', $word, $wordWeight);
+
+            $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url, W.name
                                 FROM website_dictionary AS WD
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s'", $word);
@@ -99,7 +103,10 @@ Class SearchEngine
                     $websiteWord['weight'] *= 2;
                 }
 
-                $this->websitesWeight[$websiteWord['website_id']] += ($websiteWord['weight'] * $wordWeight);
+                $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
+                $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
+
+                $this->logDebug('websiteWordWeight', $websiteWord['name'], array($word => $websiteWordWeight));
             }
         }
 
@@ -125,9 +132,6 @@ Class SearchEngine
         $websitesResult     = array();
         $websitesDatabase   = array();
 
-        $this->debug['websitesWeight'] = $this->websitesWeight;
-        $this->debug['websitesChoosen'] = $websitesChoosen;
-
         $sSql = sprintf("SELECT * FROM website WHERE id IN(%s)", implode(',', array_keys($websitesChoosen)));
         foreach($this->db->query($sSql) as $website) {
             $websitesDatabase[$website['id']] = $website;
@@ -135,6 +139,7 @@ Class SearchEngine
 
         foreach($websitesChoosen as $websiteId => $weight) {
             $websitesResult[] = $websitesDatabase[$websiteId];
+            $this->logDebug('websitesChoosen', $websitesDatabase[$websiteId]['name'], $weight);
         }
 
         return $websitesResult;
@@ -223,5 +228,23 @@ Class SearchEngine
     public function getCurrentPage()
     {
         return $this->currentPage;
+    }
+
+    protected function logDebug($keyCat,$keyValue, $value = null)
+    {
+        if(!$this->debugMode) {
+            return false;
+        }
+        if(!array_key_exists($keyCat, $this->debug)) {
+            $this->debug[$keyCat] = array();
+        }
+
+        if(!is_null($value)) {
+            $this->debug[$keyCat][$keyValue] = $value;
+        } else {
+            $this->debug[$keyCat][] = $keyValue;
+        }
+
+        return true;
     }
 }

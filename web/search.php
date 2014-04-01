@@ -10,6 +10,7 @@ $currentPage = isset($_GET['page']) ? intval($_GET['page']) : 1;
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 10,
     'currentPage'       => $currentPage,
+    'debug'             => isset($_GET['debug']),
 ));
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
@@ -98,5 +99,15 @@ $stats['forums']    = $statTmp['number']
             }
             ?>
         </div>
+
+        <?php
+        // DEBUG TRACE
+        if(isset($_GET['debug'])) {
+            echo "<style>#content { display: none; }</style>";
+            echo "<pre>";
+
+            echo "</pre>";
+        }
+        ?>
     </body>
 </html>
