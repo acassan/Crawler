@@ -105,14 +105,13 @@ Class SearchEngine
 
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
-
+die("ok");
                 $this->logDebug('websiteWordWeight', $websiteWord['name'], array($word => $websiteWordWeight));
             }
         }
 
 
         if(count($this->websitesWeight) < 1) {
-            die("ok");
             return array();
         }
 
