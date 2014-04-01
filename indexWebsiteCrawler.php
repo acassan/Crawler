@@ -17,6 +17,7 @@ foreach($db->query($sSql) as $website) {
         'showContentReceived'       => false,
     ));
     $crawler->setPageLimit(10);
+    $crawler->setFollowRedirectsTillContent(true);
     $crawler->resetWebsite();
     $crawler->initWebsite($website['url']);
     $crawler->setURL($website['url']);
