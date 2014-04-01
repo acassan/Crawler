@@ -85,7 +85,7 @@ Class SearchEngine
 
             $this->logDebug('wordWeight', $word, $wordWeight);
 
-            $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url, W.name
+            $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s'", $word);
@@ -94,7 +94,6 @@ Class SearchEngine
                 $sSql .= " AND W.forum = 0";
             }
 
-            die($sSql);
             foreach($this->db->query($sSql) as $websiteWord) {
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
@@ -107,7 +106,7 @@ Class SearchEngine
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
 
-                $this->logDebug('websiteWordWeight', $websiteWord['name'], array($word => $websiteWordWeight));
+                $this->logDebug('websiteWordWeight', $websiteWord['url'], array($word => $websiteWordWeight));
             }
         }
 
@@ -140,7 +139,7 @@ Class SearchEngine
 
         foreach($websitesChoosen as $websiteId => $weight) {
             $websitesResult[] = $websitesDatabase[$websiteId];
-            $this->logDebug('websitesChoosen', $websitesDatabase[$websiteId]['name'], $weight);
+            $this->logDebug('websitesChoosen', $websitesDatabase[$websiteId]['url'], $weight);
         }
 
         return $websitesResult;
