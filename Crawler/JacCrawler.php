@@ -32,7 +32,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
                 $this->handlingRanking($DocInfo);
                 break;
             case self::HANDLING_GAME:
-                $this->handlingGame($DocInfo);
+                return $this->handlingGame($DocInfo);
                 break;
             default:
                 throw new \Exception('Incorrect handling mode '. $this->handlingMode);
@@ -89,7 +89,6 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
     protected function handlingGame(PHPCrawlerDocumentInfo $DocInfo)
     {
-        die("ok");
         $this->iterations++;
 
         if($this->iterations > 200) {
@@ -99,7 +98,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         // Check game page
-        if(strstr($DocInfo->url, '_generale_1_1.html') == false) {
+        if(!strstr($DocInfo->url, '_generale_1_1.html')) {
             return true;
         }
 
