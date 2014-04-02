@@ -82,14 +82,14 @@ $stats['forums']    = $statTmp['number']
                         <th><img src="img/ico_jac.png" alt="Classement Jeux-alternatifs" /></th>
                     </tr>
                     </thead>
-                <?php foreach($searchResults as $website) {
+                <?php $i = 1; foreach($searchResults as $website) {
                     ?>
                     <tr>
                         <td class="website-preview">
                             <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
                         </td>
                         <td>
-                            <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
+                            <h5><a href='<?php echo $website['url']; ?>' onclick="_gaq.push(['_trackEvent', 'searchGames', 'clic', '<?php echo $website['url']; ?>']"><?php echo utf8_encode($website['title']); ?></a></h5>
                             <?php
                             if(!empty($website['jac_description'])) {
                                 echo "<p class='website-description'>";
@@ -119,5 +119,17 @@ $stats['forums']    = $statTmp['number']
             echo "</pre>";
         }
         ?>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-49631045-1', 'ruwler.com');
+            ga('send', 'pageview');
+
+            _gaq.push(['_trackEvent', 'searchGames', 'search', '<?php echo $searchValue; ?>']);
+        </script>
     </body>
 </html>
