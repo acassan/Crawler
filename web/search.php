@@ -83,12 +83,19 @@ $stats['forums']    = $statTmp['number']
                 <?php foreach($searchResults as $website) {
                     ?>
                     <tr>
-                        <td>
+                        <td class="website-preview">
                             <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
                         </td>
                         <td>
                             <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
-                            <p><i><?php echo $website['url']; ?></i></p>
+                            <?php
+                            if(!empty($website['jac_description'])) {
+                                echo "<p class='website-description'>";
+                                echo $website['jac_description'];
+                                echo "</p>";
+                            }
+                            ?>
+                            <p class="website-url"><?php echo $website['url']; ?></p>
                         </td>
                         <td class="ranking-jac">
                             <?php if(!is_null($website['ranking_jac'])) { echo $website['ranking_jac']; } ?>

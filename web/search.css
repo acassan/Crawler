@@ -46,3 +46,16 @@ header .statistics {
     text-align: center;
     font-style: italic;
 }
+
+.website-preview {
+    width: 125px;
+}
+
+.website-description {
+    text-align: justify;
+}
+
+.website-url {
+    font-style: italic;
+    font-size: 10px;
+}
