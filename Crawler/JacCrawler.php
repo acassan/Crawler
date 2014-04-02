@@ -89,6 +89,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
     protected function handlingGame(PHPCrawlerDocumentInfo $DocInfo)
     {
+        die("ok");
         $this->iterations++;
 
         if($this->iterations > 200) {
