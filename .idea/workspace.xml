@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JacCrawler.php" afterPath="$PROJECT_DIR$/JacCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/JacCrawler.php" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,9 +44,18 @@
         </entry>
       </file>
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.4511111" vertical-offset="1447" max-vertical-offset="3451">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="0.35377875" vertical-offset="0" max-vertical-offset="913">
+            <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -95,10 +103,10 @@
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
-        <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/JacCrawler.php" />
+        <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
       </list>
     </option>
   </component>
@@ -618,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="28" selection-start="2713" selection-end="2713" vertical-scroll-proportion="-7.1153846" vertical-offset="1362" max-vertical-offset="3383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="161" column="25" selection-start="4921" selection-end="4921" vertical-scroll-proportion="0.39144737" vertical-offset="2380" max-vertical-offset="4335">
@@ -639,6 +640,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
@@ -646,9 +654,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="0.35377875" vertical-offset="0" max-vertical-offset="913">
+        <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.4511111" vertical-offset="1447" max-vertical-offset="3451">
           <folding />
         </state>
       </provider>

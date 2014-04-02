@@ -106,10 +106,14 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         @$dom->loadHTML($DocInfo->content);
 
         $descriptionDiv = $dom->getElementById('accColGauche');
-        $divNodes = $descriptionDiv->getElementsByTagName('div');
 
-        $description = $divNodes->item(2)->childNodes->item(2)->nodeValue;
-        $description = $this->formatDescription($description);
+        if(!is_object($descriptionDiv)) {
+            return true;
+        }
+
+        $divNodes       = $descriptionDiv->getElementsByTagName('div');
+        $description    = $divNodes->item(2)->childNodes->item(2)->nodeValue;
+        $description    = $this->formatDescription($description);
 
         preg_match('#(.+)([0-9]+)_generale_1_1#Uis', $DocInfo->url, $tmpJacId);
         $jacId = $tmpJacId[2];
