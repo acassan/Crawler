@@ -53,10 +53,16 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $titleNode = $dom->getElementsByTagName('title');
             $title = $titleNode->length > 0 ? ($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
             $title = $this->formatTitle($title);
-            if(strstr($title,'301') == false && strstr($title,'302') == false) {
+            if(strstr($title,'301') == false && strstr($title,'302') == false && strstr($title,'moved') == false && strstr($title,'sorry,') == false) {
                 $this->website['title'] = Tools::formatWord(utf8_decode($title));
+
+                // Check directory website
+                if($this->isDirectory($DocInfo->url) || $this->isDirectory($this->website['title'])) {
+                    $this->website['directory'] = 1;
+                }
             }
         }
+
 
         $bodyContentNode = $dom->getElementsByTagName('body');
 //        if($bodyContentNode->length == 0 ) { return; }
@@ -181,6 +187,19 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         if (stripos($content, 'game')) {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $content
+     * @return bool
+     */
+    protected function isDirectory($content)
+    {
+        if (stripos($content, 'annuaire')) {
             return true;
         }
 
