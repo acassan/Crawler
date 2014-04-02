@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Tools.php" afterPath="$PROJECT_DIR$/Lib/Tools.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +28,10 @@
       <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="63" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5958379" vertical-offset="408" max-vertical-offset="5151">
+            <state line="56" column="83" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.5958379" vertical-offset="408" max-vertical-offset="5151">
               <folding>
-                <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -402,8 +401,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -446,8 +445,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="263" column="42" selection-start="7757" selection-end="7757" vertical-scroll-proportion="0.0" vertical-offset="3847" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -483,8 +482,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -511,8 +510,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5015">
           <folding>
-            <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -728,10 +727,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="63" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.5958379" vertical-offset="408" max-vertical-offset="5151">
+        <state line="56" column="83" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.5958379" vertical-offset="408" max-vertical-offset="5151">
           <folding>
-            <marker date="1396425558488" expanded="true" signature="4172:4216" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425558488" expanded="true" signature="5858:5930" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="4185:4229" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425756469" expanded="true" signature="5871:5943" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
