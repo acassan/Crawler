@@ -67,7 +67,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         foreach($words as $word) {
             if(strlen($word) > 3) {
-                die("ok");
+                var_dump($word);
                 Tools::formatWord($word);
 
                 if(preg_match('/[^a-zA-Z0-9]/', $word)) {
