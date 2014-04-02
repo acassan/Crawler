@@ -99,7 +99,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
         // Check game page
         if(strstr($DocInfo->url, '_generale_1_1.html') == false) {
-            return true;
+            return;
         }
 
         $dom = new DOMDocument();
