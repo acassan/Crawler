@@ -108,9 +108,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $descriptionDiv = $dom->getElementById('accColGauche');
         $divNodes = $descriptionDiv->getElementsByTagName('div');
 
-        foreach($divNodes->item(2)->childNodes as $childNodes) {
-            var_dump($childNodes->nodeValue);
-        }
+        var_dump($divNodes->item(2)->childNodes->item(3)->nodeValue);
     }
 
     /**
