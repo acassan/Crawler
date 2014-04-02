@@ -89,7 +89,7 @@ $stats['forums']    = $statTmp['number']
                             <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
                         </td>
                         <td>
-                            <h5><a href='<?php echo $website['url']; ?>' onclick="_gaq.push(['_trackEvent', 'searchGames', 'clic', '<?php echo $website['url']; ?>']"><?php echo utf8_encode($website['title']); ?></a></h5>
+                            <h5><a href='<?php echo $website['url']; ?>' onclick="_gaq.push(['_trackEvent', 'searchGames', 'clic', '<?php echo $website['url']; ?>']);"><?php echo utf8_encode($website['title']); ?></a></h5>
                             <?php
                             if(!empty($website['jac_description'])) {
                                 echo "<p class='website-description'>";

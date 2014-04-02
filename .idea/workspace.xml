@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -35,18 +34,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="17" selection-start="5123" selection-end="5723" vertical-scroll-proportion="-28.692308" vertical-offset="1498" max-vertical-offset="2397">
+            <state line="91" column="166" selection-start="3956" selection-end="3956" vertical-scroll-proportion="0.2246941" vertical-offset="1345" max-vertical-offset="2397">
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1396455067566" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
-                <marker date="1396455067566" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
-                <marker date="1396455067566" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
-                <marker date="1396455067566" expanded="true" signature="4530:4586" placeholder="..." />
+                <marker date="1396455151181" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
+                <marker date="1396455151181" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
+                <marker date="1396455151181" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
+                <marker date="1396455151181" expanded="true" signature="4532:4588" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -61,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.61513156" vertical-offset="0" max-vertical-offset="912">
+            <state line="33" column="17" selection-start="1676" selection-end="1676" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="714">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -159,8 +158,8 @@
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
-        <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/web/search.php" />
       </list>
     </option>
   </component>
@@ -661,27 +660,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.php">
+    <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="17" selection-start="5123" selection-end="5723" vertical-scroll-proportion="-28.692308" vertical-offset="1498" max-vertical-offset="2397">
+        <state line="33" column="17" selection-start="1676" selection-end="1676" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="714">
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1396455067566" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
-            <marker date="1396455067566" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
-            <marker date="1396455067566" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
-            <marker date="1396455067566" expanded="true" signature="4530:4586" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
+    <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.61513156" vertical-offset="0" max-vertical-offset="912">
+        <state line="91" column="166" selection-start="3956" selection-end="3956" vertical-scroll-proportion="0.2246941" vertical-offset="1345" max-vertical-offset="2397">
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1396455151181" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
+            <marker date="1396455151181" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
+            <marker date="1396455151181" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
+            <marker date="1396455151181" expanded="true" signature="4532:4588" placeholder="..." />
           </folding>
         </state>
       </provider>
