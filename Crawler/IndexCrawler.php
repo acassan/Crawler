@@ -45,6 +45,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         if($this->isGame($DocInfo->content)) {
             $this->website['game'] = 1;
         }
+        die("ok");
 
         $dom = new DOMDocument();
         @$dom->loadHTML($DocInfo->content);

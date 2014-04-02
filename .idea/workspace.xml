@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,19 +29,19 @@
       <file leaf-file-name="IndexCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="5168">
+            <state line="47" column="18" selection-start="1113" selection-end="1113" vertical-scroll-proportion="-10.461538" vertical-offset="527" max-vertical-offset="5185">
               <folding>
-                <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexWebsiteCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="indexWebsiteCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/indexWebsiteCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="603" selection-end="603" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
+            <state line="18" column="31" selection-start="603" selection-end="603" vertical-scroll-proportion="0.33515882" vertical-offset="0" max-vertical-offset="913">
               <folding>
                 <marker date="1396359603192" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
               </folding>
@@ -51,7 +52,7 @@
       <file leaf-file-name="BaseCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-7.1153846" vertical-offset="869" max-vertical-offset="2482">
+            <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2482">
               <folding>
                 <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
               </folding>
@@ -62,7 +63,7 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="-47.73077" vertical-offset="0" max-vertical-offset="2023">
+            <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2023">
               <folding>
                 <marker date="1396363895742" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
                 <marker date="1396363895742" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
@@ -72,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SearchEngine.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="81" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.01864035" vertical-offset="2380" max-vertical-offset="4335">
+            <state line="155" column="83" selection-start="4691" selection-end="4691" vertical-scroll-proportion="-9.807693" vertical-offset="2380" max-vertical-offset="4335">
               <folding>
                 <marker date="1396365460933" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
                 <marker date="1396365460933" expanded="true" signature="2173:2406" placeholder="SELECT WD.we..website_dictionary..." />
@@ -90,7 +91,7 @@
       <file leaf-file-name="PHPCrawler.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1203" column="47" selection-start="42061" selection-end="42090" vertical-scroll-proportion="-13.653846" vertical-offset="20096" max-vertical-offset="34799">
+            <state line="1203" column="47" selection-start="42061" selection-end="42090" vertical-scroll-proportion="0.0" vertical-offset="20096" max-vertical-offset="34799">
               <folding />
             </state>
           </provider>
@@ -142,13 +143,13 @@
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/web/base.css" />
         <option value="$PROJECT_DIR$/web/search.css" />
-        <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
         <option value="$PROJECT_DIR$/indexWebsiteCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
+        <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
       </list>
     </option>
   </component>
@@ -185,7 +186,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +248,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,13 +323,13 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14978679" sideWeight="0.5709845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.5703934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14978679" sideWeight="0.42901555" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.42857143" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -360,12 +361,59 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2482">
+          <folding>
+            <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2023">
+          <folding>
+            <marker date="1396363895742" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
+            <marker date="1396363895742" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
+            <marker date="1396363895742" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="83" selection-start="4691" selection-end="4691" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="4335">
+          <folding>
+            <marker date="1396365460933" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396365460933" expanded="true" signature="2173:2406" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1396365460933" expanded="true" signature="3991:4028" placeholder="SELECT * FRO..website..." />
+            <marker date="1396365460933" expanded="true" signature="4633:4682" placeholder="SELECT websi..dictionary..." />
+            <marker date="1396365460933" expanded="true" signature="5213:5303" placeholder="SELECT websi..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1203" column="47" selection-start="42061" selection-end="42090" vertical-scroll-proportion="0.0" vertical-offset="20096" max-vertical-offset="34799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5168">
           <folding>
-            <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -406,8 +454,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="263" column="42" selection-start="7757" selection-end="7757" vertical-scroll-proportion="0.0" vertical-offset="3847" max-vertical-offset="5168">
           <folding>
-            <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -441,8 +489,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="5168">
           <folding>
-            <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -467,8 +515,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5015">
           <folding>
-            <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -620,35 +668,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="5168">
-          <folding>
-            <marker date="1396278565172" expanded="true" signature="4162:4206" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396278565172" expanded="true" signature="5848:5920" placeholder="SELECT * FRO..website_dictionary..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1203" column="47" selection-start="42061" selection-end="42090" vertical-scroll-proportion="-13.653846" vertical-offset="20096" max-vertical-offset="34799">
+        <state line="1203" column="47" selection-start="42061" selection-end="42090" vertical-scroll-proportion="0.0" vertical-offset="20096" max-vertical-offset="34799">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexWebsiteCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="603" selection-end="603" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="714">
-          <folding>
-            <marker date="1396359603192" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-7.1153846" vertical-offset="869" max-vertical-offset="2482">
+        <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2482">
           <folding>
             <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
           </folding>
@@ -657,7 +686,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="-47.73077" vertical-offset="0" max-vertical-offset="2023">
+        <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2023">
           <folding>
             <marker date="1396363895742" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
             <marker date="1396363895742" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
@@ -668,13 +697,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="81" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.01864035" vertical-offset="2380" max-vertical-offset="4335">
+        <state line="155" column="83" selection-start="4691" selection-end="4691" vertical-scroll-proportion="-9.807693" vertical-offset="2380" max-vertical-offset="4335">
           <folding>
             <marker date="1396365460933" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
             <marker date="1396365460933" expanded="true" signature="2173:2406" placeholder="SELECT WD.we..website_dictionary..." />
             <marker date="1396365460933" expanded="true" signature="3991:4028" placeholder="SELECT * FRO..website..." />
             <marker date="1396365460933" expanded="true" signature="4633:4682" placeholder="SELECT websi..dictionary..." />
             <marker date="1396365460933" expanded="true" signature="5213:5303" placeholder="SELECT websi..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="18" selection-start="1113" selection-end="1113" vertical-scroll-proportion="-10.461538" vertical-offset="527" max-vertical-offset="5185">
+          <folding>
+            <marker date="1396423141592" expanded="true" signature="4181:4225" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396423141592" expanded="true" signature="5867:5939" placeholder="SELECT * FRO..website_dictionary..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexWebsiteCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="31" selection-start="603" selection-end="603" vertical-scroll-proportion="0.33515882" vertical-offset="0" max-vertical-offset="913">
+          <folding>
+            <marker date="1396359603192" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>
