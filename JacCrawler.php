@@ -15,6 +15,7 @@ $crawler->setURL("http://www.jeux-alternatifs.com/index.php?p=jeuHitP");
 //$crawler->go();
 
 $crawler->setHandlingMode(JacCrawler::HANDLING_GAME);
+$crawler->setPageLimit(0);
 $crawler->setFollowMode(1);
 $crawler->setURL("http://www.jeux-alternatifs.com");
 $crawler->go();
