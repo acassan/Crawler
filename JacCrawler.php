@@ -17,6 +17,6 @@ $crawler->setURL("http://www.jeux-alternatifs.com/index.php?p=jeuHitP");
 $crawler->setHandlingMode(JacCrawler::HANDLING_GAME);
 $crawler->setPageLimit(0);
 $crawler->setFollowMode(1);
-$crawler->setURL(" http://www.jeux-alternatifs.com/Gloire-et-Pouvoir-jeu97_generale_1_1.html10f6");
+$crawler->setURL(" http://www.jeux-alternatifs.com");
 $crawler->go();
 

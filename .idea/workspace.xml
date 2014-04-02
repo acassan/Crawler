@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/JacCrawler.php" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JacCrawler.php" afterPath="$PROJECT_DIR$/JacCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.4511111" vertical-offset="1447" max-vertical-offset="3451">
+            <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="-15.615385" vertical-offset="1447" max-vertical-offset="3451">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="476">
+            <state line="19" column="50" selection-start="616" selection-end="616" vertical-scroll-proportion="0.35377875" vertical-offset="0" max-vertical-offset="913">
               <folding />
             </state>
           </provider>
@@ -105,8 +105,8 @@
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
-        <option value="$PROJECT_DIR$/JacCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
+        <option value="$PROJECT_DIR$/JacCrawler.php" />
       </list>
     </option>
   </component>
@@ -640,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="96" selection-start="662" selection-end="662" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
@@ -656,7 +649,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.4511111" vertical-offset="1447" max-vertical-offset="3451">
+        <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="-15.615385" vertical-offset="1447" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JacCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="50" selection-start="616" selection-end="616" vertical-scroll-proportion="0.35377875" vertical-offset="0" max-vertical-offset="913">
           <folding />
         </state>
       </provider>
