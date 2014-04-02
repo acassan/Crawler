@@ -41,6 +41,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
+        var_dump("ok");
         // Check game website
         if($this->isGame($DocInfo->content)) {
             $this->website['game'] = 1;
@@ -67,7 +68,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         foreach($words as $word) {
             if(strlen($word) > 3) {
-                var_dump($word);
                 Tools::formatWord($word);
 
                 if(preg_match('/[^a-zA-Z0-9]/', $word)) {
