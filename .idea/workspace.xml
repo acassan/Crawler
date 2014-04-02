@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +42,7 @@
       <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="22" selection-start="597" selection-end="597" vertical-scroll-proportion="0.63432837" vertical-offset="153" max-vertical-offset="1207">
+            <state line="48" column="14" selection-start="637" selection-end="637" vertical-scroll-proportion="0.70682305" vertical-offset="153" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -682,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="597" selection-end="597" vertical-scroll-proportion="0.63432837" vertical-offset="153" max-vertical-offset="1207">
+        <state line="48" column="14" selection-start="637" selection-end="637" vertical-scroll-proportion="0.70682305" vertical-offset="153" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>

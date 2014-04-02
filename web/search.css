@@ -45,6 +45,10 @@ header .statistics {
     margin-bottom: 0px;
 }
 
+.list-results tr p {
+    margin-top: 0px;
+}
+
 .ranking-jac {
     width: 80px;
     text-align: center;
