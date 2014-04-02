@@ -82,7 +82,7 @@ class BaseCrawler extends PHPCrawler
 //        $this->addContentTypeReceiveRule($options['receiveContentType']);
         $this->addURLFilterRule($options['URLFilterRule']);
         $this->setFollowMode($options['FollowMode']);
-//        $this->setFollowRedirects(true);
+        $this->setFollowRedirects(true);
         $this->enableCookieHandling(true);
 //        $this->setUrlCacheType(PHPCrawlerUrlCacheTypes::URLCACHE_SQLITE);
 

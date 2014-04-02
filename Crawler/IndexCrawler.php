@@ -41,7 +41,6 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        var_dump($DocInfo->content);
         // Check game website
         if($this->isGame($DocInfo->content)) {
             $this->website['game'] = 1;
@@ -60,7 +59,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         $bodyContentNode = $dom->getElementsByTagName('body');
-        if($bodyContentNode->length == 0 ) { return; }
+//        if($bodyContentNode->length == 0 ) { return; }
 
         $bodyContent    = strip_tags($bodyContentNode->item(0)->nodeValue);
         $words          = explode(' ', $bodyContent);
