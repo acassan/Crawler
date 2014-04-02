@@ -78,7 +78,7 @@ $stats['forums']    = $statTmp['number']
                     <tr>
                         <th></th>
                         <th></th>
-                        <th>Classement JAC</th>
+                        <th><img src="img/ico_jac.png" /></th>
                     </tr>
                 <?php foreach($searchResults as $website) {
                     ?>
@@ -98,7 +98,7 @@ $stats['forums']    = $statTmp['number']
                             <p class="website-url"><?php echo $website['url']; ?></p>
                         </td>
                         <td class="ranking-jac">
-                            <?php if(!is_null($website['ranking_jac'])) { echo $website['ranking_jac']; } ?>
+                            <?php if(!is_null($website['ranking_jac']) && $website['ranking_jac'] > 0) { echo $website['ranking_jac']; } ?>
                         </td>
                     </tr>
                     <?php
