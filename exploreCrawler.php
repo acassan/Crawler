@@ -4,7 +4,7 @@ require_once 'Lib/Database.php';
 
 $db     = Database::getInstance();
 $now    = new \DateTime();
-$sSql   = sprintf("SELECT * FROM directory WHERE updatedAt <= '%s'", date('Y-m-d H:i:s',strtotime('-1 day')));
+$sSql   = sprintf("SELECT * FROM directory WHERE updatedAt <= '%s'", date('Y-m-d H:i:s',strtotime('-2 weeks')));
 
 foreach($db->query($sSql) as $directory) {
     $crawler = new ExploreCrawler(array(
