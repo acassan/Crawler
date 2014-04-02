@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+            <state line="55" column="19" selection-start="746" selection-end="746" vertical-scroll-proportion="0.8336887" vertical-offset="153" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exploreCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exploreCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="576" selection-end="576" vertical-scroll-proportion="0.27960527" vertical-offset="0" max-vertical-offset="912">
+            <state line="11" column="40" selection-start="428" selection-end="429" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="510">
               <folding>
                 <marker date="1396446423321" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
                 <marker date="1396446423321" expanded="true" signature="701:770" placeholder="UPDATE direc..." />
@@ -115,10 +115,10 @@
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/web/search.php" />
-        <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/JacCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
+        <option value="$PROJECT_DIR$/web/search.css" />
       </list>
     </option>
   </component>
@@ -645,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="41" selection-start="3241" selection-end="3241" vertical-scroll-proportion="-15.615385" vertical-offset="1447" max-vertical-offset="3451">
@@ -668,11 +661,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="576" selection-end="576" vertical-scroll-proportion="0.27960527" vertical-offset="0" max-vertical-offset="912">
+        <state line="11" column="40" selection-start="428" selection-end="429" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="510">
           <folding>
             <marker date="1396446423321" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
             <marker date="1396446423321" expanded="true" signature="701:770" placeholder="UPDATE direc..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="19" selection-start="746" selection-end="746" vertical-scroll-proportion="0.8336887" vertical-offset="153" max-vertical-offset="1139">
+          <folding />
         </state>
       </provider>
     </entry>
