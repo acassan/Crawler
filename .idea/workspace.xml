@@ -42,7 +42,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="40" selection-start="470" selection-end="470" vertical-scroll-proportion="0.26067907" vertical-offset="0" max-vertical-offset="913">
               <folding>
-                <marker date="1396424275896" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
+                <marker date="1396424731685" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
               </folding>
             </state>
           </provider>
@@ -51,7 +51,7 @@
       <file leaf-file-name="BaseCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2482">
+            <state line="84" column="40" selection-start="2466" selection-end="2466" vertical-scroll-proportion="-17.653847" vertical-offset="969" max-vertical-offset="2482">
               <folding>
                 <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
               </folding>
@@ -338,7 +338,7 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.5703934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15138593" sideWeight="0.5703934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -430,7 +430,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="40" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="697">
           <folding>
-            <marker date="1396424275896" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
+            <marker date="1396424731685" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>
@@ -474,7 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="29" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="680">
           <folding>
-            <marker date="1396424275896" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
+            <marker date="1396424731685" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>
@@ -684,15 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="38" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="869" max-vertical-offset="2482">
-          <folding>
-            <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="49" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2023">
@@ -743,11 +734,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/BaseCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="40" selection-start="2466" selection-end="2466" vertical-scroll-proportion="-17.653847" vertical-offset="969" max-vertical-offset="2482">
+          <folding>
+            <marker date="1396359642286" expanded="true" signature="3301:3339" placeholder="SELECT * FRO..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/indexWebsiteCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="40" selection-start="470" selection-end="470" vertical-scroll-proportion="0.26067907" vertical-offset="0" max-vertical-offset="913">
           <folding>
-            <marker date="1396424275896" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
+            <marker date="1396424731685" expanded="true" signature="239:286" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>
