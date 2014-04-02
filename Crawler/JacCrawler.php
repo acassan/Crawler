@@ -111,7 +111,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $description = $divNodes->item(2)->childNodes->item(2)->nodeValue;
 
         preg_match("#<a id='btn_versJeu' href='sortie.php?j=([0-9]+)' title='#Uis", $DocInfo->content, $tmpGameId);
-        var_dump($tmpGameId[1]);
+        var_dump($tmpGameId);
     }
 
     /**
