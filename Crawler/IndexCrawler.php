@@ -54,8 +54,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $title = $titleNode->length > 0 ? ($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
             $title = $this->formatTitle($title);
             if(strstr($title,'301') == false && strstr($title,'302') == false) {
-                var_dump(Tools::formatWord(utf8_decode($title)));
-                $this->website['title'] = utf8_decode($title);
+                $this->website['title'] = Tools::formatWord(utf8_decode($title));
             }
         }
 
@@ -151,76 +150,20 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function updateDictionaries()
     {
-        // Dictionary
-        $currentDictionary = array();
-        if(count($this->dictionary) > 0) {
-            $sSql = sprintf("SELECT * FROM dictionary WHERE word IN('%s')", implode("','", array_keys($this->dictionary)));
-            foreach($this->db->query($sSql) as $word) {
-                $currentDictionary[$word['word']] = $word;
-            }
-        }
-
-        foreach($this->dictionary as $word => $websites) {
-            if(array_key_exists($word, $currentDictionary)) {
-                // Existing word
-                $currentWord        = $currentDictionary[$word];
-                $currentWebsites    = array_unique(array_merge(json_decode($currentWord['websites']), $websites));
-
-                $now                = new \DateTime();
-                $fieldsUpdated = array(
-                    'weight'        => count($currentWebsites),
-                    'websites'      => json_encode($currentWebsites),
-                    'updatedAt'     => $now->format('Y-m-d H:i:s'),
-                );
-
-                $this->db->Update('dictionary', $fieldsUpdated, array('word' => $currentWord['word']));
-            } else {
-                // New word
-                $now                = new \DateTime();
-                $currentWebsites = array_unique($websites);
-                $fields = array(
-                    'word'          => $word,
-                    'weight'        => count($currentWebsites),
-                    'websites'      => json_encode($currentWebsites),
-                    'updatedAt'     => $now->format('Y-m-d H:i:s'),
-                );
-
-                $this->db->Insert($fields, 'dictionary');
-            }
-        }
-
-        // Website Dictionary
-        $currentDictionary = array();
-        if(count($this->websiteDictionary) > 0) {
-            $sSql = sprintf("SELECT * FROM website_dictionary WHERE website_id = %s AND word IN('%s')", $this->website['id'], implode("','", array_keys($this->websiteDictionary)));
-            foreach($this->db->query($sSql) as $word) {
-                $currentDictionary[$word['word']] = $word;
-            }
-        }
+        // Delete website dictionary
+        $sSql = "DELETE FROM website_dictionary WHERE website_id = ". intval($this->website['id']);
+        $this->db->query($sSql);
 
         foreach($this->websiteDictionary as $word => $weight) {
-            if(array_key_exists($word, $currentDictionary)) {
-                // Existing word
-                $currentWord        = $currentDictionary[$word];
-
-                $now                = new \DateTime();
-                $fieldsUpdated = array(
-                    'weight'        => $weight,
-                );
-
-                $this->db->Update('website_dictionary', $fieldsUpdated, array('website_id' => $currentWord['website_id']));
-            } else {
-                // New word
-                $now                = new \DateTime();
+            if($this->website['id'] > 0 && !empty($word)) {
+                $now    = new \DateTime();
                 $fields = array(
                     'website_id'    => $this->website['id'],
                     'word'          => $word,
                     'weight'        => $weight,
                 );
 
-                if($this->website['id'] > 0 && !empty($word)) {
-                    $this->db->Insert($fields, 'website_dictionary');
-                }
+                $this->db->Insert($fields, 'website_dictionary');
             }
         }
 
@@ -263,8 +206,14 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     protected function formatTitle($title)
     {
+        // Remove spacing
         $title = ltrim($title);
         $title = rtrim($title);
+
+        // Remove accents
+        $search = array('à','á','â','ã','ä','ç','è','é','ê','ë','ì','í','î','ï','ñ','ò','ó','ô','õ','ö','ù','ú','û','ü','ý','ÿ','À','Á','Â','Ã','Ä','Ç','È','É','Ê','Ë','Ì','Í','Î','Ï','Ñ','Ò','Ó','Ô','Õ','Ö','Ù','Ú','Û','Ü','Ý');
+        $replace = array('a','a','a','a','a','c','e','e','e','e','i','i','i','i','n','o','o','o','o','o','u','u','u','u','y','y','A','A','A','A','A','C','E','E','E','E','I','I','I','I','N','O','O','O','O','O','U','U','U','U','Y');
+        $title = str_replace($search,$replace,$title);
 
         return $title;
     }
