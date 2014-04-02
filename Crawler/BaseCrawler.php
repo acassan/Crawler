@@ -79,7 +79,7 @@ class BaseCrawler extends PHPCrawler
 
         $options = array_merge($optionsDefaults, $optionsEntered);
 
-//        $this->addContentTypeReceiveRule($options['receiveContentType']);
+        $this->addContentTypeReceiveRule($options['receiveContentType']);
         $this->addURLFilterRule($options['URLFilterRule']);
         $this->setFollowMode($options['FollowMode']);
         $this->setFollowRedirects(true);
