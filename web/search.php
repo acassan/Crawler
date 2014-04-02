@@ -74,7 +74,7 @@ $stats['forums']    = $statTmp['number']
                 echo "<div>Aucun résultat</div>";
             } else {
                 ?>
-                <table class="table" style='width: 100%;'>
+                <table class="table list-results" style='width: 100%;'>
                     <tr>
                         <th></th>
                         <th></th>
@@ -90,9 +90,9 @@ $stats['forums']    = $statTmp['number']
                             <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
                             <?php
                             if(!empty($website['jac_description'])) {
-                                echo "<div class='website-description'>";
+                                echo "<p class='website-description'>";
                                 echo $website['jac_description'];
-                                echo "</div>";
+                                echo "</p>";
                             }
                             ?>
                             <p class="website-url"><?php echo $website['url']; ?></p>
