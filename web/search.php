@@ -90,9 +90,9 @@ $stats['forums']    = $statTmp['number']
                             <h5><a href='<?php echo $website['url']; ?>'><?php echo utf8_encode($website['title']); ?></a></h5>
                             <?php
                             if(!empty($website['jac_description'])) {
-                                echo "<p class='website-description'>";
+                                echo "<div class='website-description'>";
                                 echo $website['jac_description'];
-                                echo "</p>";
+                                echo "</div>";
                             }
                             ?>
                             <p class="website-url"><?php echo $website['url']; ?></p>
