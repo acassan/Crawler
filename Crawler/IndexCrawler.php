@@ -41,7 +41,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
      */
     public function handle(PHPCrawlerDocumentInfo $DocInfo)
     {
-        var_dump("ok");
+        var_dump($DocInfo->content);
         // Check game website
         if($this->isGame($DocInfo->content)) {
             $this->website['game'] = 1;
