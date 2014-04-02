@@ -74,12 +74,14 @@ $stats['forums']    = $statTmp['number']
                 echo "<div>Aucun résultat</div>";
             } else {
                 ?>
-                <table class="table list-results" style='width: 100%;'>
+                <table class="table list-results">
+                    <thead>
                     <tr>
                         <th></th>
                         <th></th>
-                        <th><img src="img/ico_jac.png" /></th>
+                        <th><img src="img/ico_jac.png" alt="Classement Jeux-alternatifs" /></th>
                     </tr>
+                    </thead>
                 <?php foreach($searchResults as $website) {
                     ?>
                     <tr>

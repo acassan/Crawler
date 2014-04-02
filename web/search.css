@@ -41,6 +41,15 @@ header .statistics {
     margin: 10px 0 0 15px;
 }
 
+.list-results {
+    width: 100%;
+}
+
+.list-results thead th {
+    border: 0;
+    text-align: center;
+}
+
 .list-results h5 {
     margin-bottom: 0;
 }
