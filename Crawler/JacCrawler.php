@@ -109,9 +109,18 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $divNodes = $descriptionDiv->getElementsByTagName('div');
 
         $description = $divNodes->item(2)->childNodes->item(2)->nodeValue;
+        $description = $this->formatDescription($description);
 
-        preg_match('#(.+)([0-9]+)_generale_1_1#Uis', $DocInfo->url, $tmpGameId);
-        var_dump($tmpGameId);
+        preg_match('#(.+)([0-9]+)_generale_1_1#Uis', $DocInfo->url, $tmpJacId);
+        $jacId = $tmpJacId[2];
+
+        // Retrieve Game
+        $sSql = "SELECT * FROM website WHERE jac_id = ". intval($jacId);
+        foreach($this->db->query($sSql) as $website) { }
+
+        if($website['id'] > 0) {
+            $this->db->Update('website',array('jac_description' => $description),array('id' => $website['id']));
+        }
     }
 
     /**
@@ -163,5 +172,23 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
     public function setHandlingMode($handlingMode)
     {
         $this->handlingMode = $handlingMode;
+    }
+
+    /**
+     * @param $description
+     * @return mixed|string
+     */
+    protected function formatDescription($description)
+    {
+        // Remove spacing
+        $description = ltrim($description);
+        $description = rtrim($description);
+
+        // Remove accents
+        $search = array('à','á','â','ã','ä','ç','è','é','ê','ë','ì','í','î','ï','ñ','ò','ó','ô','õ','ö','ù','ú','û','ü','ý','ÿ','À','Á','Â','Ã','Ä','Ç','È','É','Ê','Ë','Ì','Í','Î','Ï','Ñ','Ò','Ó','Ô','Õ','Ö','Ù','Ú','Û','Ü','Ý');
+        $replace = array('a','a','a','a','a','c','e','e','e','e','i','i','i','i','n','o','o','o','o','o','u','u','u','u','y','y','A','A','A','A','A','C','E','E','E','E','I','I','I','I','N','O','O','O','O','O','U','U','U','U','Y');
+        $description = str_replace($search,$replace,$description);
+
+        return $description;
     }
 }

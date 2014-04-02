@@ -17,6 +17,6 @@ $crawler->setURL("http://www.jeux-alternatifs.com/index.php?p=jeuHitP");
 $crawler->setHandlingMode(JacCrawler::HANDLING_GAME);
 $crawler->setPageLimit(0);
 $crawler->setFollowMode(1);
-$crawler->setURL("http://www.jeux-alternatifs.com/Fantasy-War-Online-jeu425_generale_1_1.html");
+$crawler->setURL("http://www.jeux-alternatifs.com");
 $crawler->go();
 
