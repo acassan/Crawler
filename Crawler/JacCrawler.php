@@ -110,7 +110,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
         $description = $divNodes->item(2)->childNodes->item(2)->nodeValue;
 
-        preg_match('#sortie.php?j=([0-9]+)#Uis', $DocInfo->content, $tmpGameId);
+        preg_match('#(.+)([0-9]+)_generale_1_1#Uis', $DocInfo->url, $tmpGameId);
         var_dump($tmpGameId);
     }
 
