@@ -97,7 +97,7 @@ $stats['forums']    = $statTmp['number']
                             ?>
                             <p class="website-url"><?php echo $website['url']; ?></p>
                         </td>
-                        <td class="ranking-jac">
+                        <td style="text-align: center;">
                             <?php if(!is_null($website['ranking_jac']) && $website['ranking_jac'] > 0) { echo $website['ranking_jac']; } ?>
                         </td>
                     </tr>
