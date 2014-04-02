@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JacCrawler.php" afterPath="$PROJECT_DIR$/JacCrawler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/JacCrawler.php" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="JacCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="8" selection-start="3064" selection-end="3314" vertical-scroll-proportion="0.6524123" vertical-offset="1173" max-vertical-offset="2873">
+            <state line="112" column="34" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.80153507" vertical-offset="1173" max-vertical-offset="2907">
               <folding />
             </state>
           </provider>
@@ -699,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="8" selection-start="3064" selection-end="3314" vertical-scroll-proportion="0.6524123" vertical-offset="1173" max-vertical-offset="2873">
+        <state line="112" column="34" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.80153507" vertical-offset="1173" max-vertical-offset="2907">
           <folding />
         </state>
       </provider>

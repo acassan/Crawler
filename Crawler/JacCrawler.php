@@ -109,6 +109,8 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
         $divNodes = $descriptionDiv->getElementsByTagName('div');
 
         var_dump($divNodes->item(3)->nodeValue);
+        var_dump($divNodes->item(4)->nodeValue);
+        var_dump($divNodes->item(5)->nodeValue);
     }
 
     /**
