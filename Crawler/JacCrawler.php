@@ -13,6 +13,11 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
     /**
      * @var integer
      */
+    protected $iterations;
+
+    /**
+     * @var integer
+     */
     protected $handlingMode;
 
     /**
@@ -84,7 +89,26 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
 
     protected function handlingGame(PHPCrawlerDocumentInfo $DocInfo)
     {
+        $this->iterations++;
 
+        if($this->iterations > 200) {
+            gc_collect_cycles();
+            echo ">> Memory: ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
+            $this->iterations = 1;
+        }
+
+        // Check game page
+        if(strstr($DocInfo->url, '_generale_1_1.html') == false) {
+            return true;
+        }
+
+        $dom = new DOMDocument();
+        @$dom->loadHTML($DocInfo->content);
+
+        $descriptionDiv = $dom->getElementById('accColGauche');
+        $divNodes = $descriptionDiv->getElementsByTagName('div');
+
+        var_dump($divNodes->item(3)->nodeValue);
     }
 
     /**
