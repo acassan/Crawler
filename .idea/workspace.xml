@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="" />
+    <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +29,20 @@
       <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="42" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.29791895" vertical-offset="680" max-vertical-offset="5151">
+            <state line="8" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.14895947" vertical-offset="0" max-vertical-offset="5151">
               <folding>
-                <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,34 +212,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phpCrawler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,8 +402,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -462,8 +446,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="263" column="42" selection-start="7757" selection-end="7757" vertical-scroll-proportion="0.0" vertical-offset="3847" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -499,8 +483,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="5168">
           <folding>
-            <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -527,8 +511,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="5015">
           <folding>
-            <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
@@ -614,11 +598,6 @@
     <entry file="file://$USER_HOME$/Téléchargements/tmp/tutu2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="115" selection-start="7" selection-end="122" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="581" selection-end="581" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
@@ -740,12 +719,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="42" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.29791895" vertical-offset="680" max-vertical-offset="5151">
+        <state line="8" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.14895947" vertical-offset="0" max-vertical-offset="5151">
           <folding>
-            <marker date="1396425095536" expanded="true" signature="4152:4196" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396425095536" expanded="true" signature="5838:5910" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="4169:4213" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396425342610" expanded="true" signature="5855:5927" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
