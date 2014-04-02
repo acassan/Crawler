@@ -54,7 +54,7 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
             $title = $titleNode->length > 0 ? ($dom->getElementsByTagName('title')->item(0)->nodeValue) : $this->website['url'];
             $title = $this->formatTitle($title);
             if(strstr($title,'301') == false && strstr($title,'302') == false) {
-                $this->website['title'] = Tools::formatWord(utf8_decode($title));
+                $this->website['title'] = Tools::removeAccents($title);
             }
         }
 
