@@ -105,6 +105,7 @@ Class SearchEngine
 
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
+                var_dump($word);
 
                 $this->logDebug('websiteWordWeight', $websiteWord['url'], $word, $websiteWordWeight, true);
             }
