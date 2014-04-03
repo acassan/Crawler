@@ -28,9 +28,21 @@
       <file leaf-file-name="updateDictionary.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateDictionary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912">
+            <state line="22" column="24" selection-start="842" selection-end="842" vertical-scroll-proportion="0.4100877" vertical-offset="0" max-vertical-offset="912">
               <folding>
-                <marker date="1396542328598" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396542713792" expanded="true" signature="90:126" placeholder="SELECT MAX(i..website..." />
+                <marker date="1396542713792" expanded="true" signature="347:403" placeholder="SELECT * FRO..website_dictionary..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/indexCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="24" selection-start="987" selection-end="1028" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="663">
+              <folding>
+                <marker date="1396429510682" expanded="true" signature="146:217" placeholder="SELECT * FRO..website_to_verify..." />
               </folding>
             </state>
           </provider>
@@ -574,15 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/indexCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="868" selection-end="868" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="663">
-          <folding>
-            <marker date="1396429510682" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..website_to_verify..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
@@ -615,11 +618,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/indexCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="987" selection-end="1028" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="663">
+          <folding>
+            <marker date="1396429510682" expanded="true" signature="146:217" placeholder="SELECT * FRO..website_to_verify..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/updateDictionary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912">
+        <state line="22" column="24" selection-start="842" selection-end="842" vertical-scroll-proportion="0.4100877" vertical-offset="0" max-vertical-offset="912">
           <folding>
-            <marker date="1396542328598" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396542713792" expanded="true" signature="90:126" placeholder="SELECT MAX(i..website..." />
+            <marker date="1396542713792" expanded="true" signature="347:403" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>
