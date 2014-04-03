@@ -1,7 +1,12 @@
-img.logo {
-    position: absolute;
-    top: 200px;
-    left: 450px;
+#content {
+    position: relative;
+    margin: auto auto;
+    width: 800px;
+    height: 230px;
+}
+
+.floatLeft {
+    float: left;
 }
 
 input.btn-search {

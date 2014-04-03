@@ -14,11 +14,13 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <img class="logo" src="img/pad.png" border="0" alt="" />
-        <div style="position: relative; width: 550px; margin: 300px auto 0 auto;">
-            <form action="search.php" method="GET">
-                <input class="searchValue" type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
-            </form>
+        <div id="content">
+            <img class="logo floatLeft" src="img/pad.png" border="0" alt="" />
+            <div class="floatLeft">
+                <form action="search.php" method="GET">
+                    <input class="searchValue" type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
+                </form>
+            </div>
         </div>
 
         <script>
