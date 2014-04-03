@@ -15,12 +15,16 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-
     margin: auto auto;
+    vertical-align: middle;
 }
 
 .floatLeft {
     float: left;
+}
+
+#content .floatLeft {
+    /*margin: auto auto;*/
 }
 
 input.btn-search {
