@@ -32,6 +32,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
+    text-align: center;
+    margin: 50px;
 }
 
 input.btn-search {
