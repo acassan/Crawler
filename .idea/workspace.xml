@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,13 +38,13 @@
       <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="45" selection-start="6692" selection-end="6692" vertical-scroll-proportion="0.7576754" vertical-offset="3423" max-vertical-offset="4335">
+            <state line="98" column="74" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.67105263" vertical-offset="1054" max-vertical-offset="4403">
               <folding>
-                <marker date="1396519271848" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396519271848" expanded="true" signature="2173:2439" placeholder="SELECT WD.we..website_dictionary..." />
-                <marker date="1396519271848" expanded="true" signature="4015:4052" placeholder="SELECT * FRO..website..." />
-                <marker date="1396519271848" expanded="true" signature="4657:4706" placeholder="SELECT websi..dictionary..." />
-                <marker date="1396519271848" expanded="true" signature="5237:5327" placeholder="SELECT websi..website_dictionary..." />
+                <marker date="1396519795913" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396519795913" expanded="true" signature="2173:2439" placeholder="SELECT WD.we..website_dictionary..." />
+                <marker date="1396519795913" expanded="true" signature="4021:4058" placeholder="SELECT * FRO..website..." />
+                <marker date="1396519795913" expanded="true" signature="4663:4712" placeholder="SELECT websi..dictionary..." />
+                <marker date="1396519795913" expanded="true" signature="5243:5333" placeholder="SELECT websi..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -693,13 +694,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="45" selection-start="6692" selection-end="6692" vertical-scroll-proportion="0.7576754" vertical-offset="3423" max-vertical-offset="4335">
+        <state line="98" column="74" selection-start="2783" selection-end="2783" vertical-scroll-proportion="0.67105263" vertical-offset="1054" max-vertical-offset="4403">
           <folding>
-            <marker date="1396519271848" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396519271848" expanded="true" signature="2173:2439" placeholder="SELECT WD.we..website_dictionary..." />
-            <marker date="1396519271848" expanded="true" signature="4015:4052" placeholder="SELECT * FRO..website..." />
-            <marker date="1396519271848" expanded="true" signature="4657:4706" placeholder="SELECT websi..dictionary..." />
-            <marker date="1396519271848" expanded="true" signature="5237:5327" placeholder="SELECT websi..website_dictionary..." />
+            <marker date="1396519795913" expanded="true" signature="1848:1890" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396519795913" expanded="true" signature="2173:2439" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1396519795913" expanded="true" signature="4021:4058" placeholder="SELECT * FRO..website..." />
+            <marker date="1396519795913" expanded="true" signature="4663:4712" placeholder="SELECT websi..dictionary..." />
+            <marker date="1396519795913" expanded="true" signature="5243:5333" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>

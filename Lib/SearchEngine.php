@@ -106,7 +106,7 @@ Class SearchEngine
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
 
-                $this->logDebug('websiteWordWeight', $websiteWord['url'], $word, $websiteWordWeight);
+                $this->logDebug('websiteWordWeight', $websiteWord['url'], $word, $websiteWordWeight, true);
             }
         }
 
@@ -230,7 +230,7 @@ Class SearchEngine
         return $this->currentPage;
     }
 
-    protected function logDebug($keyCat,$keyValue, $value = null)
+    protected function logDebug($keyCat,$keyValue, $value = null, $addArray = null)
     {
         if(!$this->debugMode) {
             return false;
@@ -240,7 +240,11 @@ Class SearchEngine
         }
 
         if(!is_null($value)) {
-            $this->debug[$keyCat][$keyValue][] = $value;
+            if(is_null($addArray)) {
+                $this->debug[$keyCat][$keyValue] = $value;
+            } else {
+                $this->debug[$keyCat][$keyValue][] = $value;
+            }
         } else {
             $this->debug[$keyCat][] = $keyValue;
         }
