@@ -14,6 +14,7 @@ foreach($db->query($sSql) as $websiteWord) {
 
     $dictionary[$websiteWord['word']][] = intval($websiteWord['website_id']);
 }
+die("ok");
 
 foreach($dictionary as $word => $websites) {
     $dictionaryWord = array(
