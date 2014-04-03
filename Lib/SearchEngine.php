@@ -90,7 +90,6 @@ Class SearchEngine
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0)", $word);
 
-            var_dump($sSql);
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
             }
