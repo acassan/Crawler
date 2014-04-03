@@ -88,7 +88,7 @@ Class SearchEngine
             $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
                                 INNER JOIN website AS W ON WD.website_id = W.id
-                                WHERE WD.word = '%s' AND W.game = 1", $word);
+                                WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0)", $word);
 
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
