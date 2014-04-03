@@ -22,8 +22,16 @@ body {
     float: left;
 }
 
-#content .floatLeft {
-    margin: auto auto;
+#div-search {
+    margin: 0 0 0 40px;
+}
+
+#ruwlerTitle {
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
 }
 
 input.btn-search {

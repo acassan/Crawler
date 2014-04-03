@@ -16,7 +16,8 @@
     <body>
         <div id="content">
             <img class="logo floatLeft" src="img/pad.png" border="0" alt="" />
-            <div class="floatLeft">
+            <div id="div-search" class="floatLeft">
+                <div id="ruwlerTitle">RUWLER</div>
                 <form action="search.php" method="GET">
                     <input class="searchValue" type="text" name="search" style="width: 400px;" /> &nbsp; <input class="btn-search" type="submit" value="Rechercher" />
                 </form>
