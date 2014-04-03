@@ -129,7 +129,7 @@ Class Database extends mysqli
 		}
 
 		$query = substr($query, 0, -5);
-
+var_dump($query);
 		return $this->query($query);
 	}
 }
