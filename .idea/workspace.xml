@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/BaseCrawler.php" afterPath="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/JacCrawler.php" afterPath="$PROJECT_DIR$/Crawler/JacCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/IndexCrawler.php" afterPath="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="IndexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="33" selection-start="6866" selection-end="6866" vertical-scroll-proportion="0.60400444" vertical-offset="3724" max-vertical-offset="4624">
+            <state line="251" column="52" selection-start="6887" selection-end="6887" vertical-scroll-proportion="0.6028921" vertical-offset="3725" max-vertical-offset="4675">
               <folding />
             </state>
           </provider>
@@ -150,13 +149,13 @@
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/JacCrawler.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
-        <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/index.css" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
+        <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
       </list>
     </option>
   </component>
@@ -679,7 +678,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="33" selection-start="6866" selection-end="6866" vertical-scroll-proportion="0.60400444" vertical-offset="3724" max-vertical-offset="4624">
+        <state line="251" column="52" selection-start="6887" selection-end="6887" vertical-scroll-proportion="0.6028921" vertical-offset="3725" max-vertical-offset="4675">
           <folding />
         </state>
       </provider>

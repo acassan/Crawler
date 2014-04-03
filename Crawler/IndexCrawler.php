@@ -246,6 +246,9 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
         $currentDirectories = json_decode($this->website['directories']);
         if(!is_array($currentDirectories)) {
             $currentDirectories = array();
+        }
+
+        if(!is_array($this->website['directories'])) {
             $this->website['directories'] = array();
         }
 
