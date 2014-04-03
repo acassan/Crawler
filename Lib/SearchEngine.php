@@ -90,6 +90,7 @@ Class SearchEngine
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0)", $word);
 
+            var_dump($sSql);
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
             }
@@ -105,7 +106,6 @@ Class SearchEngine
 
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
                 $this->websitesWeight[$websiteWord['website_id']] += $websiteWordWeight;
-                var_dump($word);
 
                 $this->logDebug('websiteWordWeight', $websiteWord['url'], $word, $websiteWordWeight, true);
             }
