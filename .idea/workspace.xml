@@ -28,9 +28,9 @@
       <file leaf-file-name="updateDictionary.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateDictionary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="459" selection-end="459" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="912">
+            <state line="10" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912">
               <folding>
-                <marker date="1396542296493" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396542328598" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -617,9 +617,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/updateDictionary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="459" selection-end="459" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="912">
+        <state line="10" column="14" selection-start="260" selection-end="260" vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912">
           <folding>
-            <marker date="1396542296493" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396542328598" expanded="true" signature="137:169" placeholder="SELECT * FRO..website_dictionary..." />
           </folding>
         </state>
       </provider>

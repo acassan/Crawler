@@ -8,13 +8,13 @@ $sSql           = "SELECT * FROM website_dictionary";
 $dictionary     = array();
 
 foreach($db->query($sSql) as $websiteWord) {
+    die("ok");
     if(!array_key_exists($websiteWord['word'], $dictionary)) {
         $dictionary[$websiteWord['word']] = array();
     }
 
     $dictionary[$websiteWord['word']][] = intval($websiteWord['website_id']);
 }
-die("ok");
 
 foreach($dictionary as $word => $websites) {
     $dictionaryWord = array(
