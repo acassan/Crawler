@@ -7,7 +7,6 @@ $db = Database::getInstance();
 
 $currentPage    = isset($_GET['page']) ? intval($_GET['page']) : 1;
 $debugMode      = isset($_GET['debug']) ? true : false;
-var_dump($debugMode);
 
 $searchEngine = new SearchEngine(array(
     'resultsPerPage'    => 10,
