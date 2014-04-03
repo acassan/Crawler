@@ -100,7 +100,7 @@ Class SearchEngine
                 }
 
                 if(strpos($websiteWord['url'], $word)) {
-                    $websiteWord['weight'] *= 4;
+                    $websiteWord['weight'] *= 10;
                 }
 
                 $websiteWordWeight = $websiteWord['weight'] * $wordWeight;
