@@ -240,7 +240,7 @@ Class SearchEngine
         }
 
         if(!is_null($value)) {
-            $this->debug[$keyCat][$keyValue] = $value;
+            $this->debug[$keyCat][$keyValue][] = $value;
         } else {
             $this->debug[$keyCat][] = $keyValue;
         }
