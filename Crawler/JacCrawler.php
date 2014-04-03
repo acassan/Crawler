@@ -77,7 +77,7 @@ class JacCrawler extends BaseCrawler implements CrawlerInterface
             $gameUrl                = Tools::parseUrl($this->getGameUrlFromJacId($jacId));
             $website                = $this->findOrCreateWebsite($gameUrl);
             $website['ranking_jac'] = $ranking;
-            $website['jac_id']      = $ranking;
+            $website['jac_id']      = $jacId;
             $website['game']        = 1;
 
 

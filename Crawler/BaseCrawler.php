@@ -110,7 +110,12 @@ class BaseCrawler extends PHPCrawler
     protected function findWebsite($url)
     {
         $sSql = sprintf("SELECT * FROM website WHERE url = '%s'", $url);
-        foreach($this->db->query($sSql) as $website) {
+        $results = $this->db->query($sSql);
+        if(!$results) {
+            return null;
+        }
+
+        foreach($results as $website) {
             return $website;
         }
 
