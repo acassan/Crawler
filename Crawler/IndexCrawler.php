@@ -73,18 +73,11 @@ class IndexCrawler extends BaseCrawler implements CrawlerInterface
 
         foreach($words as $word) {
             if(strlen($word) > 3) {
-                Tools::formatWord($word);
+                $word = Tools::formatWord($word);
 
                 if(preg_match('/[^a-zA-Z0-9]/', $word)) {
                   continue;
                 }
-
-                // Dictionary
-                if(!array_key_exists($word, $this->dictionary)) {
-                    $this->dictionary[$word] = array();
-                }
-
-                $this->dictionary[$word][] = intval($this->website['id']);
 
                 // Website dictionary
                 if(!array_key_exists($word, $this->websiteDictionary)) {
