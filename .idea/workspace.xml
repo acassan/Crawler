@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/SearchEngine.php" afterPath="$PROJECT_DIR$/Lib/SearchEngine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -68,11 +67,11 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="75" selection-start="807" selection-end="807" vertical-scroll-proportion="0.378198" vertical-offset="0" max-vertical-offset="2550">
+            <state line="17" column="60" selection-start="579" selection-end="579" vertical-scroll-proportion="0.3214683" vertical-offset="0" max-vertical-offset="2533">
               <folding>
-                <marker date="1396620786218" expanded="true" signature="1074:1112" placeholder="SELECT COUNT..website..." />
-                <marker date="1396620786218" expanded="true" signature="1236:1289" placeholder="SELECT COUNT..website..." />
-                <marker date="1396620786218" expanded="true" signature="1413:1467" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620884727" expanded="true" signature="1010:1048" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620884727" expanded="true" signature="1172:1225" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620884727" expanded="true" signature="1349:1403" placeholder="SELECT COUNT..website..." />
               </folding>
             </state>
           </provider>
@@ -719,11 +718,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="75" selection-start="807" selection-end="807" vertical-scroll-proportion="0.378198" vertical-offset="0" max-vertical-offset="2550">
+        <state line="17" column="60" selection-start="579" selection-end="579" vertical-scroll-proportion="0.3214683" vertical-offset="0" max-vertical-offset="2533">
           <folding>
-            <marker date="1396620786218" expanded="true" signature="1074:1112" placeholder="SELECT COUNT..website..." />
-            <marker date="1396620786218" expanded="true" signature="1236:1289" placeholder="SELECT COUNT..website..." />
-            <marker date="1396620786218" expanded="true" signature="1413:1467" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620884727" expanded="true" signature="1010:1048" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620884727" expanded="true" signature="1172:1225" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620884727" expanded="true" signature="1349:1403" placeholder="SELECT COUNT..website..." />
           </folding>
         </state>
       </provider>

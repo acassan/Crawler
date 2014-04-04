@@ -16,7 +16,6 @@ $searchEngine = new SearchEngine(array(
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
 $searchValue        = Tools::rmBlacklistWords($searchValue);
-$searchEngine->logDebug('params', 'searchValue', $searchValue);
 $searchValueEngine  = $db->escape_string(Tools::formatWord(utf8_decode($searchValue)));
 $searchEngine->logDebug('params', 'searchValueEngine', $searchValueEngine);
 $searchValue        = htmlentities($searchValue);
