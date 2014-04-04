@@ -86,7 +86,8 @@ $stats['forums']    = $statTmp['number']
                     ?>
                     <tr>
                         <td class="website-preview">
-                            <img src="http://www.apercite.fr/api/apercite/120x90/yes/<?php echo $website['url']; ?>">
+<!--                            <img src="http://www.apercite.fr/api/apercite/120x90/yes/--><?php //echo $website['url']; ?><!--">-->
+                            <img src="http://open.thumbshots.org/image.pxf?url=<?php echo $website['url']; ?>" width="120" height="90" />
                         </td>
                         <td>
                             <h5><a href='<?php echo $website['url']; ?>' onclick="_gaq.push(['_trackEvent', 'searchGames', 'clic', '<?php echo $website['url']; ?>']);"><?php echo utf8_encode($website['title']); ?></a></h5>
@@ -109,6 +110,10 @@ $stats['forums']    = $statTmp['number']
             }
             ?>
         </div>
+
+        <footer>
+            <a href="http://www.thumbshots.org"><img src="http://open.thumbshots.org/attribution.png" alt="Free thumbnail preview by Thumbshots.org" width="88" height="31" border="0"></a>
+        </footer>
 
         <?php
         // DEBUG TRACE
