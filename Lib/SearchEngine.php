@@ -236,6 +236,9 @@ Class SearchEngine
         if(!$this->debugMode) {
             return false;
         }
+
+        var_dump($value);
+
         if(!array_key_exists($keyCat, $this->debug)) {
             $this->debug[$keyCat] = array();
         }
