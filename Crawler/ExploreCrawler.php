@@ -51,14 +51,16 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
             if (preg_match('#\.(jpg|gif|png|pdf|jpeg|css|js|ico|google|youtube|api|facebook|twitter)$# i', $linkInfo['url_rebuild']) == 0) {
 
                 $linkUrl = Tools::parseUrl($linkInfo['url_rebuild']);
-var_dump($linkUrl);
+
                 if(!strstr($linkUrl, '.')) {
                     continue;
                 }
+                var_dump($linkUrl);
 
                 if(!array_key_exists($linkUrl, $pageUrls)) {
                     // Add website to verify
                     $sql = sprintf("INSERT IGNORE INTO website_to_verify VALUES('%s','%s',0,NOW())", md5($linkUrl), $linkUrl);
+                    var_dump($sSql);
                     $this->db->query($sql);
 
                     $pageUrls[$linkUrl] = true;

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +28,11 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="32" selection-start="702" selection-end="702" vertical-scroll-proportion="0.20920044" vertical-offset="353" max-vertical-offset="2159">
+            <state line="35" column="35" selection-start="875" selection-end="875" vertical-scroll-proportion="0.26506025" vertical-offset="353" max-vertical-offset="2193">
               <folding>
-                <marker date="1396598172688" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
-                <marker date="1396598172688" expanded="true" signature="2108:2173" placeholder="INSERT INTO ..." />
-                <marker date="1396598172688" expanded="true" signature="2822:2877" placeholder="SELECT page ..directory_page..." />
+                <marker date="1396598660691" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
+                <marker date="1396598660691" expanded="true" signature="2162:2227" placeholder="INSERT INTO ..." />
+                <marker date="1396598660691" expanded="true" signature="2876:2931" placeholder="SELECT page ..directory_page..." />
               </folding>
             </state>
           </provider>
@@ -607,11 +606,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="32" selection-start="702" selection-end="702" vertical-scroll-proportion="0.20920044" vertical-offset="353" max-vertical-offset="2159">
+        <state line="35" column="35" selection-start="875" selection-end="875" vertical-scroll-proportion="0.26506025" vertical-offset="353" max-vertical-offset="2193">
           <folding>
-            <marker date="1396598172688" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
-            <marker date="1396598172688" expanded="true" signature="2108:2173" placeholder="INSERT INTO ..." />
-            <marker date="1396598172688" expanded="true" signature="2822:2877" placeholder="SELECT page ..directory_page..." />
+            <marker date="1396598660691" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
+            <marker date="1396598660691" expanded="true" signature="2162:2227" placeholder="INSERT INTO ..." />
+            <marker date="1396598660691" expanded="true" signature="2876:2931" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
