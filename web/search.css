@@ -81,3 +81,8 @@ header .statistics {
     font-style: italic;
     font-size: 10px;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
