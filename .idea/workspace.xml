@@ -54,9 +54,9 @@
       <file leaf-file-name="indexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/indexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+            <state line="9" column="2" selection-start="194" selection-end="194" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
               <folding>
-                <marker date="1396605391385" expanded="true" signature="248:330" placeholder="SELECT * FRO..website_to_verify..." />
+                <marker date="1396605455684" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
               </folding>
             </state>
           </provider>
@@ -638,9 +638,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/indexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+        <state line="9" column="2" selection-start="194" selection-end="194" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
           <folding>
-            <marker date="1396605391385" expanded="true" signature="248:330" placeholder="SELECT * FRO..website_to_verify..." />
+            <marker date="1396605455684" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>
