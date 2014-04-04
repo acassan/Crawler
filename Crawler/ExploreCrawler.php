@@ -61,7 +61,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
                 if(!array_key_exists($linkUrl, $pageUrls)) {
                     // Add website to verify
                     $sql = sprintf("INSERT IGNORE INTO website_to_verify VALUES('%s','%s',0,NOW())", md5($linkUrl), $linkUrl);
-                    var_dump($sSql);
+                    var_dump($sql);
                     $this->db->query($sql);
 
                     $pageUrls[$linkUrl] = true;
@@ -71,7 +71,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
         }
 
         // Add page to directory
-        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
+//        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
         $this->db->query($sSql);
 
         $this->pagesHandle++;
