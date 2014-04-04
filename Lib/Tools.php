@@ -40,7 +40,7 @@ Class Tools
      * @param $string
      * @return mixed
      */
-    protected static function rmBlacklistWords($string)
+    public static function rmBlacklistWords($string)
     {
         // Blacklist word
         $blackListWords = array('<?php', '?>', ';', '"', 'echo');
