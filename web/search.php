@@ -16,7 +16,7 @@ $searchEngine = new SearchEngine(array(
 
 $searchValue        = empty($_GET['search']) ? "Jeux stratégie joueur" : $_GET['search'];
 $searchValueEngine  = $db->escape_string(Tools::formatWord(utf8_decode($searchValue)));
-$searchValue        = $db->escape_string($searchValue);
+$searchValue        = htmlentities($searchValue);
 
 $searchOptions  = array(
     'forum' => empty($_GET['forum']) ? 0 : 1,

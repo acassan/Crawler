@@ -52,11 +52,11 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="55" selection-start="662" selection-end="662" vertical-scroll-proportion="0.3403782" vertical-offset="0" max-vertical-offset="2499">
+            <state line="18" column="34" selection-start="641" selection-end="641" vertical-scroll-proportion="0.3403782" vertical-offset="0" max-vertical-offset="2499">
               <folding>
-                <marker date="1396620144472" expanded="true" signature="879:917" placeholder="SELECT COUNT..website..." />
-                <marker date="1396620144472" expanded="true" signature="1041:1094" placeholder="SELECT COUNT..website..." />
-                <marker date="1396620144472" expanded="true" signature="1218:1272" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620249637" expanded="true" signature="873:911" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620249637" expanded="true" signature="1035:1088" placeholder="SELECT COUNT..website..." />
+                <marker date="1396620249637" expanded="true" signature="1212:1266" placeholder="SELECT COUNT..website..." />
               </folding>
             </state>
           </provider>
@@ -692,11 +692,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="55" selection-start="662" selection-end="662" vertical-scroll-proportion="0.3403782" vertical-offset="0" max-vertical-offset="2499">
+        <state line="18" column="34" selection-start="641" selection-end="641" vertical-scroll-proportion="0.3403782" vertical-offset="0" max-vertical-offset="2499">
           <folding>
-            <marker date="1396620144472" expanded="true" signature="879:917" placeholder="SELECT COUNT..website..." />
-            <marker date="1396620144472" expanded="true" signature="1041:1094" placeholder="SELECT COUNT..website..." />
-            <marker date="1396620144472" expanded="true" signature="1218:1272" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620249637" expanded="true" signature="873:911" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620249637" expanded="true" signature="1035:1088" placeholder="SELECT COUNT..website..." />
+            <marker date="1396620249637" expanded="true" signature="1212:1266" placeholder="SELECT COUNT..website..." />
           </folding>
         </state>
       </provider>
