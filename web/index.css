@@ -50,3 +50,8 @@ input.btn-search {
     outline: none;
     font-weight: bold;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

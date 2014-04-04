@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.css" afterPath="$PROJECT_DIR$/web/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.css" afterPath="$PROJECT_DIR$/web/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/search.php" afterPath="$PROJECT_DIR$/web/search.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -42,20 +43,31 @@
       <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="59" selection-start="5269" selection-end="5269" vertical-scroll-proportion="-14.307693" vertical-offset="1583" max-vertical-offset="2499">
+            <state line="113" column="8" selection-start="5006" selection-end="5096" vertical-scroll-proportion="-13.0" vertical-offset="1583" max-vertical-offset="2482">
               <folding>
-                <marker date="1396613298424" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
-                <marker date="1396613298424" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
-                <marker date="1396613298424" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
+                <marker date="1396613465797" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
+                <marker date="1396613465797" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
+                <marker date="1396613465797" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="8" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5405702" vertical-offset="0" max-vertical-offset="912">
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/search.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="13" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.8731343" vertical-offset="643" max-vertical-offset="1581">
+            <state line="84" column="0" selection-start="1054" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1581">
               <folding />
             </state>
           </provider>
@@ -126,19 +138,19 @@
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/SQL/crawler.sql" />
         <option value="$PROJECT_DIR$/JacCrawler.php" />
-        <option value="$PROJECT_DIR$/web/index.css" />
         <option value="$PROJECT_DIR$/Crawler/JacCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/IndexCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/updateDictionary.php" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/exploreCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
         <option value="$PROJECT_DIR$/indexCrawler.php" />
-        <option value="$PROJECT_DIR$/web/search.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
+        <option value="$PROJECT_DIR$/web/index.css" />
+        <option value="$PROJECT_DIR$/web/search.php" />
+        <option value="$PROJECT_DIR$/web/index.php" />
       </list>
     </option>
   </component>
@@ -571,16 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="388" selection-end="388" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="223" column="0" selection-start="5671" selection-end="5671" vertical-scroll-proportion="0.40934372" vertical-offset="3423" max-vertical-offset="4556">
@@ -652,21 +654,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.php">
+    <entry file="file://$PROJECT_DIR$/web/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="59" selection-start="5269" selection-end="5269" vertical-scroll-proportion="-14.307693" vertical-offset="1583" max-vertical-offset="2499">
-          <folding>
-            <marker date="1396613298424" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
-            <marker date="1396613298424" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
-            <marker date="1396613298424" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
-          </folding>
+        <state line="26" column="1" selection-start="309" selection-end="309" vertical-scroll-proportion="0.42004263" vertical-offset="48" max-vertical-offset="1054">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="13" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.8731343" vertical-offset="643" max-vertical-offset="1581">
+        <state line="84" column="0" selection-start="1054" selection-end="1103" vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="1581">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="8" selection-start="5006" selection-end="5096" vertical-scroll-proportion="-13.0" vertical-offset="1583" max-vertical-offset="2482">
+          <folding>
+            <marker date="1396613465797" expanded="true" signature="823:861" placeholder="SELECT COUNT..website..." />
+            <marker date="1396613465797" expanded="true" signature="985:1038" placeholder="SELECT COUNT..website..." />
+            <marker date="1396613465797" expanded="true" signature="1162:1216" placeholder="SELECT COUNT..website..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="8" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5405702" vertical-offset="0" max-vertical-offset="912">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

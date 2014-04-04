@@ -24,6 +24,10 @@
             </div>
         </div>
 
+        <footer>
+                <a href="mailto:contact@ruwler.com">Contact</a>
+        </footer>
+        
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-49631045-1']);

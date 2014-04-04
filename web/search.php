@@ -112,7 +112,6 @@ $stats['forums']    = $statTmp['number']
         </div>
 
         <footer>
-<!--            <a href="http://www.thumbshots.org"><img src="http://open.thumbshots.org/attribution.png" alt="Free thumbnail preview by Thumbshots.org" width="88" height="31" border="0"></a>-->
                 <a href="mailto:contact@ruwler.com">Contact</a>
         </footer>
 
