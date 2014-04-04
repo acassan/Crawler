@@ -54,10 +54,19 @@
       <file leaf-file-name="indexCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/indexCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="194" selection-end="194" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+            <state line="20" column="31" selection-start="690" selection-end="690" vertical-scroll-proportion="0.37280703" vertical-offset="0" max-vertical-offset="912">
               <folding>
-                <marker date="1396605455684" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
+                <marker date="1396605647320" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="standard_3.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="754" column="73" selection-start="19286" selection-end="19286" vertical-scroll-proportion="-10.038462" vertical-offset="12557" max-vertical-offset="18037">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -503,11 +512,6 @@
         <state line="1035" column="14" selection-start="20823" selection-end="20823" vertical-scroll-proportion="0.8006396" vertical-offset="16844" max-vertical-offset="18258" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="9" selection-start="2340" selection-end="2340" vertical-scroll-proportion="0.34210527" vertical-offset="1201" max-vertical-offset="18037" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawlerUtils.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="52" selection-start="583" selection-end="583" vertical-scroll-proportion="0.39101863" vertical-offset="0" max-vertical-offset="11288" />
@@ -636,11 +640,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="754" column="73" selection-start="19286" selection-end="19286" vertical-scroll-proportion="-10.038462" vertical-offset="12557" max-vertical-offset="18037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/indexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="194" selection-end="194" vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+        <state line="20" column="31" selection-start="690" selection-end="690" vertical-scroll-proportion="0.37280703" vertical-offset="0" max-vertical-offset="912">
           <folding>
-            <marker date="1396605455684" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
+            <marker date="1396605647320" expanded="true" signature="239:321" placeholder="SELECT * FRO..website_to_verify..." />
           </folding>
         </state>
       </provider>

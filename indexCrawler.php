@@ -4,7 +4,7 @@ require_once 'Lib/Database.php';
 $db = Database::getInstance();
 
 // Init Crawler
-$options = getopt("",array(
+$options = getopt('',array(
     "limit::",
     "directoryid::",
 ));
