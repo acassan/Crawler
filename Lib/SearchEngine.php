@@ -230,7 +230,7 @@ Class SearchEngine
         return $this->currentPage;
     }
 
-    protected function logDebug($keyCat,$keyValue, $value = null, $addArray = null)
+    public function logDebug($keyCat,$keyValue, $value = null, $addArray = null)
     {
         if(!$this->debugMode) {
             return false;
