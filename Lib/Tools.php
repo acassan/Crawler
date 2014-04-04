@@ -40,6 +40,7 @@ Class Tools
     {
         // Blacklist word
         $blackListWords = array('<?php', '?>', ';', '"');
-        $string = str_replace($blackListWords, "", $string);
+        $replace        = array('', '', '', '');
+        $string         = str_replace($blackListWords, $replace, $string);
     }
 }
