@@ -69,7 +69,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
         // Add page to directory
 //        $sSql = sprintf("INSERT INTO directory_page VALUES(%d,'%s','%s', %d, NOW(), NOW())", $this->directory['id'], md5($DocInfo->url), $DocInfo->url, $linksFound);
-        $this->db->query($sSql);
+//        $this->db->query($sSql);
 
         $this->pagesHandle++;
         echo "Page ".$this->pagesHandle.": ".$DocInfo->url." (".$DocInfo->http_status_code.")".$this->lb;
