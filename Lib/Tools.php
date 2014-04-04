@@ -35,4 +35,11 @@ Class Tools
 
         return $url; // return the formatted url
     }
+
+    protected static function rmBlacklistWords($string)
+    {
+        // Blacklist word
+        $blackListWords = array('<?php', '?>', ';', '"');
+        $string = str_replace($blackListWords, "", $string);
+    }
 }
