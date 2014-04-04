@@ -52,6 +52,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
                 $linkUrl = Tools::parseUrl($linkInfo['url_rebuild']);
 
+                var_dump($linkUrl);
                 if(!strstr($linkUrl, '.')) {
                     continue;
                 }
