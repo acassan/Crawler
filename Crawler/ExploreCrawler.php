@@ -58,7 +58,7 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
 
                 if(!array_key_exists($linkUrl, $pageUrls)) {
                     // Add website to verify
-                    $sql = sprintf("INSERT IGNORE INTO website_to_verify(id,url,verified,directory,createdAt) VALUES('%s','%s',0,%d, NOW())", md5($linkUrl), $linkUrl, intval($this->directory['id']));
+                    $sql = sprintf("INSERT IGNORE INTO website_to_verify(id,url,verified,directory) VALUES('%s','%s',0,%d)", md5($linkUrl), $linkUrl, intval($this->directory['id']));
                     $this->db->query($sql);
                     var_dump($sql);
 
