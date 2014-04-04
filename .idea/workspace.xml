@@ -76,23 +76,23 @@
       <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="102" selection-start="2747" selection-end="2747" vertical-scroll-proportion="0.4160178" vertical-offset="714" max-vertical-offset="2567">
+            <state line="63" column="44" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.3971079" vertical-offset="714" max-vertical-offset="2567">
               <folding>
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1396623325959" expanded="true" signature="934:972" placeholder="SELECT COUNT..website..." />
-                <marker date="1396623325959" expanded="true" signature="1096:1149" placeholder="SELECT COUNT..website..." />
-                <marker date="1396623325959" expanded="true" signature="1273:1327" placeholder="SELECT COUNT..website..." />
-                <marker date="1396623325959" expanded="true" signature="2839:2887" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3098:3192" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3449:3997" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3477:3722" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3477:3608" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3502:3693" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3502:3527" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3838:3997" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3838:3873" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="3891:3997" placeholder="..." />
-                <marker date="1396623325959" expanded="true" signature="4222:4263" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="934:972" placeholder="SELECT COUNT..website..." />
+                <marker date="1396623368620" expanded="true" signature="1096:1149" placeholder="SELECT COUNT..website..." />
+                <marker date="1396623368620" expanded="true" signature="1273:1327" placeholder="SELECT COUNT..website..." />
+                <marker date="1396623368620" expanded="true" signature="2840:2888" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3099:3193" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3450:3998" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3478:3723" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3478:3609" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3503:3694" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3503:3528" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3839:3998" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3839:3874" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="3892:3998" placeholder="..." />
+                <marker date="1396623368620" expanded="true" signature="4223:4264" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -728,23 +728,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="102" selection-start="2747" selection-end="2747" vertical-scroll-proportion="0.4160178" vertical-offset="714" max-vertical-offset="2567">
+        <state line="63" column="44" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.3971079" vertical-offset="714" max-vertical-offset="2567">
           <folding>
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1396623325959" expanded="true" signature="934:972" placeholder="SELECT COUNT..website..." />
-            <marker date="1396623325959" expanded="true" signature="1096:1149" placeholder="SELECT COUNT..website..." />
-            <marker date="1396623325959" expanded="true" signature="1273:1327" placeholder="SELECT COUNT..website..." />
-            <marker date="1396623325959" expanded="true" signature="2839:2887" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3098:3192" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3449:3997" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3477:3722" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3477:3608" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3502:3693" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3502:3527" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3838:3997" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3838:3873" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="3891:3997" placeholder="..." />
-            <marker date="1396623325959" expanded="true" signature="4222:4263" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="934:972" placeholder="SELECT COUNT..website..." />
+            <marker date="1396623368620" expanded="true" signature="1096:1149" placeholder="SELECT COUNT..website..." />
+            <marker date="1396623368620" expanded="true" signature="1273:1327" placeholder="SELECT COUNT..website..." />
+            <marker date="1396623368620" expanded="true" signature="2840:2888" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3099:3193" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3450:3998" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3478:3723" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3478:3609" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3503:3694" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3503:3528" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3839:3998" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3839:3874" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="3892:3998" placeholder="..." />
+            <marker date="1396623368620" expanded="true" signature="4223:4264" placeholder="..." />
           </folding>
         </state>
       </provider>

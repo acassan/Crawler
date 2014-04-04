@@ -61,7 +61,7 @@ $stats['forums']    = $statTmp['number']
             <div class="floatLeft">
                 <input class="btn-search" type="image" src="img/ico-search.png" style="width: 30px; height: 37px;" />
             </div>
-            <?php if(strlen($searchValue) < 3) {
+            <?php if(strlen($searchValue) <= 3) {
                 echo "<div class='floatLeft'><i>La recherche doit contenir au minimum 4 caractères</i></div>";
             } ?>
             </form>
