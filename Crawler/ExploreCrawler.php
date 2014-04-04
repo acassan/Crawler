@@ -33,6 +33,9 @@ class ExploreCrawler extends BaseCrawler implements CrawlerInterface
             gc_collect_cycles();
             echo ">> Memory: ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
             $this->iterations = 1;
+            $now = new \DateTime();
+            $sSql = sprintf("UPDATE directory SET updatedAt = '%s' WHERE id = %d", $now->format('Y-m-d H:i:s'), $this->directory['id']);
+            $this->db->query($sSql);
         }
 
         if(array_key_exists(md5($DocInfo->url), $this->pages)) {

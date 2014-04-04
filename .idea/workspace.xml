@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" afterPath="$PROJECT_DIR$/Crawler/ExploreCrawler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exploreCrawler.php" afterPath="$PROJECT_DIR$/exploreCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +29,23 @@
       <file leaf-file-name="ExploreCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.54435927" vertical-offset="353" max-vertical-offset="2108">
+            <state line="32" column="32" selection-start="702" selection-end="702" vertical-scroll-proportion="0.20920044" vertical-offset="353" max-vertical-offset="2159">
               <folding>
-                <marker date="1396597890289" expanded="true" signature="1898:1963" placeholder="INSERT INTO ..." />
-                <marker date="1396597890289" expanded="true" signature="2612:2667" placeholder="SELECT page ..directory_page..." />
+                <marker date="1396598172688" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
+                <marker date="1396598172688" expanded="true" signature="2108:2173" placeholder="INSERT INTO ..." />
+                <marker date="1396598172688" expanded="true" signature="2822:2877" placeholder="SELECT page ..directory_page..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exploreCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="40" selection-start="658" selection-end="658" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <marker date="1396598140577" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
+                <marker date="1396598140577" expanded="true" signature="701:770" placeholder="UPDATE direc..." />
               </folding>
             </state>
           </provider>
@@ -271,7 +284,7 @@
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15938166" sideWeight="0.5703934" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15938166" sideWeight="0.5703934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -553,17 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="522" selection-end="522" vertical-scroll-proportion="0.24205914" vertical-offset="0" max-vertical-offset="913">
-          <folding>
-            <marker date="1396596309762" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..directory..." />
-            <marker date="1396596309762" expanded="true" signature="-1:-1" placeholder="UPDATE direc..." />
-            <marker date="1396596309762" expanded="true" signature="-1:-1" placeholder="UPDATE direc..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/indexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="38" selection-start="675" selection-end="675" vertical-scroll-proportion="0.35377875" vertical-offset="0" max-vertical-offset="913">
@@ -593,12 +595,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="658" selection-end="658" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <marker date="1396598140577" expanded="true" signature="164:211" placeholder="SELECT * FRO..directory..." />
+            <marker date="1396598140577" expanded="true" signature="701:770" placeholder="UPDATE direc..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.54435927" vertical-offset="353" max-vertical-offset="2108">
+        <state line="32" column="32" selection-start="702" selection-end="702" vertical-scroll-proportion="0.20920044" vertical-offset="353" max-vertical-offset="2159">
           <folding>
-            <marker date="1396597890289" expanded="true" signature="1898:1963" placeholder="INSERT INTO ..." />
-            <marker date="1396597890289" expanded="true" signature="2612:2667" placeholder="SELECT page ..directory_page..." />
+            <marker date="1396598172688" expanded="true" signature="905:956" placeholder="UPDATE direc..." />
+            <marker date="1396598172688" expanded="true" signature="2108:2173" placeholder="INSERT INTO ..." />
+            <marker date="1396598172688" expanded="true" signature="2822:2877" placeholder="SELECT page ..directory_page..." />
           </folding>
         </state>
       </provider>
