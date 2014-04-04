@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="54" selection-start="573" selection-end="573" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2516">
+            <state line="17" column="40" selection-start="559" selection-end="559" vertical-scroll-proportion="0.3214683" vertical-offset="0" max-vertical-offset="2516">
               <folding>
                 <marker date="1396620454113" expanded="true" signature="928:966" placeholder="SELECT COUNT..website..." />
                 <marker date="1396620454113" expanded="true" signature="1090:1143" placeholder="SELECT COUNT..website..." />
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="62" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.77530587" vertical-offset="0" max-vertical-offset="899">
+            <state line="40" column="20" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
@@ -694,21 +694,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="20" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="54" selection-start="573" selection-end="573" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2516">
+        <state line="17" column="40" selection-start="559" selection-end="559" vertical-scroll-proportion="0.3214683" vertical-offset="0" max-vertical-offset="2516">
           <folding>
             <marker date="1396620454113" expanded="true" signature="928:966" placeholder="SELECT COUNT..website..." />
             <marker date="1396620454113" expanded="true" signature="1090:1143" placeholder="SELECT COUNT..website..." />
             <marker date="1396620454113" expanded="true" signature="1267:1321" placeholder="SELECT COUNT..website..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="62" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.77530587" vertical-offset="0" max-vertical-offset="899">
-          <folding />
         </state>
       </provider>
     </entry>

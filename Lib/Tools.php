@@ -36,10 +36,16 @@ Class Tools
         return $url; // return the formatted url
     }
 
+    /**
+     * @param $string
+     * @return mixed
+     */
     protected static function rmBlacklistWords($string)
     {
         // Blacklist word
         $blackListWords = array('<?php', '?>', ';', '"', 'echo');
         $string         = str_replace($blackListWords, '', $string);
+
+        return $string;
     }
 }
