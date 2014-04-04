@@ -39,8 +39,7 @@ Class Tools
     protected static function rmBlacklistWords($string)
     {
         // Blacklist word
-        $blackListWords = array('<?php', '?>', ';', '"');
-        $replace        = array('', '', '', '');
-        $string         = str_replace($blackListWords, $replace, $string);
+        $blackListWords = array('<?php', '?>', ';', '"', 'echo');
+        $string         = str_replace($blackListWords, '', $string);
     }
 }
