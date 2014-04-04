@@ -67,6 +67,7 @@ Class SearchEngine
     {
         $explodedSearch = explode(' ', $searchString);
 
+        $this->logDebug('params', 'searchValue', $searchString);
         $this->logDebug('params', 'currentPage', $this->getCurrentPage());
         $this->logDebug('params', 'resultsPerPage', $this->resultsPerPage);
 
