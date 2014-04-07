@@ -22,9 +22,9 @@ if($currentId == 0) {
 }
 
 
-for($i = $currentId; $i <= 20; $i++) {
+for($i = 1; $i <= 20; $i++) {
     // Handling website dictionary
-    $currentWebsiteId = $currentId +1;
+    $currentWebsiteId = $currentId + $i;
     echo "Handling website id ". $currentWebsiteId ." \n";
     $sSql           = "SELECT * FROM website_dictionary WHERE website_id = ". $currentWebsiteId;
     foreach($db->query($sSql) as $websiteWord) {
