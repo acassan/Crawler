@@ -50,12 +50,12 @@
       <file leaf-file-name="updateDictionary.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateDictionary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="666" selection-end="666" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
+            <state line="24" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
               <folding>
-                <marker date="1396883664136" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
-                <marker date="1396883664136" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
-                <marker date="1396883664136" expanded="true" signature="834:885" placeholder="SELECT * FRO..website_dictionary..." />
-                <marker date="1396883664136" expanded="true" signature="1012:1061" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396883854401" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
+                <marker date="1396883854401" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
+                <marker date="1396883854401" expanded="true" signature="835:886" placeholder="SELECT * FRO..website_dictionary..." />
+                <marker date="1396883854401" expanded="true" signature="1013:1062" placeholder="SELECT * FRO..dictionary..." />
               </folding>
             </state>
           </provider>
@@ -333,10 +333,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="281" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="765">
           <folding>
-            <marker date="1396883664136" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
-            <marker date="1396883664136" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
-            <marker date="1396883664136" expanded="true" signature="834:885" placeholder="SELECT * FRO..website_dictionary..." />
-            <marker date="1396883664136" expanded="true" signature="1012:1061" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396883854401" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
+            <marker date="1396883854401" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
+            <marker date="1396883854401" expanded="true" signature="835:886" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396883854401" expanded="true" signature="1013:1062" placeholder="SELECT * FRO..dictionary..." />
           </folding>
         </state>
       </provider>
@@ -486,12 +486,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/updateDictionary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="666" selection-end="666" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
+        <state line="24" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
           <folding>
-            <marker date="1396883664136" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
-            <marker date="1396883664136" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
-            <marker date="1396883664136" expanded="true" signature="834:885" placeholder="SELECT * FRO..website_dictionary..." />
-            <marker date="1396883664136" expanded="true" signature="1012:1061" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396883854401" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
+            <marker date="1396883854401" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
+            <marker date="1396883854401" expanded="true" signature="835:886" placeholder="SELECT * FRO..website_dictionary..." />
+            <marker date="1396883854401" expanded="true" signature="1013:1062" placeholder="SELECT * FRO..dictionary..." />
           </folding>
         </state>
       </provider>
