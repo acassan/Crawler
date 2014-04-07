@@ -22,7 +22,7 @@ if($currentId == 0) {
 }
 
 
-for($i = 1; $i <= 20; $i++) {
+for($i = 1; $i <= 50; $i++) {
     // Handling website dictionary
     $currentWebsiteId = $currentId + $i;
     echo "Handling website id ". $currentWebsiteId ." \n";
