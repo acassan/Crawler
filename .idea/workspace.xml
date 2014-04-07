@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateDictionary.php" afterPath="$PROJECT_DIR$/updateDictionary.php" />
-    </list>
+    <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="" />
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,7 +48,7 @@
       <file leaf-file-name="updateDictionary.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateDictionary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
+            <state line="26" column="40" selection-start="752" selection-end="752" vertical-scroll-proportion="0.23574561" vertical-offset="227" max-vertical-offset="1139">
               <folding>
                 <marker date="1396883854401" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
                 <marker date="1396883854401" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
@@ -486,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/updateDictionary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="667" selection-end="667" vertical-scroll-proportion="0.19846492" vertical-offset="227" max-vertical-offset="1139">
+        <state line="26" column="40" selection-start="752" selection-end="752" vertical-scroll-proportion="0.23574561" vertical-offset="227" max-vertical-offset="1139">
           <folding>
             <marker date="1396883854401" expanded="true" signature="107:143" placeholder="SELECT MAX(i..website..." />
             <marker date="1396883854401" expanded="true" signature="305:366" placeholder="SELECT * FRO..config..." />
