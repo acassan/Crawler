@@ -6,7 +6,7 @@ $db = Database::getInstance();
 // Init Crawler
 $sSql = sprintf("SELECT * FROM website_to_verify WHERE verified = 0 OR updatedAt <= '%s' LIMIT 0,%d", date('Y-m-d H:i:s',strtotime('-1 month')), 100);
 foreach($db->query($sSql) as $website) {
-
+var_dump($sSql, $website);
     $crawler = new IndexCrawler(array(
         'multiprocessing'           => false,
         'FollowMode'                => 2,
