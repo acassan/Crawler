@@ -4,7 +4,7 @@ require_once 'Lib/Database.php';
 $db = Database::getInstance();
 
 // Init Crawler
-$sSql = sprintf("SELECT * FROM website_to_verify WHERE verified = 0 OR updatedAt <= '%s' LIMIT 0,%d", date('Y-m-d H:i:s',strtotime('-1 month')), 100);
+$sSql = sprintf("SELECT * FROM website_to_verify WHERE verified = 0 OR updatedAt <= '%s' LIMIT 0,%d", date('Y-m-d H:i:s',strtotime('-1 month')), 130);
 foreach($db->query($sSql) as $website) {
 
     $crawler = new IndexCrawler(array(

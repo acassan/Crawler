@@ -13,6 +13,7 @@ foreach($db->query($sSql) as $directory) {
         'showPageRequested'         => false,
         'showReferer'               => false,
         'showContentReceived'       => false,
+        'sqlite'                    => true,
     ));
     $crawler->initDirectory($directory);
     $crawler->setURL($directory['url']);

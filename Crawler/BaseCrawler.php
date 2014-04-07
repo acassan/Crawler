@@ -84,7 +84,10 @@ class BaseCrawler extends PHPCrawler
         $this->setFollowMode($options['FollowMode']);
         $this->setFollowRedirects(true);
         $this->enableCookieHandling(true);
-        $this->setUrlCacheType(PHPCrawlerUrlCacheTypes::URLCACHE_MEMORY);
+
+        if(isset($options['sqlite'])) {
+            $this->setUrlCacheType(PHPCrawlerUrlCacheTypes::URLCACHE_SQLITE);
+        }
 
         if($options['multiprocessing']) {
             $this->goMultiProcessed($options['multiprocessingNumber']);
