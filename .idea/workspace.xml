@@ -28,13 +28,13 @@
       <file leaf-file-name="SearchEngine.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="57" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.23986857" vertical-offset="2603" max-vertical-offset="5202">
+            <state line="74" column="53" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.5197368" vertical-offset="784" max-vertical-offset="5746">
               <folding>
-                <marker date="1396944209419" expanded="true" signature="1996:2038" placeholder="SELECT * FRO..dictionary..." />
-                <marker date="1396944209419" expanded="true" signature="2382:2651" placeholder="SELECT WD.we..website_dictionary..." />
-                <marker date="1396944209419" expanded="true" signature="4286:4323" placeholder="SELECT * FRO..website..." />
-                <marker date="1396944209419" expanded="true" signature="6016:6065" placeholder="SELECT websi..dictionary..." />
-                <marker date="1396944209419" expanded="true" signature="6596:6686" placeholder="SELECT websi..website_dictionary..." />
+                <marker date="1396945688716" expanded="true" signature="2094:2136" placeholder="SELECT * FRO..dictionary..." />
+                <marker date="1396945688716" expanded="true" signature="2480:2749" placeholder="SELECT WD.we..website_dictionary..." />
+                <marker date="1396945688716" expanded="true" signature="4628:4665" placeholder="SELECT * FRO..website..." />
+                <marker date="1396945688716" expanded="true" signature="7359:7408" placeholder="SELECT websi..dictionary..." />
+                <marker date="1396945688716" expanded="true" signature="7939:8029" placeholder="SELECT websi..website_dictionary..." />
               </folding>
             </state>
           </provider>
@@ -218,16 +218,17 @@
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16577825" sideWeight="0.56935817" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16577825" sideWeight="0.42960662" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16577825" sideWeight="0.5699482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16577825" sideWeight="0.4300518" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -237,7 +238,6 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -428,7 +428,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="2159" />
+        <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="2159">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
@@ -480,13 +482,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/SearchEngine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="57" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.23986857" vertical-offset="2603" max-vertical-offset="5202">
+        <state line="74" column="53" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.5197368" vertical-offset="784" max-vertical-offset="5746">
           <folding>
-            <marker date="1396944209419" expanded="true" signature="1996:2038" placeholder="SELECT * FRO..dictionary..." />
-            <marker date="1396944209419" expanded="true" signature="2382:2651" placeholder="SELECT WD.we..website_dictionary..." />
-            <marker date="1396944209419" expanded="true" signature="4286:4323" placeholder="SELECT * FRO..website..." />
-            <marker date="1396944209419" expanded="true" signature="6016:6065" placeholder="SELECT websi..dictionary..." />
-            <marker date="1396944209419" expanded="true" signature="6596:6686" placeholder="SELECT websi..website_dictionary..." />
+            <marker date="1396945688716" expanded="true" signature="2094:2136" placeholder="SELECT * FRO..dictionary..." />
+            <marker date="1396945688716" expanded="true" signature="2480:2749" placeholder="SELECT WD.we..website_dictionary..." />
+            <marker date="1396945688716" expanded="true" signature="4628:4665" placeholder="SELECT * FRO..website..." />
+            <marker date="1396945688716" expanded="true" signature="7359:7408" placeholder="SELECT websi..dictionary..." />
+            <marker date="1396945688716" expanded="true" signature="7939:8029" placeholder="SELECT websi..website_dictionary..." />
           </folding>
         </state>
       </provider>

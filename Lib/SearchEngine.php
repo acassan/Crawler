@@ -66,12 +66,14 @@ Class SearchEngine
     public function search($searchString, $options = array())
     {
         $explodedSearch = explode(' ', $searchString);
+        $options        = array_merge($options, $this->prepareOptions($explodedSearch));
+        $websiteWords   = array();
 
         $this->logDebug('params', 'searchValue', $searchString);
         $this->logDebug('params', 'currentPage', $this->getCurrentPage());
         $this->logDebug('params', 'resultsPerPage', $this->resultsPerPage);
+        $this->logDebug('params', 'options', $options);
 
-        $options = array_merge($options, $this->prepareOptions($explodedSearch));
 
         foreach($explodedSearch as $word) {
 
@@ -95,13 +97,13 @@ Class SearchEngine
                                 INNER JOIN website AS W ON WD.website_id = W.id
                                 WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0) %s", $word, $where);
 
-            $this->logDebug('sql', $sSql);
-
-            if(!empty($options['forum'])) {
-                $sSql .= " AND W.forum = 0";
-            }
-
             foreach($this->db->query($sSql) as $websiteWord) {
+
+                if(!array_key_exists($websiteWord['website_id'], $websiteWords)) {
+                    $websiteWords[$websiteWord['website_id']] = array();
+                }
+                $websiteWords[$websiteWord['website_id']][] = $word;
+
                 if(!array_key_exists($websiteWord['website_id'], $this->websitesWeight)) {
                     $this->websitesWeight[$websiteWord['website_id']] = 0;
                 }
@@ -117,6 +119,8 @@ Class SearchEngine
             }
         }
 
+        // Mandatory word
+        if(isset($options['mandatory_word'])) { $this->handleMandatoryWord($options['mandatory_word'], $websiteWords); }
 
         if(count($this->websitesWeight) < 1) {
             return array();
@@ -161,6 +165,7 @@ Class SearchEngine
         $where = "";
 
         if(isset($options['jac_only'])) { $where .= " AND W.jac_id > 0 "; }
+        if(!empty($options['forum'])) { $where .= " AND W.forum = 0"; }
 
         if(isset($options['url_contain'])) {
             foreach($options['url_contain'] as $valueToSearch)
@@ -188,7 +193,34 @@ Class SearchEngine
             }
         }
 
+        foreach($searchValue as $key => $word) {
+            if(preg_match("#".preg_quote("*")."(.+)".preg_quote("*")."#i", $word, $matches)) {
+                $mandatoryWord = $matches[1];
+                if(!isset($calculateOptions['mandatory_word'])) { $calculateOptions['mandatory_word'] = array(); }
+                $calculateOptions['mandatory_word'][] = $mandatoryWord;
+                unset($searchValue[$key]);
+            }
+        }
+
         return $calculateOptions;
+    }
+
+    /**
+     * @param array $mandatoryWords
+     * @param array $websiteWords
+     * @return bool
+     */
+    protected function handleMandatoryWord(array $mandatoryWords, array $websiteWords)
+    {
+        foreach($mandatoryWords as $word) {
+            foreach($websiteWords as $websiteId => $words) {
+                if(!in_array($word, $words)) {
+                    unset($this->websitesWeight[$websiteId]);
+                }
+            }
+        }
+
+        return true;
     }
 
     /**
