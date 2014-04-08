@@ -125,7 +125,7 @@ Class SearchEngine
         if(isset($options['mandatory_word'])) { $this->handleMandatoryWord($options['mandatory_word'], $websiteWords); }
 
         $this->logDebug('process','WebsitesAfterMandatory', count($this->websitesWeight));
-        
+
         if(count($this->websitesWeight) < 1) {
             return array();
         }
