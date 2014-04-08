@@ -215,6 +215,7 @@ Class SearchEngine
         foreach($mandatoryWords as $word) {
             foreach($websiteWords as $websiteId => $words) {
                 if(!in_array($word, $words)) {
+                    $this->logDebug('unsetMandatoryWordWebsite', $websiteId);
                     unset($this->websitesWeight[$websiteId]);
                 }
             }
