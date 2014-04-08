@@ -198,7 +198,7 @@ Class SearchEngine
                 $mandatoryWord = $matches[1];
                 if(!isset($calculateOptions['mandatory_word'])) { $calculateOptions['mandatory_word'] = array(); }
                 $calculateOptions['mandatory_word'][] = $mandatoryWord;
-                unset($searchValue[$key]);
+                $searchValue[$key] = $mandatoryWord;
             }
         }
 
