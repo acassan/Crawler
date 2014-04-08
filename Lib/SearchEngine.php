@@ -96,7 +96,7 @@ Class SearchEngine
                                 WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0) %s", $word, $where);
 
             $this->logDebug('sql', $sSql);
-            
+
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
             }
@@ -164,7 +164,7 @@ Class SearchEngine
 
         if(isset($options['url_contain'])) {
             foreach($options['url_contain'] as $valueToSearch)
-            $where .= sprintf(" AND W.url LIKE '%%s%' ", $valueToSearch);
+            $where .= " AND W.url LIKE '%".$valueToSearch."%' ";
         }
 
         return $where;
