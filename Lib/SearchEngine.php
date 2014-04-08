@@ -119,12 +119,17 @@ Class SearchEngine
             }
         }
 
+        $this->logDebug('process','WebsitesBeforeMandatory', count($this->websitesWeight));
+
         // Mandatory word
         if(isset($options['mandatory_word'])) { $this->handleMandatoryWord($options['mandatory_word'], $websiteWords); }
 
+        $this->logDebug('process','WebsitesAfterMandatory', count($this->websitesWeight));
+        
         if(count($this->websitesWeight) < 1) {
             return array();
         }
+
 
         // Stats
         $this->setTotalResult(count($this->websitesWeight));
