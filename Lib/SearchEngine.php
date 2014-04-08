@@ -71,6 +71,8 @@ Class SearchEngine
         $this->logDebug('params', 'currentPage', $this->getCurrentPage());
         $this->logDebug('params', 'resultsPerPage', $this->resultsPerPage);
 
+        $options = array_merge($options, $this->prepareOptions($explodedSearch));
+
         foreach($explodedSearch as $word) {
 
             $word = strtr($word,'àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ','aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
@@ -86,10 +88,12 @@ Class SearchEngine
 
             $this->logDebug('wordWeight', $word, $wordWeight);
 
+            $where = $this->_handleWhereWithOptions($options);
+
             $sSql = sprintf("SELECT WD.website_id, WD.weight, W.url
                                 FROM website_dictionary AS WD
                                 INNER JOIN website AS W ON WD.website_id = W.id
-                                WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0)", $word);
+                                WHERE WD.word = '%s' AND (W.game = 1 OR W.jac_id > 0) %s", $word, $where);
 
             if(!empty($options['forum'])) {
                 $sSql .= " AND W.forum = 0";
@@ -144,6 +148,45 @@ Class SearchEngine
         }
 
         return $websitesResult;
+    }
+
+    /**
+     * @param array $options
+     * @return string
+     */
+    protected function _handleWhereWithOptions(array $options)
+    {
+        $where = "";
+
+        if(isset($options['jac_only'])) { $where .= " AND W.jac_id > 0 "; }
+
+        if(isset($options['url_contain'])) {
+            foreach($options['url_contain'] as $valueToSearch)
+            $where .= sprintf(" AND W.url LIKE '%%s%' ", $valueToSearch);
+        }
+
+        return $where;
+    }
+
+    /**
+     * @param array $searchValue
+     * @return array
+     */
+    protected function prepareOptions(array &$searchValue)
+    {
+        $calculateOptions = array();
+
+        foreach($searchValue as $key => $word) {
+            if(strstr($word, 'url:')) {
+                $tmp = explode(':', $word);
+                $urlContainValue = $tmp[1];
+                if(!isset($calculateOptions['url_contain'])) { $calculateOptions['url_contain'] = array(); }
+                $calculateOptions['url_contain'][] = $urlContainValue;
+                unset($searchValue[$key]);
+            }
+        }
+
+        return $calculateOptions;
     }
 
     /**
