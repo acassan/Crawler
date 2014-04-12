@@ -185,6 +185,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $this->db->Insert($societyData, 'society');
             return $this->db->insert_id;
         } else {
+            var_dump($societyData);
             $this->db->Update('society', $societyData, array('id' => $society['id']));
             return $society['id'];
         }
