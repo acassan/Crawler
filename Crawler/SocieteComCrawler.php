@@ -40,7 +40,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
 
             /** @var DOMElement $table */
             foreach($dom->getElementsByTagName('table') as $table) {
-               if(preg_match("#font-size:11px;#i", $table->getAttribute('style')) && count($table) < 3) {
+               if(preg_match("#font-size:11px;#i", $table->getAttribute('style')) && count($table) < 2) {
                    $tables[] = $table;
                }
             }
