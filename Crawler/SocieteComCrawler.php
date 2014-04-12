@@ -40,7 +40,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             /** @var DOMElement $table */
             foreach($dom->getElementsByTagName('table') as $table) {
                 echo "+table \n ";
-               if(preg_match('#font-size:11px; margin-left:15px;" width="100%"#i', $table->getAttribute('style'))) {
+               if(preg_match("#font-size:11px; margin-left:15px;#i", $table->getAttribute('style'))) {
                    echo "+tableOk \n ";
                    $tr = $table->getElementsByTagName('tr');
                    $commercialName = $tr->item(0)->getElementsByTagName('td')->item(1)->nodeValue;
