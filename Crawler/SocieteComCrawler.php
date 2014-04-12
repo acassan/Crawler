@@ -39,7 +39,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
 
             /** @var DOMNode $table */
             foreach($dom->getElementsByTagName('table') as $table) {
-               var_dump($table->attributes());
+               var_dump(get_class($table));
             }
         }
     }
