@@ -5,7 +5,7 @@ require_once "CrawlerInterface.php";
 require_once "phpCrawler/PHPCrawlerDocumentInfo.class.php";
 require_once "Lib/Tools.php";
 
-class SocieteCrawler extends BaseCrawler implements CrawlerInterface
+class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
 {
 
     /**
