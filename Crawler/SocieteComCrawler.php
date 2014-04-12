@@ -33,7 +33,14 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
     protected function explore(PHPCrawlerDocumentInfo $DocInfo)
     {
         if(preg_match("#www.societe.com/societe/(.+).html#i", $DocInfo->url, $society)) {
-            var_dump($society);
+            // Handling society
+            $dom = new DOMDocument();
+            @$dom->loadHTML($DocInfo->content);
+
+            /** @var DOMNode $table */
+            foreach($dom->getElementsByTagName('table') as $table) {
+               var_dump($table->attributes());
+            }
         }
     }
 }

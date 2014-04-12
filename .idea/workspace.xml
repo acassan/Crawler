@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/SocieteComCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +38,7 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="322" selection-end="322" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="850">
+            <state line="13" column="85" selection-start="468" selection-end="468" vertical-scroll-proportion="0.26" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -46,7 +47,16 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="748">
+            <state line="41" column="46" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="867">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JacCrawler.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="54" selection-start="1165" selection-end="1290" vertical-scroll-proportion="-17.653847" vertical-offset="408" max-vertical-offset="3468">
               <folding />
             </state>
           </provider>
@@ -298,16 +308,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/indexWebsiteCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/ExploreCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="2159" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exploreCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="44" selection-start="387" selection-end="387" vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912" />
@@ -384,16 +384,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/JacCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="54" selection-start="1165" selection-end="1290" vertical-scroll-proportion="-17.653847" vertical-offset="408" max-vertical-offset="3468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/dom_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="24" selection-start="6959" selection-end="6959" vertical-scroll-proportion="0.27294117" vertical-offset="3627" max-vertical-offset="36873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="748">
+        <state line="41" column="46" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="322" selection-end="322" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="850">
+        <state line="13" column="85" selection-start="468" selection-end="468" vertical-scroll-proportion="0.26" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
