@@ -46,12 +46,16 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             }
 
             if($tables[0] instanceof DOMElement) {
-                $commercialName      = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
-                $activity            = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
-                $category            = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
-                $headQuarter         = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
-                $legalForm           = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(4)->getElementsByTagName('td')->item(1)->nodeValue));
-                var_dump($commercialName,$activity,$category,$headQuarter, $legalForm);
+                $commercialName         = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
+                $activity               = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
+                $category               = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
+                $headQuarter            = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
+                $legalForm              = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(4)->getElementsByTagName('td')->item(1)->nodeValue));
+                $siret                  = ltrim(rtrim($tables[1]->getElementsByTagName('tr')->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
+                $rcs                    = ltrim(rtrim($tables[1]->getElementsByTagName('tr')->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
+                $capital                = ltrim(rtrim($tables[1]->getElementsByTagName('tr')->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
+                $createdAt              = ltrim(rtrim($tables[1]->getElementsByTagName('tr')->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
+                var_dump($commercialName,$activity,$category,$headQuarter, $legalForm,$siret,$rcs,$capital,$createdAt);
             }
         }
     }
