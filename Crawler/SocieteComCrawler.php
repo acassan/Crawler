@@ -39,9 +39,10 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             @$dom->loadHTML($DocInfo->content);
             $tables = array();
             $societyData = array();
-            $societyData['name'] = rtrim(ltrim(Tools::formatWord($society[0])));
-            $societyData['public_name'] = rtrim(ltrim($society[0]));
-            $societyData['societecom_id'] = intval($society[1]);
+            $societyData['name'] = rtrim(ltrim(Tools::formatWord($society[1])));
+            $societyData['public_name'] = rtrim(ltrim($society[1]));
+            $societyData['societecom_id'] = intval($society[2]);
+            $societyData['societecom_url'] = $DocInfo->url;
 
             $societyInformations = $dom->getElementById('synthese')->getElementsByTagName('p');
             $societyData['description'] = rtrim(ltrim($societyInformations->item(1)->nodeValue));
@@ -49,10 +50,10 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             // President
             preg_match("#(.+) (.+) (.+) (.+) en ([0-9]+)#i", $societyInformations->item(2)->nodeValue, $presidentTmp);
             $presidentData = array();
-            $presidentData['civility']  = Tools::formatWord($presidentTmp[0]);
-            $presidentData['firstname'] = Tools::formatWord($presidentTmp[1]);
-            $presidentData['lastname']  = Tools::formatWord($presidentTmp[2]);
-            $presidentData['birthdate'] = new \DateTime(Tools::formatWord($presidentTmp[3]));
+            $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
+            $presidentData['firstname'] = Tools::formatWord($presidentTmp[2]);
+            $presidentData['lastname']  = Tools::formatWord($presidentTmp[3]);
+            $presidentData['birthdate'] = new \DateTime(Tools::formatWord($presidentTmp[4]));
 
             $presidentId = $this->createOrUpdateClient($presidentData);
 
