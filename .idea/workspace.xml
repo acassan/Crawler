@@ -46,7 +46,16 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="29" selection-start="643" selection-end="643" vertical-scroll-proportion="0.64" vertical-offset="0" max-vertical-offset="850">
+            <state line="34" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="0.68" vertical-offset="0" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pcre.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="10" selection-start="3965" selection-end="3965" vertical-scroll-proportion="-15.807693" vertical-offset="1765" max-vertical-offset="8636">
               <folding />
             </state>
           </provider>
@@ -350,13 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="29" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.20352942" vertical-offset="1153" max-vertical-offset="8636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/IndexCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="20" selection-start="581" selection-end="581" vertical-scroll-proportion="-6.5384617" vertical-offset="323" max-vertical-offset="4556">
@@ -371,9 +373,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="10" selection-start="3965" selection-end="3965" vertical-scroll-proportion="-15.807693" vertical-offset="1765" max-vertical-offset="8636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="29" selection-start="643" selection-end="643" vertical-scroll-proportion="0.64" vertical-offset="0" max-vertical-offset="850">
+        <state line="34" column="51" selection-start="735" selection-end="735" vertical-scroll-proportion="0.68" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
