@@ -34,24 +34,23 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
     {
         if(preg_match("#www.societe.com/societe/(.+).html#i", $DocInfo->url, $society)) {
             // Handling society
-            $dom = new DOMDocument();
+            $dom    = new DOMDocument();
             @$dom->loadHTML($DocInfo->content);
+            $tables = array();
 
             /** @var DOMElement $table */
             foreach($dom->getElementsByTagName('table') as $table) {
-                echo "+table \n ";
-               if(preg_match("#font-size:11px; margin-left:15px;#i", $table->getAttribute('style'))) {
-                   echo "+tableOk \n ";
-                   $tr = $table->getElementsByTagName('tr');
-                   $commercialName      = ltrim(rtrim($tr->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
-                   $activity            = ltrim(rtrim($tr->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
-                   $category            = ltrim(rtrim($tr->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
-                   $headQuarter         = ltrim(rtrim($tr->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
-                   $legalForm           = ltrim(rtrim($tr->item(4)->getElementsByTagName('td')->item(1)->nodeValue));
-                   var_dump($commercialName,$activity,$category,$headQuarter, $legalForm);
-                   break;
+               if(preg_match("#font-size:11px;#i", $table->getAttribute('style')) && count($table) < 3) {
+                   $tables[] = $table;
                }
             }
+
+            $commercialName      = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
+            $activity            = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
+            $category            = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
+            $headQuarter         = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
+            $legalForm           = ltrim(rtrim($tables[0]->getElementsByTagName('tr')->item(4)->getElementsByTagName('td')->item(1)->nodeValue));
+            var_dump($commercialName,$activity,$category,$headQuarter, $legalForm);
         }
     }
 }
