@@ -71,6 +71,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                     $trList = $table->getElementsByTagName('tr');
                     foreach($trList as $tr) {
                         $keyColumn = ltrim(rtrim(Tools::formatWord($tr->getElementsByTagName('td')->item(0)->nodeValue)));
+                        var_dump($keyColumn);
                         switch($keyColumn) {
                             case "nom commercial":
                                 $societyData['commercial_name'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
@@ -185,7 +186,6 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $this->db->Insert($societyData, 'society');
             return $this->db->insert_id;
         } else {
-            var_dump($societyData);
             $this->db->Update('society', $societyData, array('id' => $society['id']));
             return $society['id'];
         }
