@@ -7,10 +7,12 @@ $crawler = new SocieteComCrawler(array(
     'FollowMode'                => 3,
     'showReferer'               => false,
     'showContentReceived'       => false,
-    'showPageRequested'         => false,
+    'showPageRequested'         => true,
 ));
 
-$crawler->setURL("http://www.societe.com");
-//$crawler->setURL("http://www.societe.com/societe/riverline-535190920.html");
+//$crawler->setURL("http://www.societe.com");
+$crawler->setPageLimit(1);
+//$crawler->setURL("http://www.societe.com/societe/brasseries-kronenbourg-430371021.html");
+//$crawler->go();
+$crawler->setURL("http://www.societe.com/societe/riverline-535190920.html");
 $crawler->go();
-

@@ -102,7 +102,7 @@ class BaseCrawler extends PHPCrawler
         }
 
         if(array_key_exists('showContentReceived', $options)) {
-            $this->options['showContentReceived'] = $options['showContentReceived'];
+            $this->options['showContentReceivedlast'] = $options['showContentReceived'];
         }
     }
 
