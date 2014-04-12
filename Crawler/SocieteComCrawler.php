@@ -53,7 +53,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
             $presidentData['firstname'] = Tools::formatWord($presidentTmp[2]);
             $presidentData['lastname']  = Tools::formatWord($presidentTmp[3]);
-            $presidentData['birthdate'] = new \DateTime(Tools::formatWord($presidentTmp[4]));
+            $presidentData['birthdate'] = new \DateTime(Tools::formatWord($presidentTmp[5]));
 
             $presidentId = $this->createOrUpdateClient($presidentData);
 
