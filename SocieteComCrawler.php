@@ -11,6 +11,6 @@ $crawler = new SocieteComCrawler(array(
 ));
 
 //$crawler->setURL("http://www.societe.com");
-$crawler->setURL("view-source:http://www.societe.com/societe/riverline-535190920.html");
+$crawler->setURL("http://www.societe.com/societe/riverline-535190920.html");
 $crawler->go();
 
