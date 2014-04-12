@@ -7,6 +7,7 @@ $crawler = new SocieteComCrawler(array(
     'FollowMode'                => 3,
     'showReferer'               => false,
     'showContentReceived'       => false,
+    'showPageRequested'         => false,
 ));
 
 $crawler->setURL("http://www.societe.com");
