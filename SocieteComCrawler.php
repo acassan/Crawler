@@ -8,7 +8,6 @@ $crawler = new SocieteComCrawler(array(
     'showReferer'               => false,
     'showContentReceived'       => false,
 ));
-$crawler->setPageLimit(1);
 
 $crawler->setURL("http://www.societe.com");
 $crawler->go();
