@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Tools.php" afterPath="$PROJECT_DIR$/Lib/Tools.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="62" selection-start="2736" selection-end="2736" vertical-scroll-proportion="-11.038462" vertical-offset="937" max-vertical-offset="3366">
+            <state line="80" column="34" selection-start="3312" selection-end="3312" vertical-scroll-proportion="0.49882075" vertical-offset="937" max-vertical-offset="3383">
               <folding>
-                <marker date="1397342898068" expanded="true" signature="6946:6949" placeholder="/** * @param..." />
+                <marker date="1397343142751" expanded="true" signature="7062:7065" placeholder="/** * @param..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.28502995" vertical-offset="0" max-vertical-offset="1020">
+            <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -131,8 +131,8 @@
         <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
-        <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
+        <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
       </list>
     </option>
   </component>
@@ -421,15 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="62" selection-start="2736" selection-end="2736" vertical-scroll-proportion="-11.038462" vertical-offset="937" max-vertical-offset="3366">
-          <folding>
-            <marker date="1397342898068" expanded="true" signature="6946:6949" placeholder="/** * @param..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="25" selection-start="394" selection-end="394" vertical-scroll-proportion="0.24292453" vertical-offset="100" max-vertical-offset="19142">
@@ -439,8 +430,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.28502995" vertical-offset="0" max-vertical-offset="1020">
+        <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1020">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="34" selection-start="3312" selection-end="3312" vertical-scroll-proportion="0.49882075" vertical-offset="937" max-vertical-offset="3383">
+          <folding>
+            <marker date="1397343142751" expanded="true" signature="7062:7065" placeholder="/** * @param..." />
+          </folding>
         </state>
       </provider>
     </entry>
