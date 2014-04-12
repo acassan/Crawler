@@ -57,6 +57,7 @@ Class Database extends mysqli
 		if(is_array($data)){
 			foreach($data as $key=>$val){
 				if(!is_array($data[$key])){
+                    var_dump($data[$key]);
 					$data[$key] = $this->escape_string($data[$key]);
 				}
 			}
