@@ -44,7 +44,11 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                    echo "+tableOk \n ";
                    $tr = $table->getElementsByTagName('tr');
                    $commercialName = $tr->item(0)->getElementsByTagName('td')->item(1)->nodeValue;
-                   var_dump($commercialName);
+                   $activity = $tr->item(1)->getElementsByTagName('td')->item(1)->nodeValue;
+                   $category = $tr->item(2)->getElementsByTagName('td')->item(1)->nodeValue;
+                   $headQuarter = $tr->item(3)->getElementsByTagName('td')->item(1)->nodeValue;
+                   var_dump($commercialName,$activity,$category,$headQuarter);
+                   break;
                }
             }
         }
