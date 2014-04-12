@@ -43,11 +43,12 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                if(preg_match("#font-size:11px; margin-left:15px;#i", $table->getAttribute('style'))) {
                    echo "+tableOk \n ";
                    $tr = $table->getElementsByTagName('tr');
-                   $commercialName = $tr->item(0)->getElementsByTagName('td')->item(1)->nodeValue;
-                   $activity = $tr->item(1)->getElementsByTagName('td')->item(1)->nodeValue;
-                   $category = $tr->item(2)->getElementsByTagName('td')->item(1)->nodeValue;
-                   $headQuarter = $tr->item(3)->getElementsByTagName('td')->item(1)->nodeValue;
-                   var_dump($commercialName,$activity,$category,$headQuarter);
+                   $commercialName      = ltrim(rtrim($tr->item(0)->getElementsByTagName('td')->item(1)->nodeValue));
+                   $activity            = ltrim(rtrim($tr->item(1)->getElementsByTagName('td')->item(1)->nodeValue));
+                   $category            = ltrim(rtrim($tr->item(2)->getElementsByTagName('td')->item(1)->nodeValue));
+                   $headQuarter         = ltrim(rtrim($tr->item(3)->getElementsByTagName('td')->item(1)->nodeValue));
+                   $legalForm           = ltrim(rtrim($tr->item(4)->getElementsByTagName('td')->item(1)->nodeValue));
+                   var_dump($commercialName,$activity,$category,$headQuarter, $legalForm);
                    break;
                }
             }
