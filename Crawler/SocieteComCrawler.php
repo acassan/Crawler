@@ -53,7 +53,8 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
             $presidentData['firstname'] = Tools::formatWord($presidentTmp[2]);
             $presidentData['lastname']  = Tools::formatWord($presidentTmp[3]);
-            $presidentData['birthdate'] = new \DateTime(Tools::formatWord($presidentTmp[5]));
+            $birthDate = new \DateTime(Tools::formatWord($presidentTmp[5]));
+            $presidentData['birthdate'] = $birthDate->format('Y-m-d H:i:s');
 
             $presidentId = $this->createOrUpdateClient($presidentData);
 
@@ -93,13 +94,15 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                                 $societyData['capital'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
                             break;
                             case "immatriculation":
-                                $societyData['registration'] = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                $societyData['registration'] = $dateTmp->format('Y-m-d H:i:s');
                             break;
                             case "nationalite":
                                 $societyData['nationality'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
                             break;
                             case "radiation":
-                                $societyData['radiation'] = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                $societyData['radiation'] = $dateTmp->format('Y-m-d H:i:s');
                             break;
                         }
                     }
