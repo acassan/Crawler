@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="32" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02" vertical-offset="0" max-vertical-offset="850">
+            <state line="12" column="40" selection-start="362" selection-end="362" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
         <option value="$PROJECT_DIR$/updateDictionary.php" />
         <option value="$PROJECT_DIR$/Lib/SearchEngine.php" />
         <option value="$PROJECT_DIR$/web/search.css" />
-        <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+        <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
       </list>
     </option>
   </component>
@@ -373,7 +373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="38" selection-end="38" vertical-scroll-proportion="0.02" vertical-offset="0" max-vertical-offset="850">
+        <state line="12" column="40" selection-start="362" selection-end="362" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>

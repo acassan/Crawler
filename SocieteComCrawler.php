@@ -10,6 +10,6 @@ $crawler = new SocieteComCrawler(array(
 ));
 $crawler->setPageLimit(1);
 
-$crawler->setfsetURL("http://www.societe.com/");
+$crawler->setURL("http://www.societe.com");
 $crawler->go();
 
