@@ -10,9 +10,12 @@ $crawler = new SocieteComCrawler(array(
     'showPageRequested'         => true,
 ));
 
-//$crawler->setURL("http://www.societe.com");
-$crawler->setPageLimit(1);
-//$crawler->setURL("http://www.societe.com/societe/brasseries-kronenbourg-430371021.html");
-//$crawler->go();
-$crawler->setURL("http://www.societe.com/societe/riverline-535190920.html");
-$crawler->go();
+$sSql           = "SELECT * FROM config WHERE name='society.dpt'";
+foreach($db->query($sSql) as $tmp) { $currentId = $tmp['value']; }
+
+for($i=$currentId; $i <= 99; $i++) {
+    echo "Handling dpt ". $currentId ." \n";
+    $crawler->setURL(sprintf("http://www.societe.com/liste-%02d.html", $i));
+    $crawler->go();
+}
+
