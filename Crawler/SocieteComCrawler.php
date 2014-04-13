@@ -33,6 +33,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
     protected function explore(PHPCrawlerDocumentInfo $DocInfo)
     {
         if(preg_match("#www.societe.com/societe/-?(.+)-([0-9]+).html#i", $DocInfo->url, $society)) {
+            $this->iterations++;
             echo $DocInfo->url. "\n ";
             // Handling society
             $dom    = new DOMDocument();
@@ -124,6 +125,8 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $sql = sprintf("INSERT IGNORE INTO society_has_client(society_id,client_id,position) VALUES('%d','%d','%s')", $societyId, $presidentId, 'president');
             $this->db->query($sql);
         }
+
+        if($this->iterations >= 5) { die();}
     }
 
     /**
