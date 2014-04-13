@@ -37,7 +37,7 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="0.63909775" vertical-offset="0" max-vertical-offset="532">
+            <state line="20" column="49" selection-start="692" selection-end="692" vertical-scroll-proportion="0.63909775" vertical-offset="0" max-vertical-offset="532">
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="updateDictionary.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/updateDictionary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="286" selection-end="435" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1139">
+            <state line="57" column="115" selection-start="2129" selection-end="2236" vertical-scroll-proportion="-17.653847" vertical-offset="510" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -450,14 +450,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/updateDictionary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="286" selection-end="435" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1139">
+        <state line="57" column="115" selection-start="2129" selection-end="2236" vertical-scroll-proportion="-17.653847" vertical-offset="510" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="0.63909775" vertical-offset="0" max-vertical-offset="532">
+        <state line="20" column="49" selection-start="692" selection-end="692" vertical-scroll-proportion="0.63909775" vertical-offset="0" max-vertical-offset="532">
           <folding />
         </state>
       </provider>

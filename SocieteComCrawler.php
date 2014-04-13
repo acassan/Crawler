@@ -14,8 +14,10 @@ $sSql           = "SELECT * FROM config WHERE name='society.dpt'";
 foreach($db->query($sSql) as $tmp) { $currentId = $tmp['value']; }
 
 for($i=$currentId; $i <= 99; $i++) {
-    echo "Handling dpt ". $currentId ." \n";
+    echo "Handling dpt ". $i ." \n";
     $crawler->setURL(sprintf("http://www.societe.com/liste-%02d.html", $i));
     $crawler->go();
+
+    $db->Update('config', array('value' => $i), array('name' => 'society.dpt'));
 }
 
