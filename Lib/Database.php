@@ -66,7 +66,7 @@ Class Database extends mysqli
 		return $data;
 	}
 
-    public function Insert($vars, $table, $exclude = ''){
+    public function Insert($vars, $table, $exclude = '', $secureData = true){
 
 		// Catch Exclusions
 		if($exclude == ''){
@@ -76,7 +76,7 @@ Class Database extends mysqli
 		array_push($exclude, 'MAX_FILE_SIZE'); // Automatically exclude this one
 
 		// Prepare Variables
-		$vars = $this->SecureData($vars);
+		$vars = $secureData ? $this->SecureData($vars) : $vars;
 
 		$query = "INSERT INTO `{$table}` SET ";
 		foreach($vars as $key=>$value){
@@ -93,7 +93,7 @@ Class Database extends mysqli
 	}
 
     // Updates a record in the database based on WHERE
-	public function Update($table, $set, $where, $exclude = ''){
+	public function Update($table, $set, $where, $exclude = '',$secureData = true){
 		// Catch Exceptions
 		if(trim($table) == '' || !is_array($set) || !is_array($where)){
 			return false;
@@ -104,8 +104,8 @@ Class Database extends mysqli
 
 		array_push($exclude, 'MAX_FILE_SIZE'); // Automatically exclude this one
 
-		$set 		= $this->SecureData($set);
-		$where 	    = $this->SecureData($where);
+		$set 		= $secureData ? $this->SecureData($set) : $set;
+		$where 	    = $secureData ? $this->SecureData($where) : $where;
 
 		// SET
 

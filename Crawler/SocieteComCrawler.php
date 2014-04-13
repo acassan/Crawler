@@ -148,10 +148,10 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
         $client = $this->clientExist($clientData['lastname'], $clientData['firstname']);
 
         if(is_null($client)) {
-            $this->db->Insert($clientData, 'client');
+            $this->db->Insert($clientData, 'client','',false);
             return $this->db->insert_id;
         } else {
-            $this->db->Update('client', $clientData, array('id' => $client['id']));
+            $this->db->Update('client', $clientData, array('id' => $client['id']),'', false);
             return $client['id'];
         }
     }
@@ -184,10 +184,10 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
         $society = $this->societyExist($societyData['name']);
 
         if(is_null($society)) {
-            $this->db->Insert($societyData, 'society');
+            $this->db->Insert($societyData, 'society','',false);
             return $this->db->insert_id;
         } else {
-            $this->db->Update('society', $societyData, array('id' => $society['id']));
+            $this->db->Update('society', $societyData, array('id' => $society['id']),'',false);
             return $society['id'];
         }
     }
