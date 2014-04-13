@@ -88,7 +88,7 @@ Class Database extends mysqli
 		}
 
 		$query = substr($query, 0, -2);
-var_dump($query);
+
 		return $this->query($query);
 	}
 
