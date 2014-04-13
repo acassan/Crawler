@@ -16,6 +16,7 @@ Class Database extends mysqli
     protected $dbUsername   = "dbo518842993";
     protected $dbPassword   = "riverline2013";
     protected $dbDatabase   = "db518842993";
+    protected $charset      = "UTF8";
 
     /**
      * Empêche la création externe d'instances.
@@ -27,6 +28,8 @@ Class Database extends mysqli
             die('Erreur de connexion (' . mysqli_connect_errno() . ') '
                     . mysqli_connect_error());
         }
+
+        $this->query("SET NAMES ". $this->charset);
     }
 
     /**
