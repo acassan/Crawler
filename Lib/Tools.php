@@ -52,4 +52,16 @@ Class Tools
 
         return $string;
     }
+
+    /**
+     * @param $chaineHtml
+     * @return string
+     */
+    public static function unhtmlentities($chaineHtml) {
+        $tmp = get_html_translation_table(HTML_ENTITIES);
+        $tmp = array_flip ($tmp);
+        $chaineTmp = strtr ($chaineHtml, $tmp);
+
+        return $chaineTmp;
+    }
 }

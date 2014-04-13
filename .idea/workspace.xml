@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Tools.php" afterPath="$PROJECT_DIR$/Lib/Tools.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,9 +47,9 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="113" selection-start="3772" selection-end="3772" vertical-scroll-proportion="0.5397112" vertical-offset="1146" max-vertical-offset="3366">
+            <state line="85" column="135" selection-start="3794" selection-end="3794" vertical-scroll-proportion="0.38628158" vertical-offset="1231" max-vertical-offset="3366">
               <folding>
-                <marker date="1397383508740" expanded="true" signature="7033:7036" placeholder="/** * @param..." />
+                <marker date="1397390111461" expanded="true" signature="7056:7059" placeholder="/** * @param..." />
               </folding>
             </state>
           </provider>
@@ -66,7 +67,7 @@
       <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1020">
+            <state line="54" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-14.923077" vertical-offset="530" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -139,8 +140,8 @@
         <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
-        <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
+        <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
       </list>
     </option>
@@ -407,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysqli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="491" column="20" selection-start="13870" selection-end="13870" vertical-scroll-proportion="0.72643256" vertical-offset="7903" max-vertical-offset="54893">
@@ -442,11 +436,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-14.923077" vertical-offset="530" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="113" selection-start="3772" selection-end="3772" vertical-scroll-proportion="0.5397112" vertical-offset="1146" max-vertical-offset="3366">
+        <state line="85" column="135" selection-start="3794" selection-end="3794" vertical-scroll-proportion="0.38628158" vertical-offset="1231" max-vertical-offset="3366">
           <folding>
-            <marker date="1397383508740" expanded="true" signature="7033:7036" placeholder="/** * @param..." />
+            <marker date="1397390111461" expanded="true" signature="7056:7059" placeholder="/** * @param..." />
           </folding>
         </state>
       </provider>
