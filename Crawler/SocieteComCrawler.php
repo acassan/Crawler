@@ -73,33 +73,33 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                         $keyColumn = ltrim(rtrim(Tools::formatWord($tr->getElementsByTagName('td')->item(0)->nodeValue)));
                         switch($keyColumn) {
                             case "nom commercial":
-                                $societyData['commercial_name'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['commercial_name'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "activite":
-                                $societyData['activity'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['activity'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "siege social":
-                                $societyData['headquarter'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['headquarter'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "forme juridique":
                                 $societyData['legaltype'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
                                 $societyData['legaltype'] = utf8_decode($societyData['legaltype']);
                             break;
                             case "siret":
-                                $societyData['siret'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['siret'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "rcs":
-                                $societyData['rcs'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['rcs'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "capital social":
-                                $societyData['capital'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['capital'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "immatriculation":
                                 $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                                 $societyData['registration'] = $dateTmp->format('Y-m-d H:i:s');
                             break;
                             case "nationalite":
-                                $societyData['nationality'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                $societyData['nationality'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "radiation":
                                 $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
