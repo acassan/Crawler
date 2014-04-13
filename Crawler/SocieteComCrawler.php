@@ -84,7 +84,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                             break;
                             case "forme juridique":
                                 $societyData['legaltype'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
-                                $societyData['legaltype'] = mb_convert_encoding($societyData['legaltype'],'utf-8');
+                                $societyData['legaltype'] = mb_convert_encoding($societyData['legaltype'],'utf-8', mb_detect_encoding($societyData['legaltype']));
                             break;
                             case "siret":
                                 $societyData['siret'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
