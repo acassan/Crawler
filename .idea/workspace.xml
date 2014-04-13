@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -29,9 +28,9 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="96" selection-start="3694" selection-end="3694" vertical-scroll-proportion="0.56" vertical-offset="969" max-vertical-offset="3672">
+            <state line="86" column="124" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.58" vertical-offset="969" max-vertical-offset="3689">
               <folding>
-                <marker date="1397411147632" expanded="true" signature="8007:8010" placeholder="/** * @param..." />
+                <marker date="1397411377655" expanded="true" signature="8146:8149" placeholder="/** * @param..." />
               </folding>
             </state>
           </provider>
@@ -393,9 +392,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="96" selection-start="3694" selection-end="3694" vertical-scroll-proportion="0.56" vertical-offset="969" max-vertical-offset="3672">
+        <state line="86" column="124" selection-start="3832" selection-end="3832" vertical-scroll-proportion="0.58" vertical-offset="969" max-vertical-offset="3689">
           <folding>
-            <marker date="1397411147632" expanded="true" signature="8007:8010" placeholder="/** * @param..." />
+            <marker date="1397411377655" expanded="true" signature="8146:8149" placeholder="/** * @param..." />
           </folding>
         </state>
       </provider>
