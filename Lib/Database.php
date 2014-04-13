@@ -84,12 +84,11 @@ Class Database extends mysqli
 				continue;
 			}
 			//$query .= '`' . $key . '` = "' . $value . '", ';
-			$query .= "`{$key}` = '{$value}', ";
+			$query .= "`{$key}` = '{$value}', ";var_dump($key);
 		}
 
 		$query = substr($query, 0, -2);
 
-        var_dump($query);
 		return $this->query($query);
 	}
 
