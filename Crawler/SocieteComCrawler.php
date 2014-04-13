@@ -71,7 +71,6 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                     $trList = $table->getElementsByTagName('tr');
                     foreach($trList as $tr) {
                         $keyColumn = ltrim(rtrim(Tools::formatWord($tr->getElementsByTagName('td')->item(0)->nodeValue)));
-                        var_dump($keyColumn);
                         switch($keyColumn) {
                             case "nom commercial":
                                 $societyData['commercial_name'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
@@ -85,6 +84,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                             case "forme juridique":
                                 $societyData['legaltype'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
                                 $societyData['legaltype'] = mb_convert_encoding($societyData['legaltype'],'utf-8', mb_detect_encoding($societyData['legaltype']));
+                                var_dump($societyData['legaltype']);
                             break;
                             case "siret":
                                 $societyData['siret'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
