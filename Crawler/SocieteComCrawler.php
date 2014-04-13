@@ -53,6 +53,11 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
             $presidentData['firstname'] = utf8_decode(rtrim(ltrim($presidentTmp[2])));
             $presidentData['lastname']  = utf8_decode(rtrim(ltrim($presidentTmp[3])));
+
+            $search     = array(',',';',':','/','?','.','!','*','$','^','&','"',"'",'(',')','{','}','[',']','|','`','#','=');
+            $presidentData['firstname']       = str_replace($search,'',$presidentData['firstname']);
+            $presidentData['lastname']       = str_replace($search,'',$presidentData['lastname']);
+
             $birthDate = new \DateTime(Tools::formatWord($presidentTmp[5]));
             $presidentData['birthdate'] = $birthDate->format('Y-m-d H:i:s');
 
