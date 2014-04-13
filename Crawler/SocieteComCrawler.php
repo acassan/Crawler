@@ -77,7 +77,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                             break;
                             case "activite":
                                 $societyData['activity'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                var_dump($dom->saveHTML($tr->getElementsByTagName('td')->item(1)));
+                                var_dump($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->firstChild));
                             break;
                             case "siege social":
                                 $societyData['headquarter'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));

@@ -46,9 +46,9 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="98" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
+            <state line="79" column="108" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
               <folding>
-                <marker date="1397392670867" expanded="true" signature="7210:7213" placeholder="/** * @param..." />
+                <marker date="1397392721410" expanded="true" signature="7222:7225" placeholder="/** * @param..." />
               </folding>
             </state>
           </provider>
@@ -444,9 +444,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="98" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
+        <state line="79" column="108" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
           <folding>
-            <marker date="1397392670867" expanded="true" signature="7210:7213" placeholder="/** * @param..." />
+            <marker date="1397392721410" expanded="true" signature="7222:7225" placeholder="/** * @param..." />
           </folding>
         </state>
       </provider>
