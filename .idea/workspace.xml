@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -47,10 +46,19 @@
       <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="126" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.5090253" vertical-offset="1146" max-vertical-offset="3349">
+            <state line="85" column="113" selection-start="3772" selection-end="3772" vertical-scroll-proportion="0.5397112" vertical-offset="1146" max-vertical-offset="3366">
               <folding>
-                <marker date="1397383389108" expanded="true" signature="6919:6922" placeholder="/** * @param..." />
+                <marker date="1397383508740" expanded="true" signature="7033:7036" placeholder="/** * @param..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="standard_0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="307" column="39" selection-start="8526" selection-end="8526" vertical-scroll-proportion="-5.4615383" vertical-offset="5077" max-vertical-offset="22270">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -333,11 +341,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="1" selection-start="794" selection-end="794" vertical-scroll-proportion="0.40525115" vertical-offset="699" max-vertical-offset="1598" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JacCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476">
@@ -432,11 +435,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="307" column="39" selection-start="8526" selection-end="8526" vertical-scroll-proportion="-5.4615383" vertical-offset="5077" max-vertical-offset="22270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="126" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.5090253" vertical-offset="1146" max-vertical-offset="3349">
+        <state line="85" column="113" selection-start="3772" selection-end="3772" vertical-scroll-proportion="0.5397112" vertical-offset="1146" max-vertical-offset="3366">
           <folding>
-            <marker date="1397383389108" expanded="true" signature="6919:6922" placeholder="/** * @param..." />
+            <marker date="1397383508740" expanded="true" signature="7033:7036" placeholder="/** * @param..." />
           </folding>
         </state>
       </provider>
