@@ -76,8 +76,9 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
                                 $societyData['commercial_name'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
                             break;
                             case "activite":
-                                $societyData['activity'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                var_dump($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->firstChild),$dom->saveHTML($tr->getElementsByTagName('td')->item(1)->childNodes->item(2)));
+                                $societyData['activity']    = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->childNodes->item(2)))));
+                                $activityName               = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->firstChild))));
+                                $this->insertSocietyActivity($societyData['activity'], $activityName);
                             break;
                             case "siege social":
                                 $societyData['headquarter'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
@@ -148,10 +149,10 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
         $client = $this->clientExist($clientData['lastname'], $clientData['firstname']);
 
         if(is_null($client)) {
-            $this->db->Insert($clientData, 'client','',false);
+            $this->db->Insert($clientData, 'client');
             return $this->db->insert_id;
         } else {
-            $this->db->Update('client', $clientData, array('id' => $client['id']),'', false);
+            $this->db->Update('client', $clientData, array('id' => $client['id']));
             return $client['id'];
         }
     }
@@ -184,11 +185,17 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
         $society = $this->societyExist($societyData['name']);
 
         if(is_null($society)) {
-            $this->db->Insert($societyData, 'society','',false);
+            $this->db->Insert($societyData, 'society');
             return $this->db->insert_id;
         } else {
-            $this->db->Update('society', $societyData, array('id' => $society['id']),'',false);
+            $this->db->Update('society', $societyData, array('id' => $society['id']));
             return $society['id'];
         }
+    }
+
+    protected function insertSocietyActivity($code,$name)
+    {
+        $sql = sprintf("INSERT IGNORE INTO society_activity(code,name) VALUES('%s','%s')", $code, $name);
+        $this->db->query($sql);
     }
 }

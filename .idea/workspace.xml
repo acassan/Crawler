@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Database.php" afterPath="$PROJECT_DIR$/Lib/Database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
@@ -43,12 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="185" selection-start="3443" selection-end="3443" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
+            <state line="151" column="26" selection-start="6766" selection-end="6766" vertical-scroll-proportion="-12.307693" vertical-offset="2247" max-vertical-offset="3502">
               <folding>
-                <marker date="1397392923513" expanded="true" signature="7300:7303" placeholder="/** * @param..." />
+                <marker date="1397395318424" expanded="true" signature="7382:7385" placeholder="/** * @param..." />
               </folding>
             </state>
           </provider>
@@ -63,19 +64,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
+      <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-14.923077" vertical-offset="530" max-vertical-offset="1224">
+            <state line="90" column="17" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.47111914" vertical-offset="1269" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+      <file leaf-file-name="Tools.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/Tools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="62" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-9.692307" vertical-offset="1363" max-vertical-offset="2380">
+            <state line="54" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-14.923077" vertical-offset="530" max-vertical-offset="1224">
               <folding />
             </state>
           </provider>
@@ -139,9 +140,9 @@
         <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
-        <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+        <option value="$PROJECT_DIR$/Lib/Database.php" />
       </list>
     </option>
   </component>
@@ -350,7 +351,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phpCrawler/PHPCrawler.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1223" column="28" selection-start="43142" selection-end="43142" vertical-scroll-proportion="0.24352941" vertical-offset="20584" max-vertical-offset="34799" />
+        <state line="1223" column="28" selection-start="43142" selection-end="43142" vertical-scroll-proportion="0.24352941" vertical-offset="20584" max-vertical-offset="34799">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
@@ -414,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="62" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-9.692307" vertical-offset="1363" max-vertical-offset="2380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mbstring.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="556" column="6" selection-start="17838" selection-end="17838" vertical-scroll-proportion="0.53249097" vertical-offset="9157" max-vertical-offset="20621">
@@ -444,10 +440,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="185" selection-start="3443" selection-end="3443" vertical-scroll-proportion="0.8285199" vertical-offset="884" max-vertical-offset="3383">
+        <state line="151" column="26" selection-start="6766" selection-end="6766" vertical-scroll-proportion="-12.307693" vertical-offset="2247" max-vertical-offset="3502">
           <folding>
-            <marker date="1397392923513" expanded="true" signature="7300:7303" placeholder="/** * @param..." />
+            <marker date="1397395318424" expanded="true" signature="7382:7385" placeholder="/** * @param..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="17" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.47111914" vertical-offset="1269" max-vertical-offset="2380">
+          <folding />
         </state>
       </provider>
     </entry>
