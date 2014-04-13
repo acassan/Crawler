@@ -16,7 +16,6 @@ Class Database extends mysqli
     protected $dbUsername   = "dbo518842993";
     protected $dbPassword   = "riverline2013";
     protected $dbDatabase   = "db518842993";
-    protected $charset      = "UTF8";
 
     /**
      * Empêche la création externe d'instances.
@@ -28,8 +27,6 @@ Class Database extends mysqli
             die('Erreur de connexion (' . mysqli_connect_errno() . ') '
                     . mysqli_connect_error());
         }
-
-        $this->query("SET NAMES ". $this->charset);
     }
 
     /**
@@ -69,7 +66,7 @@ Class Database extends mysqli
 		return $data;
 	}
 
-    public function Insert($vars, $table, $exclude = '', $secureData = true){
+    public function Insert($vars, $table, $exclude = ''){
 
 		// Catch Exclusions
 		if($exclude == ''){
@@ -79,7 +76,7 @@ Class Database extends mysqli
 		array_push($exclude, 'MAX_FILE_SIZE'); // Automatically exclude this one
 
 		// Prepare Variables
-		$vars = $secureData ? $this->SecureData($vars) : $vars;
+		$vars = $this->SecureData($vars);
 
 		$query = "INSERT INTO `{$table}` SET ";
 		foreach($vars as $key=>$value){
@@ -96,7 +93,7 @@ Class Database extends mysqli
 	}
 
     // Updates a record in the database based on WHERE
-	public function Update($table, $set, $where, $exclude = '',$secureData = true){
+	public function Update($table, $set, $where, $exclude = ''){
 		// Catch Exceptions
 		if(trim($table) == '' || !is_array($set) || !is_array($where)){
 			return false;
@@ -107,8 +104,8 @@ Class Database extends mysqli
 
 		array_push($exclude, 'MAX_FILE_SIZE'); // Automatically exclude this one
 
-		$set 		= $secureData ? $this->SecureData($set) : $set;
-		$where 	    = $secureData ? $this->SecureData($where) : $where;
+		$set 		= $this->SecureData($set);
+		$where 	    = $this->SecureData($where);
 
 		// SET
 
