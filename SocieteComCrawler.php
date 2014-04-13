@@ -2,6 +2,8 @@
 require_once 'Crawler/SocieteComCrawler.php';
 require_once 'Lib/Database.php';
 
+$db = Database::getInstance();
+
 $crawler = new SocieteComCrawler(array(
     'multiprocessing'           => false,
     'FollowMode'                => 3,
