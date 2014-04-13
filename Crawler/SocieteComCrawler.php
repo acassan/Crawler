@@ -147,7 +147,6 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $this->db->query($sql);
         }
 
-        if($this->iterations >= 5) { die();}
     }
 
     /**
