@@ -23,7 +23,5 @@ $crawler = new SocieteComCrawler(array(
 //    $db->Update('config', array('value' => $i), array('name' => 'society.dpt'));
 //}
 
-$crawler->setPageLimit(1);
-//    $crawler->setURL("http://www.societe.com");
-    $crawler->setURL("http://www.societe.com/societe/areva-nc-305207169.html");
-    $crawler->go();
+$crawler->setURL("http://www.societe.com");
+$crawler->go();

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415bf1b3-29ee-4695-9def-cffb62d11aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SocieteComCrawler.php" afterPath="$PROJECT_DIR$/SocieteComCrawler.php" />
     </list>
     <ignored path="crawler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="65" selection-start="7027" selection-end="7027" vertical-scroll-proportion="0.88" vertical-offset="1496" max-vertical-offset="4012">
+            <state line="132" column="65" selection-start="7027" selection-end="7027" vertical-scroll-proportion="-30.73077" vertical-offset="1445" max-vertical-offset="4012">
               <folding>
                 <marker date="1397411595589" expanded="true" signature="9155:9158" placeholder="/** * @param..." />
               </folding>
@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SocieteComCrawler.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="19" selection-start="957" selection-end="957" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="578">
+            <state line="25" column="33" selection-start="814" selection-end="814" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -85,9 +85,9 @@
         <option value="$PROJECT_DIR$/web/search.css" />
         <option value="$PROJECT_DIR$/Lib/Tools.php" />
         <option value="$PROJECT_DIR$/Crawler/BaseCrawler.php" />
-        <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
         <option value="$PROJECT_DIR$/Lib/Database.php" />
         <option value="$PROJECT_DIR$/Crawler/SocieteComCrawler.php" />
+        <option value="$PROJECT_DIR$/SocieteComCrawler.php" />
       </list>
     </option>
   </component>
@@ -383,19 +383,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="957" selection-end="957" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crawler/SocieteComCrawler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="65" selection-start="7027" selection-end="7027" vertical-scroll-proportion="0.88" vertical-offset="1496" max-vertical-offset="4012">
+        <state line="132" column="65" selection-start="7027" selection-end="7027" vertical-scroll-proportion="-30.73077" vertical-offset="1445" max-vertical-offset="4012">
           <folding>
             <marker date="1397411595589" expanded="true" signature="9155:9158" placeholder="/** * @param..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SocieteComCrawler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="33" selection-start="814" selection-end="814" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="850">
+          <folding />
         </state>
       </provider>
     </entry>
