@@ -45,14 +45,14 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $societyData['societecom_url'] = $DocInfo->url;
 
             $societyInformations = $dom->getElementById('synthese')->getElementsByTagName('p');
-            $societyData['description'] = rtrim(ltrim($societyInformations->item(1)->nodeValue));
+            $societyData['description'] = utf8_decode(rtrim(ltrim($societyInformations->item(1)->nodeValue)));
 
             // President
             preg_match("#(.+) (.+) (.+) (.+) en ([0-9]+)#i", $societyInformations->item(2)->nodeValue, $presidentTmp);
             $presidentData = array();
             $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
-            $presidentData['firstname'] = Tools::formatWord($presidentTmp[2]);
-            $presidentData['lastname']  = Tools::formatWord($presidentTmp[3]);
+            $presidentData['firstname'] = utf8_decode(rtrim(ltrim($presidentTmp[2])));
+            $presidentData['lastname']  = utf8_decode(rtrim(ltrim($presidentTmp[3])));
             $birthDate = new \DateTime(Tools::formatWord($presidentTmp[5]));
             $presidentData['birthdate'] = $birthDate->format('Y-m-d H:i:s');
 
