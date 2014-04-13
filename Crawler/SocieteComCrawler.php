@@ -45,106 +45,113 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $societyData['societecom_id'] = intval($society[2]);
             $societyData['societecom_url'] = $DocInfo->url;
 
-            if(!$dom->getElementById('synthese') instanceof DOMElement) { return true; }
-            $societyInformations = $dom->getElementById('synthese')->getElementsByTagName('p');
-            $societyData['description'] = utf8_decode(rtrim(ltrim($societyInformations->item(1)->nodeValue)));
+            if($dom->getElementById('synthese') instanceof DOMElement) {
+                $societyInformations = $dom->getElementById('synthese')->getElementsByTagName('p');
+                $societyData['description'] = utf8_decode(rtrim(ltrim($societyInformations->item(1)->nodeValue)));
 
-            // President
-            preg_match("#(.+) (.+) (.+) (.+) en ([0-9]+)#i", $societyInformations->item(2)->nodeValue, $presidentTmp);
-            $presidentData = array();
-            $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
-            $presidentData['firstname'] = utf8_decode(rtrim(ltrim($presidentTmp[2])));
-            $presidentData['lastname']  = utf8_decode(rtrim(ltrim($presidentTmp[3])));
+                // President
+                preg_match("#(.+) (.+) (.+) (.+) en ([0-9]+)#i", $societyInformations->item(2)->nodeValue, $presidentTmp);
+                $presidentData = array();
+                $presidentData['civility']  = Tools::formatWord($presidentTmp[1]);
+                $presidentData['firstname'] = utf8_decode(rtrim(ltrim($presidentTmp[2])));
+                $presidentData['lastname']  = utf8_decode(rtrim(ltrim($presidentTmp[3])));
 
-            $search     = array(',',';',':','/','?','.','!','*','$','^','&','"',"'",'(',')','{','}','[',']','|','`','#','=');
-            $presidentData['firstname']       = str_replace($search,'',$presidentData['firstname']);
-            $presidentData['lastname']       = str_replace($search,'',$presidentData['lastname']);
+                $search     = array(',',';',':','/','?','.','!','*','$','^','&','"',"'",'(',')','{','}','[',']','|','`','#','=');
+                $presidentData['firstname']       = str_replace($search,'',$presidentData['firstname']);
+                $presidentData['lastname']       = str_replace($search,'',$presidentData['lastname']);
 
-            $birthDate = new \DateTime(Tools::formatWord($presidentTmp[5]));
-            $presidentData['birthdate'] = $birthDate->format('Y-m-d H:i:s');
+                $birthDate = new \DateTime(Tools::formatWord($presidentTmp[5]));
+                $presidentData['birthdate'] = $birthDate->format('Y-m-d H:i:s');
 
-            $presidentId = $this->createOrUpdateClient($presidentData);
+                $presidentId = $this->createOrUpdateClient($presidentData);
 
-            /** @var DOMElement $table */
-            foreach($dom->getElementsByTagName('table') as $table) {
-               if(preg_match("#font-size:11px;#i", $table->getAttribute('style')) && count($table) < 2) {
-                   $tables[] = $table;
-               }
-            }
+                /** @var DOMElement $table */
+                foreach($dom->getElementsByTagName('table') as $table) {
+                   if(preg_match("#font-size:11px;#i", $table->getAttribute('style')) && count($table) < 2) {
+                       $tables[] = $table;
+                   }
+                }
 
-            foreach($tables as $table) {
-                if($tables[0] instanceof DOMElement) {
-                    /** @var DOMNodeList $tr */
-                    $trList = $table->getElementsByTagName('tr');
-                    foreach($trList as $tr) {
-                        $keyColumn = ltrim(rtrim(Tools::formatWord($tr->getElementsByTagName('td')->item(0)->nodeValue)));
-                        switch($keyColumn) {
-                            case "nom commercial":
-                                if(!isset($societyData['commercial_name'])) {
-                                    $societyData['commercial_name'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "activite":
-                                if(!isset($societyData['activity'])) {
-                                    $childsLength = $tr->getElementsByTagName('td')->item(1)->childNodes->length;
-                                    $societyData['activity']    = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->childNodes->item($childsLength-1)))));
-                                    $activityName               = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->firstChild))));
-                                    $this->insertSocietyActivity($societyData['activity'], $activityName);
-                                }
-                            break;
-                            case "siege social":
-                                if(!isset($societyData['headquarter'])) {
-                                    $societyData['headquarter'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "forme juridique":
-                                if(!isset($societyData['legaltype'])) {
-                                    $societyData['legaltype'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
-                                    $societyData['legaltype'] = utf8_decode($societyData['legaltype']);
-                                }
-                            break;
-                            case "siret":
-                                if(!isset($societyData['siret'])) {
-                                    $societyData['siret'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "rcs":
-                                if(!isset($societyData['rcs'])) {
-                                    $societyData['rcs'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "capital social":
-                                if(!isset($societyData['capital'])) {
-                                    $societyData['capital'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "immatriculation":
-                                if(!isset($societyData['registration'])) {
-                                    $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                    $societyData['registration'] = $dateTmp->format('Y-m-d H:i:s');
-                                }
-                            break;
-                            case "nationalite":
-                                if(!isset($societyData['nationality'])) {
-                                    $societyData['nationality'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                }
-                            break;
-                            case "radiation":
-                                if(!isset($societyData['radiation'])) {
-                                    $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
-                                    $societyData['radiation'] = $dateTmp->format('Y-m-d H:i:s');
-                                }
-                            break;
+                foreach($tables as $table) {
+                    if($tables[0] instanceof DOMElement) {
+                        /** @var DOMNodeList $tr */
+                        $trList = $table->getElementsByTagName('tr');
+                        foreach($trList as $tr) {
+                            $keyColumn = ltrim(rtrim(Tools::formatWord($tr->getElementsByTagName('td')->item(0)->nodeValue)));
+                            switch($keyColumn) {
+                                case "nom commercial":
+                                    if(!isset($societyData['commercial_name'])) {
+                                        $societyData['commercial_name'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "activite":
+                                    if(!isset($societyData['activity'])) {
+                                        $childsLength = $tr->getElementsByTagName('td')->item(1)->childNodes->length;
+                                        $societyData['activity']    = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->childNodes->item($childsLength-1)))));
+                                        $activityName               = utf8_decode(ltrim(rtrim($dom->saveHTML($tr->getElementsByTagName('td')->item(1)->firstChild))));
+                                        $this->insertSocietyActivity($societyData['activity'], $activityName);
+                                    }
+                                break;
+                                case "siege social":
+                                    if(!isset($societyData['headquarter'])) {
+                                        $societyData['headquarter'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "forme juridique":
+                                    if(!isset($societyData['legaltype'])) {
+                                        $societyData['legaltype'] = ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue));
+                                        $societyData['legaltype'] = utf8_decode($societyData['legaltype']);
+                                    }
+                                break;
+                                case "siret":
+                                    if(!isset($societyData['siret'])) {
+                                        $societyData['siret'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "rcs":
+                                    if(!isset($societyData['rcs'])) {
+                                        $societyData['rcs'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "capital social":
+                                    if(!isset($societyData['capital'])) {
+                                        $societyData['capital'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "immatriculation":
+                                    if(!isset($societyData['registration'])) {
+                                        $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                        $societyData['registration'] = $dateTmp->format('Y-m-d H:i:s');
+                                    }
+                                break;
+                                case "nationalite":
+                                    if(!isset($societyData['nationality'])) {
+                                        $societyData['nationality'] = utf8_decode(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                    }
+                                break;
+                                case "radiation":
+                                    if(!isset($societyData['radiation'])) {
+                                        $dateTmp = new \DateTime(ltrim(rtrim($tr->getElementsByTagName('td')->item(1)->nodeValue)));
+                                        $societyData['radiation'] = $dateTmp->format('Y-m-d H:i:s');
+                                    }
+                                break;
+                            }
                         }
                     }
                 }
+
+                $societyId = $this->createOrUpdateSociety($societyData);
+
+                // Add link between society and client
+                $sql = sprintf("INSERT IGNORE INTO society_has_client(society_id,client_id,position) VALUES('%d','%d','%s')", $societyId, $presidentId, 'president');
+                $this->db->query($sql);
             }
+        }
 
-            $societyId = $this->createOrUpdateSociety($societyData);
-
-            // Add link between society and client
-            $sql = sprintf("INSERT IGNORE INTO society_has_client(society_id,client_id,position) VALUES('%d','%d','%s')", $societyId, $presidentId, 'president');
-            $this->db->query($sql);
+        if($this->iterations > 200) {
+            gc_collect_cycles();
+            echo ">> Memory: ". number_format(memory_get_usage(), 0, '.', ','). " octets". $this->lb;
+            $this->iterations = 1;
         }
 
     }
