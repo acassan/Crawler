@@ -11,15 +11,17 @@ $crawler = new SocieteComCrawler(array(
     'showContentReceived'       => false,
     'showPageRequested'         => true,
 ));
+//
+//$sSql           = "SELECT * FROM config WHERE name='society.dpt'";
+//foreach($db->query($sSql) as $tmp) { $currentId = $tmp['value']; }
+//
+//for($i=$currentId; $i <= 99; $i++) {
+//    echo "Handling dpt ". $i ." \n";
+//    $crawler->setURL(sprintf("http://www.societe.com/liste-%02d.html", $i));
+//    $crawler->go();
+//
+//    $db->Update('config', array('value' => $i), array('name' => 'society.dpt'));
+//}
 
-$sSql           = "SELECT * FROM config WHERE name='society.dpt'";
-foreach($db->query($sSql) as $tmp) { $currentId = $tmp['value']; }
-
-for($i=$currentId; $i <= 99; $i++) {
-    echo "Handling dpt ". $i ." \n";
-    $crawler->setURL(sprintf("http://www.societe.com/liste-%02d.html", $i));
+    $crawler->setURL("http://www.societe.com");
     $crawler->go();
-
-    $db->Update('config', array('value' => $i), array('name' => 'society.dpt'));
-}
-

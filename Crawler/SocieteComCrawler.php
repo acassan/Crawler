@@ -44,6 +44,7 @@ class SocieteComCrawler extends BaseCrawler implements CrawlerInterface
             $societyData['societecom_id'] = intval($society[2]);
             $societyData['societecom_url'] = $DocInfo->url;
 
+            if(!$dom->getElementById('synthese') instanceof DOMElement) { return true; }
             $societyInformations = $dom->getElementById('synthese')->getElementsByTagName('p');
             $societyData['description'] = utf8_decode(rtrim(ltrim($societyInformations->item(1)->nodeValue)));
 
