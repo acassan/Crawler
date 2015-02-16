@@ -14,8 +14,8 @@ Class Database extends mysqli
 
     protected $dbHost       ="db518842993.db.1and1.com";
     protected $dbUsername   = "dbo518842993";
-    protected $dbPassword   = "riverline2013";
-    protected $dbDatabase   = "db518842993";
+    protected $dbPassword   = "";
+    protected $dbDatabase   = "";
 
     /**
      * Empêche la création externe d'instances.
